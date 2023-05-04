@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 
 
@@ -17,34 +16,35 @@
 		<!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-stroke.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
 		
 		<!-- REVOLUTION STYLE SHEETS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
 		
 		<!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" type="text/css" href="assets/css/noneed.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/noneed.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
 		
 		<!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery.themepunch.revolution.min.js"></script>
 		
 		<!-- PARTICLES ADD-ON FILES -->
-		<link rel='stylesheet' href='assets/js/revolution.addon.particles.css?ver=1.0.3' type='text/css' media='all' />
-		<script type='text/javascript' src='assets/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
+		<link rel='stylesheet' href='../assets/js/revolution.addon.particles.css?ver=1.0.3' type='text/css' media='all' />
+		<script type='text/javascript' src='../assets/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
 
 		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-		<script type="text/javascript" src="assets/js/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="assets/js/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="../assets/js/revolution.extension.video.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -64,14 +64,14 @@
 </head>
 
 
-<body class="bg-secondary">
+<body class="bg-primary">
 
 <!-- This is an example component -->
 <div class="w-full">
     
     <nav class="bg-primary">
     <div class="container mx-auto flex flex-wrap items-center justify-between w-fit md:container flex justify-center w-fit min-w-full">
-      <a href="#"><img class="md:hidden w-4/12 ml-6" src="assets/images/logowithoutback.png"></a>
+      <a href="#"><img class="md:hidden w-4/12 ml-6" src="../assets/images/logowithoutback.png"></a>
         <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden mr-3 text-gray-400 hover:text-blanc focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -103,7 +103,7 @@
                 </div>
             </li>
             <li class="hidden md:block w-2/12">
-           <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
+           <a href="#"><img class="w-4/6" src="../assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
             <a href="#" class="font-medium text-blanc hover:text-primary hover:bg-blanc duration-300 border-b border-gray-100 md:hover:bg-blanc md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:rounded-lg p-2 mt-1">Réalisations</a>
@@ -128,7 +128,7 @@
 		<ul>	<!-- SLIDE  -->
 			<li data-index="rs-32" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
-				<img src="assets/images/transparent.png" data-bgcolor='#1d2931'' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+				<img src="../assets/images/transparent.png" data-bgcolor='#1d2931'' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
 
 				<!-- LAYER NR. 1 -->
@@ -151,7 +151,7 @@
 					data-paddingbottom="[0,0,0,0]"
 					data-paddingleft="[0,0,0,0]"
 
-					style="z-index: 5;"><img class="grayscale" src="assets/images/vscode_bg.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> </div>
+					style="z-index: 5;"><img class="grayscale" src="../assets/images/vscode_bg.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> </div>
 
 				<!-- LAYER NR. 2 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-1" 
@@ -268,7 +268,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 10;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/galaxy_bg-2.png" alt="" data-ww="['509px','509px','509px','407px']" data-hh="['250px','250px','250px','200px']" width="407" height="200" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/galaxy_bg-2.png" alt="" data-ww="['509px','509px','509px','407px']" data-hh="['250px','250px','250px','200px']" width="407" height="200" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 7 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" 
@@ -290,14 +290,14 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 11;">
-		<div class="rs-looped rs-wave"  data-speed="10" data-angle="0" data-radius="5px" data-origin="50% 50%"><img src="assets/images/gravity_astronaut.png" alt="" data-ww="['820px','718px','615px','410px']" data-hh="['400px','350px','300px','200px']" width="1025" height="500" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="10" data-angle="0" data-radius="5px" data-origin="50% 50%"><img src="../assets/images/gravity_astronaut.png" alt="" data-ww="['820px','718px','615px','410px']" data-hh="['400px','350px','300px','200px']" width="1025" height="500" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 8 -->
 				<a class="tp-caption   tp-resizeme" 
 		 href="view/realisations.php" target="_blank"			 id="slide-32-layer-16" 
 					 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 					 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['230','210','310','310']" 
-								data-fontsize="['25','25','25','20']"
+								datext-3xlta-fontsize="['25','25','25','20']"
 					data-lineheight="['25','25','25','20']"
 					data-width="['none','none','none','320']"
 					data-height="none"
@@ -357,7 +357,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 14;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake2.png" alt="" data-ww="['29px','29px','29px','29px']" data-hh="['21px','21px','21px','21px']" width="29" height="21" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake2.png" alt="" data-ww="['29px','29px','29px','29px']" data-hh="['21px','21px','21px','21px']" width="29" height="21" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 11 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-3" 
@@ -379,7 +379,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 15;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake5.png" alt="" data-ww="['28px','28px','28px','28px']" data-hh="['27px','27px','27px','27px']" width="28" height="27" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake5.png" alt="" data-ww="['28px','28px','28px','28px']" data-hh="['27px','27px','27px','27px']" width="28" height="27" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 12 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
@@ -401,7 +401,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 16;">
-		<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="assets/images/flake4.png" alt="" data-ww="['26px','26px','26px','26px']" data-hh="['24px','24px','24px','24px']" width="26" height="24" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="../assets/images/flake4.png" alt="" data-ww="['26px','26px','26px','26px']" data-hh="['24px','24px','24px','24px']" width="26" height="24" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 13 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
@@ -423,7 +423,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 17;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="4px" data-origin="50% 50%"><img src="assets/images/flake3.png" alt="" data-ww="['27px','27px','27px','27px']" data-hh="['26px','26px','26px','26px']" width="27" height="26" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="4px" data-origin="50% 50%"><img src="../assets/images/flake3.png" alt="" data-ww="['27px','27px','27px','27px']" data-hh="['26px','26px','26px','26px']" width="27" height="26" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 14 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
@@ -445,7 +445,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 18;">
-		<div class="rs-looped rs-wave"  data-speed="6" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake1.png" alt="" data-ww="['13','13','13','13px']" data-hh="12px" width="25" height="24" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="6" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake1.png" alt="" data-ww="['13','13','13','13px']" data-hh="12px" width="25" height="24" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 15 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
@@ -467,7 +467,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 19;">
-		<div class="rs-looped rs-wave"  data-speed="7" data-angle="0" data-radius="6px" data-origin="50% 50%"><img src="assets/images/flake3.png" alt="" data-ww="['16px','16px','16px','16px']" data-hh="['15px','15px','15px','15px']" width="27" height="26" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="7" data-angle="0" data-radius="6px" data-origin="50% 50%"><img src="../assets/images/flake3.png" alt="" data-ww="['16px','16px','16px','16px']" data-hh="['15px','15px','15px','15px']" width="27" height="26" data-no-retina> </div></div>
 
 			</li>
 		</ul>
@@ -477,95 +477,83 @@
     </article>
 </section>
 
+<hr class="md:w-2/6">
+
+<h2 class="text-3xl text-blanc">
+  Quelques-uns de
+  <span class="magic">
+    <span class="magic-text">nos projets</span>
+  </span>
+</h2>
+
+<hr class="w-2/6">
+
 <!-- Container for demo purpose -->
 <div class="container my-24 px-6 mx-auto">
 
   <!-- Section: Design Block -->
-  <section class="mb-32 text-gray-800">
-    <div class="flex justify-center">
-    </div>
-
-    <div class="flex flex-wrap justify-center">
-      <div class="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-8/12 lg:w-6/12 px-3 lg:px-6">
-        <form>
-          <div class="form-group mb-6">
-            <input type="text" class="form-control block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300
-            rounded
-            transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-              placeholder="Name">
+  <section class="mb-32 text-gray-800 text-center">
+    <style>
+      .map-container {
+        height: 700px;
+        z-index: -1;
+      }
+    </style>
+    <div class="px-6 py-12 md:px-12">
+      <div class="container mx-auto xl:px-32">
+        <div class="grid lg:grid-cols-2 flex items-center">
+          <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
+            <div
+              class="bg-blanc bg-opacity-25 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+            >
+            <h2 class="text-3xl font-bold mb-12">Contact us</h2>
+            <form>
+              <div class="form-group mb-6">
+                <input
+                  type="text"
+                  class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleInput7"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group mb-6">
+                <input
+                  type="email"
+                  class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleInput8"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="form-group mb-6">
+                <textarea
+                  class="resize-none form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlTextarea13"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full px-6 py-2.5 bg-grenat text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-rose hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              >
+                Send
+              </button>
+            </form>
+            </div>
           </div>
-          <div class="form-group mb-6">
-            <input type="email" class="form-control block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300
-            rounded
-            transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-              placeholder="Email address">
+          <div class="md:mb-12 lg:mb-0">
+            <div class="map-container relative shadow-lg rounded-lg">
+              <img src="../assets/images/image-contact.jpg" class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen>
+            </div>
           </div>
-          <div class="form-group mb-6">
-            <textarea class="
-            form-control
-            block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300
-            rounded
-            transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-          " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
-          </div>
-          <button type="submit" class="
-          w-full
-          px-6
-          py-2.5
-          bg-blue-600
-          text-white
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          rounded
-          shadow-md
-          hover:bg-blue-700 hover:shadow-lg
-          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-blue-800 active:shadow-lg
-          transition
-          duration-150
-          ease-in-out">Send</button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
   <!-- Section: Design Block -->
 
 </div>
+
 <!-- Script -->
 
 <script type="text/javascript">
@@ -635,8 +623,35 @@
     });	/*ready*/
   </script>
 
+  <script> 
+
+let index = 0,
+    interval = 1000;
+
+const rand = (min, max) => 
+  Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = star => {
+  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
+
+  star.style.animation = "none";
+  star.offsetHeight;
+  star.style.animation = "";
+}
+
+for(const star of document.getElementsByClassName("magic-star")) {
+  setTimeout(() => {
+    animate(star);
+    
+    setInterval(() => animate(star), 1000);
+  }, index++ * (interval / 3))
+}
+
+  </script>
+
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-<script type="text/javascript" src="assets/js/warning.js"></script>
+<script type="text/javascript" src="../assets/js/warning.js"></script>
 
 </body>
 
