@@ -35,8 +35,8 @@
     type="text/css" media="all" />
 
 
-  <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-stroke.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
 
   <!-- REVOLUTION STYLE SHEETS -->
   <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
