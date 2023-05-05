@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <script src="script.js"></script>
+  <script defer src="../assets/js/accueil.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -488,6 +488,107 @@
 
 <hr class="w-2/6">
 
+	<div id="cards">
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<a href="">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				</a>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-apartment"></i>
+					<div class="card-info-title">
+					<h3>Apartments</h3>  
+					<h4>Places to be apart. Wait, what?</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<i class="fa-duotone fa-unicorn"></i>
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-unicorn"></i>
+					<div class="card-info-title">
+					<h3>Unicorns</h3>  
+					<h4>A single corn. Er, I mean horn.</h4>
+					</div>    
+				</div>  
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<i class="fa-duotone fa-blender-phone"></i>
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-blender-phone"></i>
+					<div class="card-info-title">
+					<h3>Blender Phones</h3>  
+					<h4>These absolutely deserve to exist.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<i class="fa-duotone fa-person-to-portal"></i>
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-person-to-portal"></i>
+					<div class="card-info-title">
+					<h3>Adios</h3>  
+					<h4>See you...</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<i class="fa-duotone fa-person-from-portal"></i>
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-person-from-portal"></i>
+					<div class="card-info-title">
+					<h3>I mean hello</h3>  
+					<h4>...over here.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<i class="fa-duotone fa-otter"></i>
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<i class="fa-duotone fa-otter"></i>
+					<div class="card-info-title">
+					<h3>Otters</h3>  
+					<h4>Look at me, imma cute lil fella.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
 <!-- Container for demo purpose -->
 <div class="container my-24 px-6 mx-auto">
 
@@ -550,11 +651,12 @@
       </div>
     </div>
   </section>
-  <!-- Section: Design Block -->
-
 </div>
 
+
+
 <!-- Script -->
+
 
 <script type="text/javascript">
 		
@@ -649,6 +751,39 @@ for(const star of document.getElementsByClassName("magic-star")) {
 }
 
   </script>
+
+<script>
+
+document.getElementById("cards").onmousemove = e => {
+  for(const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
+
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  };
+}
+
+</script>
+
+<script>
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.ntshow');
+hiddenElements.forEach((el) =>observer.observe(el));
+
+</script>
 
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 <script type="text/javascript" src="../assets/js/warning.js"></script>
