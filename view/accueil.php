@@ -16,15 +16,15 @@
 		<!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		
-		<link rel="stylesheet" type="text/css" href="../assets/css/pe-icon-7-stroke.css">
-		<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+		<link rel="stylesheet" href="../assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 		
 		<!-- REVOLUTION STYLE SHEETS -->
 		<link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
 		
 		<!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" type="text/css" href="../assets/css/noneed.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
 		
 		<!-- REVOLUTION JS FILES -->
@@ -67,7 +67,7 @@
 <body class="bg-primary">
 
 <!-- This is an example component -->
-<div class="w-full">
+<div class="hidden sticky top-0 z-50 md:w-full relative md:block">
     
     <nav class="bg-primary">
     <div class="container mx-auto flex flex-wrap items-center justify-between w-fit md:container flex justify-center w-fit min-w-full">
@@ -80,41 +80,62 @@
         <div class="hidden md:block w-full" id="mobile-menu">
         <ul class="flex-col items-center justify-around md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li class="w-full md:w-auto">
-            <a href="#" class="flex items-center text-blanc hover:text-primary hover:bg-blanc duration-300 border-b border-gray-100 md:hover:bg-blanc md:border-0 pl-3 pr-4 py-2 md:hover:text-primary md:rounded-lg p-2 mt-1 font-medium md:w-auto" aria-current="page">Articles</a>
+            <a href="#" class="flex items-center md: ensavoirplus " aria-current="page">Articles</a>
             </li>
             <li class="w-full md:w-auto">
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md:w-auto hover:text-primary hover:bg-blanc duration-300 border-b border-gray-100 md:hover:bg-blanc md:border-0 pl-3 pr-4 py-2 md:hover:text-primary md:rounded-lg p-2 mt-1 md:font-medium md:w-auto">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md: ensavoirplus">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <ul class="" aria-labelledby="dropdownLargeButton">
                     <li>
-                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                        <a href="#" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Nos compétences</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
+                        <a href="#" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
                     </li>
                     </ul>
-                    <div class="py-1">
-                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
-                    </div>
                 </div>
             </li>
             <li class="hidden md:block w-2/12">
            <a href="#"><img class="w-4/6" src="../assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#" class="font-medium text-blanc hover:text-primary hover:bg-blanc duration-300 border-b border-gray-100 md:hover:bg-blanc md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:rounded-lg p-2 mt-1">Réalisations</a>
+            <a href="#" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#" class="font-medium text-blanc hover:text-primary hover:bg-blanc duration-300 border-b border-gray-100 md:hover:bg-blanc md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:rounded-lg p-2 mt-1"">Contact</a>
+            <a href="#" class="font-medium text-blanc md: ensavoirplus">Contact</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
+</div>
+
+
+<div class="flex w-full md:hidden" id="nav">
+    <a href="article.php" class="button active">
+        <i class="fa-solid fa-house"></i> 
+    </a>
+    <a href="#" class="button">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="button">
+        <i class="fa-solid fa-newspaper"></i>
+    </a>
+    <button type="button" class="button" data-dropdown-toggle="dropupPhone">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+	<div id="dropupPhone" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+    <ul class="py-1 bg-primary" aria-labelledby="dropdownLargeButton">
+        <li>
+            <a href="#" class="text-blanc bg-primary block px-4 py-2">Réalisation</a>
+        </li>
+        <li>
+            <a href="#" class="text-blanc bg-primary block px-4 py-2">Présentation</a>
+        </li>
+    </ul>
+</div>
+
 </div>
 
 
@@ -477,7 +498,7 @@
     </article>
 </section>
 
-<hr class="md:w-2/6">
+<hr class="w-4/6 m-auto mt-16 md:w-2/6">
 
 <h2 class="text-3xl text-blanc">
   Quelques-uns de
@@ -486,7 +507,7 @@
   </span>
 </h2>
 
-<hr class="w-2/6">
+<hr class="w-4/6 m-auto mb-16 md:w-2/6">
 
 	<div id="cards">
 			<div class="card ntshow">
@@ -498,7 +519,6 @@
 				</a>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-apartment"></i>
 					<div class="card-info-title">
 					<h3>Apartments</h3>  
 					<h4>Places to be apart. Wait, what?</h4>
@@ -510,11 +530,10 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<i class="fa-duotone fa-unicorn"></i>
+				<img src="../assets/images/image-contact.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-unicorn"></i>
 					<div class="card-info-title">
 					<h3>Unicorns</h3>  
 					<h4>A single corn. Er, I mean horn.</h4>
@@ -526,11 +545,10 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<i class="fa-duotone fa-blender-phone"></i>
+				<img src="../assets/images/image-contact.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-blender-phone"></i>
 					<div class="card-info-title">
 					<h3>Blender Phones</h3>  
 					<h4>These absolutely deserve to exist.</h4>
@@ -542,11 +560,10 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<i class="fa-duotone fa-person-to-portal"></i>
+				<img src="../assets/images/image-contact.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-person-to-portal"></i>
 					<div class="card-info-title">
 					<h3>Adios</h3>  
 					<h4>See you...</h4>
@@ -558,11 +575,10 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<i class="fa-duotone fa-person-from-portal"></i>
+				<img src="../assets/images/image-contact.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-person-from-portal"></i>
 					<div class="card-info-title">
 					<h3>I mean hello</h3>  
 					<h4>...over here.</h4>
@@ -574,11 +590,10 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<i class="fa-duotone fa-otter"></i>
+				<img src="../assets/images/image-contact.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
-					<i class="fa-duotone fa-otter"></i>
 					<div class="card-info-title">
 					<h3>Otters</h3>  
 					<h4>Look at me, imma cute lil fella.</h4>
@@ -588,6 +603,118 @@
 			</div>
 			</div>
 		</div>
+
+		<a href="#" class="ensavoirplus block m-auto w-fit pt-8">En savoir plus</a>
+
+
+<hr class="w-4/6 m-auto mt-16 md:w-2/6">
+
+<h2 class="text-3xl text-blanc">
+  Quelques-uns de
+  <span class="magic">
+    <span class="magic-text">nos articles</span>
+  </span>
+</h2>
+
+<hr class="w-4/6 m-auto mb-16 md:w-2/6">
+
+
+<div id="cards">
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<a href="">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				</a>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>Apartments</h3>  
+					<h4>Places to be apart. Wait, what?</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>Unicorns</h3>  
+					<h4>A single corn. Er, I mean horn.</h4>
+					</div>    
+				</div>  
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>Blender Phones</h3>  
+					<h4>These absolutely deserve to exist.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>Adios</h3>  
+					<h4>See you...</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>I mean hello</h3>  
+					<h4>...over here.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="card ntshow">
+			<div class="card-content">
+				<div class="card-image">
+				<img src="../assets/images/image-contact.jpg">
+				</div>
+				<div class="card-info-wrapper">
+				<div class="card-info">
+					<div class="card-info-title">
+					<h3>Otters</h3>  
+					<h4>Look at me, imma cute lil fella.</h4>
+					</div>    
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<a href="#" class="ensavoirplus block m-auto w-fit pt-8">En savoir plus</a>
 
 <!-- Container for demo purpose -->
 <div class="container my-24 px-6 mx-auto">
@@ -642,7 +769,7 @@
             </form>
             </div>
           </div>
-          <div class="md:mb-12 lg:mb-0">
+          <div class="hidden md:mb-12 lg:mb-0 md:block">
             <div class="map-container relative shadow-lg rounded-lg">
               <img src="../assets/images/image-contact.jpg" class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen>
             </div>
@@ -652,8 +779,6 @@
     </div>
   </section>
 </div>
-
-
 
 <!-- Script -->
 
@@ -786,7 +911,6 @@ hiddenElements.forEach((el) =>observer.observe(el));
 </script>
 
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-<script type="text/javascript" src="../assets/js/warning.js"></script>
 
 </body>
 
