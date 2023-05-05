@@ -49,7 +49,7 @@
   <!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
   <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet"
     type="text/css" media="all" />
-  <link rel="stylesheet" type="text/css" href="assets/css/noneed.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/noneed.css"> -->
   <!-- REVOLUTION JS FILES -->
   <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
@@ -552,13 +552,13 @@
                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="
                     z-index: 5;
                     text-transform: left;
-                    background-color: rgba(0, 0, 0, 0.25);
+                    background-color: rgba(0, 0, 0, 0.25;
                     border-color: rgba(0, 0, 0, 0.5);
                     border-width: 0px;
                   "></div>
 
               <!-- LAYER NR. 2 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3063-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3063-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -571,7 +571,7 @@
               </div>
 
               <!-- LAYER NR. 3 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3063-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3063-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -584,7 +584,7 @@
               </div>
 
               <!-- LAYER NR. 4 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3063-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3063-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -702,7 +702,7 @@
                   "></div>
 
               <!-- LAYER NR. 10 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3064-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3064-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -715,7 +715,7 @@
               </div>
 
               <!-- LAYER NR. 11 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3064-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3064-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -728,7 +728,7 @@
               </div>
 
               <!-- LAYER NR. 12 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3064-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3064-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -846,7 +846,7 @@
                   "></div>
 
               <!-- LAYER NR. 18 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3065-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3065-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -859,7 +859,7 @@
               </div>
 
               <!-- LAYER NR. 19 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3065-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3065-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -872,7 +872,7 @@
               </div>
 
               <!-- LAYER NR. 20 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3065-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3065-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -990,7 +990,7 @@
                   "></div>
 
               <!-- LAYER NR. 26 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3066-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3066-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -1003,7 +1003,7 @@
               </div>
 
               <!-- LAYER NR. 27 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3066-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3066-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -1016,7 +1016,7 @@
               </div>
 
               <!-- LAYER NR. 28 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3066-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3066-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -1134,7 +1134,7 @@
                   "></div>
 
               <!-- LAYER NR. 34 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3067-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3067-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -1147,7 +1147,7 @@
               </div>
 
               <!-- LAYER NR. 35 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3067-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3067-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -1160,7 +1160,7 @@
               </div>
 
               <!-- LAYER NR. 36 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3067-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3067-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -1278,7 +1278,7 @@
                   "></div>
 
               <!-- LAYER NR. 42 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3068-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3068-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -1291,7 +1291,7 @@
               </div>
 
               <!-- LAYER NR. 43 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3068-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3068-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -1304,7 +1304,7 @@
               </div>
 
               <!-- LAYER NR. 44 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3068-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3068-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -1422,7 +1422,7 @@
                   "></div>
 
               <!-- LAYER NR. 50 -->
-              <div class="tp-caption Team-Name tp-resizeme" id="slide-3069-layer-1"
+              <div class="tp-caption Team-Name tp-resizeme text-grenat" id="slide-3069-layer-1"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
                 data-fontsize="['70','70','50','50']" data-lineheight="['70','70','50','50']" data-width="none"
@@ -1435,7 +1435,7 @@
               </div>
 
               <!-- LAYER NR. 51 -->
-              <div class="tp-caption Team-Position tp-resizeme" id="slide-3069-layer-2"
+              <div class="tp-caption Team-Position tp-resizeme text-rose" id="slide-3069-layer-2"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
                 data-fontsize="['30','30','20','20']" data-lineheight="['30','30','20','20']" data-width="none"
@@ -1448,7 +1448,7 @@
               </div>
 
               <!-- LAYER NR. 52 -->
-              <div class="tp-caption Team-Description tp-resizeme" id="slide-3069-layer-3"
+              <div class="tp-caption Team-Description tp-resizeme text-blanc" id="slide-3069-layer-3"
                 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
                 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
                 data-fontsize="['18','18','15','15']" data-lineheight="['28','28','25','25']"
@@ -1551,7 +1551,7 @@
               data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="
                   z-index: 61;
                   text-transform: left;
-                  background-color: #1D1D1F;
+                  background-color: rgba(112, 22, 60, 0.25);
                   border-color: rgba(0, 0, 0, 0);
                   border-width: 0px;
                 "></div>
@@ -1856,8 +1856,6 @@
   <script src="assets/scripts/hammer.min.js"></script>
   <script src="assets/scripts/sequence.min.js"></script>
   <script src="assets/scripts/sequence-theme.two-up.js"></script>
-
-  <script type="text/javascript" src="assets/warning.js"></script>
 
 </body>
 
