@@ -77,8 +77,21 @@
     width: calc(100% - 20px);
     margin: auto;
   }
+
+  #cardss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;  
+    max-width: 1280px;
+    width: calc(100% - 20px);
+    margin: auto;
+  }
   
   #cards:hover > .card::after {
+    opacity: 1;
+  }
+
+  #cardss:hover > .card::after {
     opacity: 1;
   }
   
@@ -353,6 +366,11 @@
     }
     
     #cards {    
+      max-width: 1000px;
+      padding: 10px 0px;
+    }
+
+    #cardss {    
       max-width: 1000px;
       padding: 10px 0px;
     }

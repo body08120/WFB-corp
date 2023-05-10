@@ -530,7 +530,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card2.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -545,7 +545,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card3.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -560,7 +560,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card4.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -575,7 +575,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card5.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -590,7 +590,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card6.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -619,12 +619,12 @@
 <hr class="w-4/6 m-auto mb-16 md:w-2/6">
 
 
-<div id="cards">
+<div id="cardss">
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
 				<a href="">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card7.jpg">
 				</div>
 				</a>
 				<div class="card-info-wrapper">
@@ -640,7 +640,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card8.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -655,7 +655,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card9.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -670,7 +670,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card10.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -685,7 +685,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card11.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -700,7 +700,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="../assets/images/card12.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -880,6 +880,21 @@ for(const star of document.getElementsByClassName("magic-star")) {
 <script>
 
 document.getElementById("cards").onmousemove = e => {
+  for(const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
+
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  };
+}
+
+</script>
+
+<script>
+
+document.getElementById("cardss").onmousemove = e => {
   for(const card of document.getElementsByClassName("card")) {
     const rect = card.getBoundingClientRect(),
           x = e.clientX - rect.left,
