@@ -1,187 +1,171 @@
-<?php
-session_start();
-?>
-
 <!doctype html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de la page</title>
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		
-    <!-- LOADING FONTS AND ICONS -->
-    <link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-    
-    <link rel="stylesheet" type="text/css" href="../assets/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
-    
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
-    
-    <!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
-    <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/noneed.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
-    
-    <!-- REVOLUTION JS FILES -->
-    <script type="text/javascript" src="../assets/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="../assets/js/jquery.themepunch.revolution.min.js"></script>
-    
-    <!-- PARTICLES ADD-ON FILES -->
-    <link rel='stylesheet' href='../assets/js/revolution.addon.particles.css?ver=1.0.3' type='text/css' media='all' />
-    <script type='text/javascript' src='../assets/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
-
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-    <script type="text/javascript" src="../assets/js/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="../assets/js/revolution.extension.video.min.js"></script>
-
-    <script>
-        tailwind.config = {
-        theme: {
-            extend: {
-            colors: {
-                primary: '#1D1D1F',
-                card: '#1C242A',
-                blanc: '#F1F5F2',
-                rose: '#8c7284',
-                grenat: '#70163c',
-            }
-            }
-        }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="../assets/css/cards.css">
 </head>
-<body class="bg-primary">
-<?php
-// On vérifie on est sur quel page
-if (isset($_GET['page']) && !empty($_GET['page'])) {
-    $currentPage = (int) strip_tags($_GET['page']);
-} else {
-    $currentPage = 1;
-}
 
-// On se connecte à la db
-require_once('../../assets/config/config.php');
+<body class="bg-[#141414]">
 
-// On détermine le nombre de film et on renomme
-$sql = "SELECT COUNT(*) AS nb_articles 
-        FROM articles";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+    <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
+        <div class="space-y-5 w-9/12">
 
-//On récupère le nombre de film
-$result = $stmt->fetch();
-// on force en nombre entier, autre sécu si on veut
-$nbArticles = (int) $result['nb_articles'];
+            <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
+                <ul class="flex items-center gap-2 text-sm font-medium ">
+                    <li class="flex-1">
+                        <a href="#all-section"
+                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Tous</a>
+                    </li>
+                    <li class="flex-1">
+                        <a href="#dev-section"
+                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Pôle développement</a>
+                    </li>
+                    <li class="flex-1">
+                        <a href="#design-section"
+                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Pôle design
+                        </a>
+                    </li>
+                    <li class="flex-1">
+                        <a href="#apps-section"
+                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Pôle référencement</a>
+                    </li>
+                </ul>
 
-// On détermine le nombre de film par page
-$parPage = 10;
-$pages = ceil($nbArticles / $parPage);
-
-// Calcul du premier film de la page
-$premier = ($currentPage * $parPage) - $parPage;
-
-// On récupère les id, img et nom des films
-$sql = "SELECT images.image_head, articles.id_article, articles.title
-        FROM images
-        INNER JOIN articles ON images.id_article = articles.id_article;
-        LIMIT :premier, :parpage";
-$stmt = $pdo->prepare($sql);
-$stmt->bindValue(':premier', $premier, PDO::PARAM_INT);
-$stmt->bindValue(':parpage', $parPage, PDO::PARAM_INT);
-$stmt->execute();
-
-// On stock les films dans un tableau associatif
-$articles = $stmt->fetchAll();
-
-// var_dump($films);
-// die();
-
-
-?>
-
-
-    <!--catalogue-->
-    <section class="my-9">
-        <div class="text-[#EAD7D7] uppercase">
-        <div id="result-zone" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
-                <!-- On boucle sur les films -->
-                <?php foreach ($articles as $article): ?>
-                    <div class="w-4/5 h-96 mx-auto my-9">
-                        <div class="mx-auto my-2 text-center h-96">
-
-                            <!-- On envoie vers le film avec l'id en paramètres GET -->
-                            <a href="content/pages/film.php?id=<?php echo $article['id_article']; ?>">
-                                <!-- On affiche ce qu'on veut afficher du film, et qu'on récupère de la db -->
-                                <img class="h-96 mx-auto" src="<?php echo $article['image_head'] ?>" alt="article" />
-                                <span>
-                                    <?php echo $article['title'] ?>
-                                </span>
-                            </a>
+                <div id="all-section" class="mt-4">
+                    <div id="cards" style="margin: auto;">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
+                                                mobile</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                                mobile</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
+                                        alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                                d'un site web</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
+                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <i class="fa-duotone fa-otter"></i>
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Blabla</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- fin de la boucle -->
-                <?php endforeach; ?>
+                <div id="dev-section" class="mt-4" style="display: none;">
+                    <h2 class="text-xl text-white">Content for Pôle développement</h2>
+                    <p>This is the content section for the Pôle développement tab.</p>
+                </div>
+
+                <div id="design-section" class="mt-4" style="display: none;">
+                    <h2 class="text-xl text-white">Content for Pôle design</h2>
+                    <p>This is the content section for the Pôle design tab.</p>
+                </div>
+
+                <div id="apps-section" class="mt-4" style="display: none;">
+                    <h2 class="text-xl text-white">Content for Référencement</h2>
+                    <p>This is the content section for the Applications tab.</p>
+                </div>
+
             </div>
         </div>
+    </main>
 
-        <br><br>
-        <!-- navigation pagination -->
-        <nav class="my-9 flex justify-center" aria-label="Page navigation example">
-            <ul class="inline-flex -space-x-px">
 
-                <!-- précedent -->
-                <li>
-                    <!-- Si la page courante + grand que 1: -->
-                    <?php if ($currentPage > 1): ?>
-                        <!-- Le lien soustrait 1 de la page courante -->
-                        <a href="content/pages/catalogue.php?page=<?php echo $currentPage - 1; ?>"
-                            class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                    <?php endif; ?>
-                </li>
-
-                <!-- on boucle les pages -->
-                <?php for ($page = 1; $page <= $pages; $page++): ?>
-                    <li>
-                        <a href="content/pages/catalogue.php?page=<?php echo $page; ?>" aria-current="page"
-                            class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"><?php echo $page; ?></a>
-                    </li>
-                <?php endfor; ?>
-
-                <!-- suivant -->
-                <li>
-                    <!-- si la page courante est + petite que le nombre de pages -->
-                    <?php if ($currentPage < $pages): ?>
-                        <!-- Le lien additionne 1 à la page courante -->
-                        <a href="content/pages/catalogue.php?page=<?php echo $currentPage + 1; ?>"
-                            class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
-                    <?php endif; ?>
-                </li>
-
-            </ul>
-        </nav>
-
-    </section>
-    <!---->
-
+    <script src="../assets/js/cards.js"></script>
+    <script src="../assets/js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
 </body>
-
 
 </html>
