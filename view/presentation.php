@@ -552,7 +552,7 @@
                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="
                     z-index: 5;
                     text-transform: left;
-                    background-color: rgba(0, 0, 0, 0.25;
+                    background-color: rgba(0, 0, 0, 0.25);
                     border-color: rgba(0, 0, 0, 0.5);
                     border-width: 0px;
                   "></div>
