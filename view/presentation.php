@@ -157,9 +157,9 @@
         </p>
         <div class="flex justify-center lg:justify-start mt-6">
           <a class="px-4 py-3 bg-grenat text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
-            href="#">Découvrir</a>
+            href="#sequence">Découvrir</a>
           <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-            href="#">Notre équipe</a>
+            href="#team">Notre équipe</a>
         </div>
       </div>
     </div>
@@ -517,7 +517,7 @@
 
 
   <!-- section team -->
-  <section class="example">
+  <section id="team" class="example">
     <article class="content">
       <div id="rev_slider_1082_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="team"
         data-source="gallery" style="
@@ -552,7 +552,7 @@
                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="
                     z-index: 5;
                     text-transform: left;
-                    background-color: rgba(0, 0, 0, 0.25;
+                    background-color: rgba(0, 0, 0, 0.25);
                     border-color: rgba(0, 0, 0, 0.5);
                     border-width: 0px;
                   "></div>
