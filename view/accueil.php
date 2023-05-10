@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <script defer src="../assets/js/accueil.js"></script>
+  <script defer src="assets/js/accueil.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -16,35 +16,35 @@
 		<!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		
-		<link rel="stylesheet" href="../assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-		<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 		
 		<!-- REVOLUTION STYLE SHEETS -->
-		<link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
 		
 		<!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-        <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/accueil.css">
 		
 		<!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="../assets/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="../assets/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
 		
 		<!-- PARTICLES ADD-ON FILES -->
-		<link rel='stylesheet' href='../assets/js/revolution.addon.particles.css?ver=1.0.3' type='text/css' media='all' />
-		<script type='text/javascript' src='../assets/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
+		<link rel='stylesheet' href='assets/js/revolution.addon.particles.css?ver=1.0.3' type='text/css' media='all' />
+		<script type='text/javascript' src='assets/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
 
 		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-		<script type="text/javascript" src="../assets/js/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="../assets/js/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="assets/js/revolution.extension.video.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -71,7 +71,7 @@
     
     <nav class="bg-primary">
     <div class="container mx-auto flex flex-wrap items-center justify-between w-fit md:container flex justify-center w-fit min-w-full">
-      <a href="#"><img class="md:hidden w-4/12 ml-6" src="../assets/images/logowithoutback.png"></a>
+      <a href="#"><img class="md:hidden w-4/12 ml-6" src="assets/images/logowithoutback.png"></a>
         <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden mr-3 text-gray-400 hover:text-blanc focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -97,7 +97,7 @@
                 </div>
             </li>
             <li class="hidden md:block w-2/12">
-           <a href="#"><img class="w-4/6" src="../assets/images/logowithoutback.png"></a>
+           <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
             <a href="#" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
@@ -149,7 +149,7 @@
 		<ul>	<!-- SLIDE  -->
 			<li data-index="rs-32" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
-				<img src="../assets/images/transparent.png" data-bgcolor='#1d2931'' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+				<img src="assets/images/transparent.png" data-bgcolor='#1d2931'' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
 
 				<!-- LAYER NR. 1 -->
@@ -172,7 +172,7 @@
 					data-paddingbottom="[0,0,0,0]"
 					data-paddingleft="[0,0,0,0]"
 
-					style="z-index: 5;"><img class="grayscale" src="../assets/images/vscode_bg.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> </div>
+					style="z-index: 5;"><img class="grayscale" src="assets/images/vscode_bg.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> </div>
 
 				<!-- LAYER NR. 2 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-1" 
@@ -289,7 +289,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 10;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/galaxy_bg-2.png" alt="" data-ww="['509px','509px','509px','407px']" data-hh="['250px','250px','250px','200px']" width="407" height="200" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/galaxy_bg-2.png" alt="" data-ww="['509px','509px','509px','407px']" data-hh="['250px','250px','250px','200px']" width="407" height="200" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 7 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" 
@@ -311,7 +311,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 11;">
-		<div class="rs-looped rs-wave"  data-speed="10" data-angle="0" data-radius="5px" data-origin="50% 50%"><img src="../assets/images/gravity_astronaut.png" alt="" data-ww="['820px','718px','615px','410px']" data-hh="['400px','350px','300px','200px']" width="1025" height="500" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="10" data-angle="0" data-radius="5px" data-origin="50% 50%"><img src="assets/images/gravity_astronaut.png" alt="" data-ww="['820px','718px','615px','410px']" data-hh="['400px','350px','300px','200px']" width="1025" height="500" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 8 -->
 				<a class="tp-caption   tp-resizeme" 
@@ -378,7 +378,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 14;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake2.png" alt="" data-ww="['29px','29px','29px','29px']" data-hh="['21px','21px','21px','21px']" width="29" height="21" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake2.png" alt="" data-ww="['29px','29px','29px','29px']" data-hh="['21px','21px','21px','21px']" width="29" height="21" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 11 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-3" 
@@ -400,7 +400,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 15;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake5.png" alt="" data-ww="['28px','28px','28px','28px']" data-hh="['27px','27px','27px','27px']" width="28" height="27" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake5.png" alt="" data-ww="['28px','28px','28px','28px']" data-hh="['27px','27px','27px','27px']" width="28" height="27" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 12 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
@@ -422,7 +422,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 16;">
-		<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="../assets/images/flake4.png" alt="" data-ww="['26px','26px','26px','26px']" data-hh="['24px','24px','24px','24px']" width="26" height="24" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="assets/images/flake4.png" alt="" data-ww="['26px','26px','26px','26px']" data-hh="['24px','24px','24px','24px']" width="26" height="24" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 13 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
@@ -444,7 +444,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 17;">
-		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="4px" data-origin="50% 50%"><img src="../assets/images/flake3.png" alt="" data-ww="['27px','27px','27px','27px']" data-hh="['26px','26px','26px','26px']" width="27" height="26" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="4px" data-origin="50% 50%"><img src="assets/images/flake3.png" alt="" data-ww="['27px','27px','27px','27px']" data-hh="['26px','26px','26px','26px']" width="27" height="26" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 14 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
@@ -466,7 +466,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 18;">
-		<div class="rs-looped rs-wave"  data-speed="6" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="../assets/images/flake1.png" alt="" data-ww="['13','13','13','13px']" data-hh="12px" width="25" height="24" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="6" data-angle="0" data-radius="3px" data-origin="50% 50%"><img src="assets/images/flake1.png" alt="" data-ww="['13','13','13','13px']" data-hh="12px" width="25" height="24" data-no-retina> </div></div>
 
 				<!-- LAYER NR. 15 -->
 				<div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
@@ -488,7 +488,7 @@
 					data-paddingleft="[0,0,0,0]"
 
 					style="z-index: 19;">
-		<div class="rs-looped rs-wave"  data-speed="7" data-angle="0" data-radius="6px" data-origin="50% 50%"><img src="../assets/images/flake3.png" alt="" data-ww="['16px','16px','16px','16px']" data-hh="['15px','15px','15px','15px']" width="27" height="26" data-no-retina> </div></div>
+		<div class="rs-looped rs-wave"  data-speed="7" data-angle="0" data-radius="6px" data-origin="50% 50%"><img src="assets/images/flake3.png" alt="" data-ww="['16px','16px','16px','16px']" data-hh="['15px','15px','15px','15px']" width="27" height="26" data-no-retina> </div></div>
 
 			</li>
 		</ul>
@@ -514,7 +514,7 @@
 			<div class="card-content">
 				<div class="card-image">
 				<a href="">
-				<img src="../assets/images/image-contact.jpg">
+				<img src="assets/images/image-contact.jpg">
 				</div>
 				</a>
 				<div class="card-info-wrapper">
@@ -530,7 +530,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card2.jpg">
+				<img src="assets/images/card2.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -545,7 +545,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card3.jpg">
+				<img src="assets/images/card3.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -560,7 +560,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card4.jpg">
+				<img src="assets/images/card4.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -575,7 +575,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card5.jpg">
+				<img src="assets/images/card5.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -590,7 +590,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card6.jpg">
+				<img src="assets/images/card6.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -624,7 +624,7 @@
 			<div class="card-content">
 				<div class="card-image">
 				<a href="">
-				<img src="../assets/images/card7.jpg">
+				<img src="assets/images/card7.jpg">
 				</div>
 				</a>
 				<div class="card-info-wrapper">
@@ -640,7 +640,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card8.jpg">
+				<img src="assets/images/card8.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -655,7 +655,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card9.jpg">
+				<img src="assets/images/card9.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -670,7 +670,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card10.jpg">
+				<img src="assets/images/card10.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -685,7 +685,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card11.jpg">
+				<img src="assets/images/card11.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -700,7 +700,7 @@
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
-				<img src="../assets/images/card12.jpg">
+				<img src="assets/images/card12.jpg">
 				</div>
 				<div class="card-info-wrapper">
 				<div class="card-info">
@@ -771,7 +771,7 @@
           </div>
           <div class="hidden md:mb-12 lg:mb-0 md:block">
             <div class="map-container relative shadow-lg rounded-lg">
-              <img src="../assets/images/image-contact.jpg" class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen>
+              <img src="assets/images/image-contact.jpg" class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen>
             </div>
           </div>
         </div>
