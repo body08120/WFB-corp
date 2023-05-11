@@ -17,9 +17,9 @@
 </head>
 <body>
     
-<section class="featured-image">
-  <article class="article">
-    <h1 class="text-4xl my-2">Les enjeux de la cybersécurité pour la création d'un site web ou web mobile</h1>
+<section class="featured-image m-4">
+  <article class="article mt-4">
+    <h1 class="text-4xl m-4">Les enjeux de la cybersécurité pour la création d'un site web ou web mobile</h1>
 
     <h2>Dans cet article, nous allons examiner les principaux enjeux de la cybersécurité dans la création d'un site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécurité de votre site.</h2>
     <!-- <hr class="my-4"> -->
@@ -50,130 +50,87 @@
 
     <p>
 
-      <div id="share-buttons">
+    <div id="share-buttons">
 
-          <span>Partager</span>
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://exemple.com/projet_wfb/article.php" class="facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a>
+        <span>Partager</span>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://exemple.com/projet_wfb/article.php" class="facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a>
 
-          
-          <!-- twitter -->
-          <a href="https://twitter.com/share?url=https://exemple.com/projet_wfb/article.php&text=Nouvel article sur mon site web" class="twitter" target="_blank"><i class="fa-brands fa-twitter" style="color: #fff;"></i></a>
+        
+        <!-- twitter -->
+        <a href="https://twitter.com/share?url=https://exemple.com/projet_wfb/article.php&text=Nouvel article sur mon site web" class="twitter" target="_blank"><i class="fa-brands fa-twitter" style="color: #fff;"></i></a>
 
-          <!-- linkedin -->
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://exemple.com/projet_wfb/article.php&title=Les enjeux de la cybersécurité pour la création d'un site web ou web mobile&summary=Dans cet article, nous allons examiner les principaux enjeux de la cybersécurité dans la création d'un site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécurité de votre site." class="linkedin" target="_blank"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
-
-
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://exemple.com/projet_wfb/article.php&title=Les enjeux de la cybersécurité pour la création d'un site web ou web mobile&summary=Dans cet article, nous allons examiner les principaux enjeux de la cybersécurité dans la création d'un site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécurité de votre site." class="linkedin" target="_blank"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
 
 
-      </div>
+
+
+    </div>
+    </p>
+    <p>
+    <div id="all-section article" class="mt-4 w-full">
+    <div id="cards" style="margin: auto;">
+                          
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        <div class="card-info-title">
+                            <h3 class="category_article">Pôle développement</h3>
+                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        <div class="card-info-title">
+                            <h3 class="category_article">Pôle design</h3>
+                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                mobile</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
+                        alt="" width="250px">
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        <div class="card-info-title">
+                            <h3 class="category_article">Pôle référencement</h3>
+                            <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                d'un site web</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </p>
 
   </article>
+</section>
 
       
-  <article id="all-section article" class="mt-4 w-full">
-    <div id="cards" style="margin: auto;">
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle développement</h3>
-                                              <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
-                                                  mobile</h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle développement</h3>
-                                              <h4>Le développement de jeux vidéo : une industrie en constante évolution
-                                              </h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle design</h3>
-                                              <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
-                                                  mobile</h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
-                                          alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle référencement</h3>
-                                              <h4> L'importance du référencement dans la stratégie de marketing numérique
-                                                  d'un site web</h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle design</h3>
-                                              <h4>Les tendances récentes en web design : Couleurs audacieuses,
-                                                  typographies imposantes et expériences centrées sur l'utilisateur</h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="card-content">
-                                  <div class="card-image">
-                                      <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
-                                  </div>
-                                  <div class="card-info-wrapper">
-                                      <div class="card-info">
-                                          <i class="fa-duotone fa-otter"></i>
-                                          <div class="card-info-title">
-                                              <h3 class="category_article">Pôle développement</h3>
-                                              <h4>Blabla</h4>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-  </article>
-</section>
+
+
 
   -<script src="../assets/js/cards.js"></script>
     <script src="../assets/js/tabs.js"></script>
