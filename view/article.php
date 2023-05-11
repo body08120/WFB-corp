@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/articles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="../assets/css/cards.css">
 
 </head>
 <body>
@@ -68,65 +70,114 @@
     </p>
 
   </article>
-</section>
+
       
-<section class="featured-image">
-  <article class="mx-6">
-
-    <section class="mb-32 text-[#1d1d1f] text-center">
-      <h3 class="text-3xl text-[#ffffff] font-bold py-4">Autres articles qui pourraient vous intéresser</h3>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-xl-12">
-
-          <div class="relative block rounded-lg shadow-lg bg-white p-6 mb-12">
-              <img class="rounded-lg shadow-lg mb-6 mx-auto" src="../assets/images/articles/gaming.jpg"
-            alt="avatar" style="width: 250px; ; height: 200px;" />
-              <h5 class="text-lg font-bold mb-4">Tout savoir sur le développement de jeux vidéo</h5>
-              <p class="overflow-auto mb-6">Les jeux vidéo ont pris une place prépondérante dans notre société, et leur popularité ne cesse de croître. Devenus une industrie gigantesque générant des milliards de dollars chaque année, les jeux vidéo offrent également des possibilités de carrière à des milliers de personnes dans le monde entier. Mais comment se déroule le développement de jeux vidéo ? Quelles sont les étapes clés, les outils et les défis auxquels font face les développeurs ?</p>
-          
-              <button class="rounded italic text-[#70163c] hover:bg-[#70163c] hover:text-[#ffffff] px-2"><a href="#!" >Lire l'article </a></button>
-            
-          </div>
-
-          <div class="relative block rounded-lg shadow-lg bg-white p-6 mb-12">
-              <img class="rounded-lg shadow-lg mb-6 mx-auto" src="../assets/images/articles/AI.jpg"
-            alt="avatar" style="width: 250px; ; height: 200px;" />
-              <h5 class="text-lg font-bold mb-4">Les implications des technologies d'Intelligence Artificielle (IA) dans différents domaines</h5>
-              <p class="overflow-auto mb-6">Les technologies d'Intelligence Artificielle (IA) ont pris une place de plus en plus importante dans la vie actuelle, avec des implications dans de nombreux domaines, de la médecine à la finance en passant par l'industrie et la communication.</p>
-          
-              <button class="rounded italic text-[#70163c] hover:bg-[#70163c] hover:text-[#ffffff] px-2"><a href="#!" >Lire l'article </a></button>
-            
-          </div>
-
-          <div class="relative block rounded-lg shadow-lg bg-white p-6 mb-12">
-              <img class="rounded-lg shadow-lg mb-6 mx-auto" src="../assets/images/articles/framework.jpg"
-            alt="avatar" style="width: 250px; ; height: 200px;" />
-              <h5 class="text-lg font-bold mb-4">Les avantages et inconvénients des frameworks, librairies et outils de développement web</h5>
-              <p class="overflow-auto mb-6">Dans la création d'applications web et mobiles modernes, l'utilisation de frameworks, librairies et outils de développement est incontournable. Cependant, quels sont les avantages et les inconvénients de ces outils et comment choisir le plus adapté à ses besoins ?</p>
-
-              <button class="rounded italic text-[#70163c] hover:bg-[#70163c] hover:text-[#ffffff] px-2"><a href="#!" >Lire l'article </a></button>
-              
-          </div>
-
-          <div class="relative block rounded-lg shadow-lg bg-white p-6 mb-12">
-              <img class="rounded-lg shadow-lg mb-6 mx-auto" src="../assets/images/articles/API.jpg"
-            alt="avatar" style="width: 250px; ; height: 200px;" />
-              <h5 class="text-lg font-bold mb-4"> Les API : des outils essentiels pour les développeurs d'applications modernes</h5>
-              <p class="overflow-auto mb-6">Les API (Interfaces de Programmation d'Application) sont des outils clés pour les développeurs dans la création d'applications modernes. Elles facilitent l'accès à des données et des fonctionnalités provenant d'autres applications et services, ce qui permet une intégration plus efficace et une collaboration plus fluide entre les différents systèmes.</p>
-          
-              <button class="rounded italic text-[#70163c] hover:bg-[#70163c] hover:text-[#ffffff] px-2"><a href="#!">Lire l'article</a></button>
-            
-          </div>
-
-      </div>
-    </section>
+  <article id="all-section article" class="mt-4 w-full">
+    <div id="cards" style="margin: auto;">
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle développement</h3>
+                                              <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
+                                                  mobile</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle développement</h3>
+                                              <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                              </h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle design</h3>
+                                              <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                                  mobile</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
+                                          alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle référencement</h3>
+                                              <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                                  d'un site web</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle design</h3>
+                                              <h4>Les tendances récentes en web design : Couleurs audacieuses,
+                                                  typographies imposantes et expériences centrées sur l'utilisateur</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-content">
+                                  <div class="card-image">
+                                      <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
+                                  </div>
+                                  <div class="card-info-wrapper">
+                                      <div class="card-info">
+                                          <i class="fa-duotone fa-otter"></i>
+                                          <div class="card-info-title">
+                                              <h3 class="category_article">Pôle développement</h3>
+                                              <h4>Blabla</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
   </article>
 </section>
 
-
-
-
-
+  -<script src="../assets/js/cards.js"></script>
+    <script src="../assets/js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
 </body>
 </html>
