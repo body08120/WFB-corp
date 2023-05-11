@@ -19,23 +19,23 @@
                 <ul class="flex items-center gap-2 text-sm font-medium ">
                     <li class="flex-1">
                         <a href="#all-section"
-                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Tous</a>
                     </li>
                     <li class="flex-1">
                         <a href="#dev-section"
-                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Pôle développement</a>
                     </li>
                     <li class="flex-1">
                         <a href="#design-section"
-                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Pôle design
                         </a>
                     </li>
                     <li class="flex-1">
                         <a href="#ref-section"
-                            class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Pôle référencement</a>
                     </li>
                 </ul>
@@ -45,7 +45,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/AI.jpg" alt="artificial intelligence" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -61,7 +61,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="gaming" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -77,7 +77,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -94,7 +94,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
-                                        alt="" width="250px">
+                                        alt="cybersécutité" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -110,7 +110,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/dev.jpg" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -126,7 +126,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/framework.jpg" alt="framework" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -147,7 +147,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/AI.jpg" alt="cybersecurity" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -163,7 +163,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="jeux vidéos" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -181,7 +181,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/dev.jpg" alt="développement informatique" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -197,7 +197,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/framework.jpg" alt="framework" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -220,7 +220,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="gaming" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -236,7 +236,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="design UI/UX" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -253,7 +253,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
-                                        alt="" width="250px">
+                                        alt="cybersécurité" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -269,7 +269,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/dev.jpg" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -293,7 +293,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="designer UI/UX" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -310,7 +310,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
-                                        alt="" width="250px">
+                                        alt="référencement" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -326,7 +326,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                    <img src="../assets/images/articles/dev.jpg" alt="Typographies" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">

@@ -12,7 +12,7 @@ section.featured-image {
 
 article {
   background: #1d1d1fb5;
-  /* position: absolute; */
+  position: absolute;
   bottom: 0;
   width: 100%;
   color: #fff;
