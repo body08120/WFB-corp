@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="flex-1">
-                        <a href="#apps-section"
+                        <a href="#ref-section"
                             class="text-gray-700 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Pôle référencement</a>
                     </li>
@@ -143,19 +143,206 @@
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                    <h2 class="text-xl text-white">Content for Pôle développement</h2>
-                    <p>This is the content section for the Pôle développement tab.</p>
+                <div id="cards" style="margin: auto;">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/AI.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
+                                                mobile</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
+                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/framework.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <i class="fa-duotone fa-otter"></i>
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Blabla</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
-                    <h2 class="text-xl text-white">Content for Pôle design</h2>
-                    <p>This is the content section for the Pôle design tab.</p>
+                    <div id="cards" style="margin: auto;">
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/gaming.jpg " alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                                mobile</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
+                                        alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                                d'un site web</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
+                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
                 </div>
+               
 
-                <div id="apps-section" class="mt-4" style="display: none;">
-                    <h2 class="text-xl text-white">Content for Référencement</h2>
-                    <p>This is the content section for the Applications tab.</p>
+                <div id="ref-section" class="mt-4" style="display: none;">
+                    <div id="cards" style="margin: auto;">
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/web_design.jpeg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                                mobile</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.jpg"
+                                        alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                                d'un site web</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <img src="../assets/images/articles/dev.jpg" alt="" width="250px">
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <h3 class="category_article">Pôle design</h3>
+                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
+                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
                 </div>
+            
 
             </div>
         </div>
