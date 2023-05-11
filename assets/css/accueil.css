@@ -356,6 +356,122 @@
     text-align: center;
   }
 
+  #btn-back-to-top {
+    position: fixed;
+    display: none;
+  }
+
+  .testimonial {
+    position: relative;
+    background-image: url("../images/attireoeil.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .testimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(2px);
+  }
+  
+  .testimonial-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, transparent, #1d1d1f, transparent);
+  }
+  
+  .icons-row, .text-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons-row {
+    margin-bottom: 20px;
+  }
+  
+  .icon, .text {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .icon i {
+    font-size: 30px;
+  }
+  
+  .text h4 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  :root {
+    --border: rgb(3, 169, 244);
+    
+    --g1: rgb(140, 114, 132);
+    --g2: rgb(236, 64, 122);
+    --g3: rgb(112, 22, 60);
+  }
+
+  .button-twitch{
+    border: 0.5vmin solid var(--border);
+    cursor: pointer;
+    position: relative;
+    width: 10%;
+  }
+
+  .button-twitch:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.08, 1.03);
+  }
+  
+  .button-twitch:hover > .button-twitch {
+    background-position: -10% 0%;
+  }
+  
+  .button-twitch:hover > .button-twitch-icon {
+    color: white; 
+  }
+  
+  .button-twitch:hover > .button-twitch-content > .button-twitch-subtitle > .button-twitch-subtitle-word {  
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+  }
+  
+  .button-twitch:before {
+    background: linear-gradient(
+      130deg, 
+      transparent 0% 33%, 
+      var(--g1) 66%, 
+      var(--g2) 83.5%, 
+      var(--g3) 100%
+    );
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    transition: background-position 350ms ease, transform 350ms ease;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+
   
   /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
   

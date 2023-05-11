@@ -64,7 +64,7 @@
 </head>
 
 
-<body class="bg-primary">
+<body class="bg-[#141414]">
 
 <!-- This is an example component -->
 <div class="hidden sticky top-0 z-50 md:w-full relative md:block">
@@ -103,7 +103,7 @@
             <a href="#" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#" class="font-medium text-blanc md: ensavoirplus">Contact</a>
+            <a href="#contacternous" class="font-medium text-blanc md: ensavoirplus">Contact</a>
             </li>
         </ul>
         </div>
@@ -137,8 +137,6 @@
 </div>
 
 </div>
-
-
 
 <section class="example">
 			<article class="content">
@@ -498,6 +496,11 @@
     </article>
 </section>
 
+
+<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="z-50 bottom-20 right-2 inline-block p-3 bg-grenat text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose hover:shadow-lg focus:bg-grenat focus:shadow-lg focus:outline-none focus:ring-0 active:bg-rose active:shadow-lg transition duration-150 ease-in-out fixed md:bottom-5 md:right-5" id="btn-back-to-top">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+</button>
+
 <hr class="w-4/6 m-auto mt-16 md:w-2/6">
 
 <h2 class="text-3xl text-blanc">
@@ -604,7 +607,9 @@
 			</div>
 		</div>
 
-		<a href="#" class="ensavoirplus block m-auto w-fit pt-8">En savoir plus</a>
+		<a href="#" class="m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-8">
+		<p class="z-10">En savoir plus</p>
+		</a>
 
 
 <hr class="w-4/6 m-auto mt-16 md:w-2/6">
@@ -714,12 +719,35 @@
 			</div>
 		</div>
 
-		<a href="#" class="ensavoirplus block m-auto w-fit pt-8">En savoir plus</a>
+		<a href="#" class="m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-8">
+		<p class="z-10">En savoir plus</p>
+		</a>
 
-<!-- Container for demo purpose -->
+<div class="testimonial w-full border-0 mt-28">
+  <div class="testimonial-content w-4/6 m-auto">
+    <div class="icons-row w-4/6 pt-8">
+      <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+    </div>
+    <div class="text-row w-4/6">
+      <div class="text"><h4>Des designs magiques !</h4></div>
+      <div class="text"><h4>Une réalisation rapide !</h4></div>
+    </div>
+    <div class="icons-row w-4/6 pt-8">
+      <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="icon"><i class="fa-solid fa-gear"></i></div>
+    </div>
+    <div class="text-row w-4/6 pb-8">
+      <div class="text"><h4>Des paiements sécurisés.</h4></div>
+      <div class="text"><h4>Une maintenance automatique.</h4></div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+
 <div class="container my-24 px-6 mx-auto">
-
-  <!-- Section: Design Block -->
+<h4 class="text-center">Une question ? Une requête ? Une recommandation ? N'hésitez pas et venez nous en parler.</h4>
   <section class="mb-32 text-gray-800 text-center">
     <style>
       .map-container {
@@ -727,21 +755,21 @@
         z-index: -1;
       }
     </style>
-    <div class="px-6 py-12 md:px-12">
+    <div id="contacternous" class="px-6 py-12 md:px-12">
       <div class="container mx-auto xl:px-32">
         <div class="grid lg:grid-cols-2 flex items-center">
           <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
             <div
               class="bg-blanc bg-opacity-25 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
             >
-            <h2 class="text-3xl font-bold mb-12">Contact us</h2>
+            <h2 class="text-3xl font-bold mb-12">Nous contacter</h2>
             <form>
               <div class="form-group mb-6">
                 <input
                   type="text"
                   class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="exampleInput7"
-                  placeholder="Name"
+                  placeholder="Nom / Prénom"
                 />
               </div>
               <div class="form-group mb-6">
@@ -749,7 +777,7 @@
                   type="email"
                   class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="exampleInput8"
-                  placeholder="Email address"
+                  placeholder="Adresse Email"
                 />
               </div>
               <div class="form-group mb-6">
@@ -757,14 +785,14 @@
                   class="resize-none form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="exampleFormControlTextarea13"
                   rows="3"
-                  placeholder="Message"
+                  placeholder="Votre message"
                 ></textarea>
               </div>
               <button
                 type="submit"
                 class="w-full px-6 py-2.5 bg-grenat text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-rose hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
               >
-                Send
+                Envoyer
               </button>
             </form>
             </div>
@@ -850,7 +878,7 @@
     });	/*ready*/
   </script>
 
-  <script> 
+  <!-- <script> 
 
 let index = 0,
     interval = 1000;
@@ -875,7 +903,7 @@ for(const star of document.getElementsByClassName("magic-star")) {
   }, index++ * (interval / 3))
 }
 
-  </script>
+  </script> -->
 
 <script>
 
@@ -922,6 +950,36 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.ntshow');
 hiddenElements.forEach((el) =>observer.observe(el));
+
+</script>
+
+<script>
+
+// Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 </script>
 
