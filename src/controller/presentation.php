@@ -1,5 +1,5 @@
 <?php 
-function presentation(){
+function presentationVue(){
     require('view/presentation.php');
 }
 
