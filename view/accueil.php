@@ -66,7 +66,7 @@
 
 <body class="bg-primary">
 
-
+<?php include('view/includes/navbar.php'); ?>
 
 <section class="example">
 			<article class="content">
