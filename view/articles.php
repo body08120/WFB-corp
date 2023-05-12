@@ -12,6 +12,12 @@
 
 <body class="bg-[#141414]">
 
+<?php
+
+include_once "view/includes/navbar.php";
+
+?>
+
     <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
         <div class="space-y-5 w-9/12">
 
@@ -343,6 +349,12 @@
             </div>
         </div>
     </main>
+
+<?php
+
+include_once "view/includes/footer.php";
+
+?>
 
 
     <script src="../assets/js/cards.js"></script>
