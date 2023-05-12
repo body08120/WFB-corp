@@ -1,4 +1,3 @@
-<!-- This is an example component -->
 <div class="hidden sticky top-0 z-50 md:w-full relative md:block">
     
     <nav class="bg-primary">
@@ -12,10 +11,10 @@
         <div class="hidden md:block w-full" id="mobile-menu">
         <ul class="flex-col items-center justify-around md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li class="w-full md:w-auto">
-            <a href="#" class="flex items-center md: ensavoirplus " aria-current="page">Articles</a>
+            <a href="articles.php" class="flex items-center md:navbaranim " aria-current="page">Articles</a>
             </li>
             <li class="w-full md:w-auto">
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md: ensavoirplus">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md:navbaranim">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                     <ul class="" aria-labelledby="dropdownLargeButton">
@@ -23,7 +22,7 @@
                         <a href="index.php?action=presentation#sequence" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Nos compétences</a>
                     </li>
                     <li>
-                        <a href="#" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
+                        <a href="presentation.php" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
                     </li>
                     </ul>
                 </div>
@@ -32,10 +31,10 @@
            <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
+            <a href="realisations.php" class="font-medium text-blanc md:navbaranim">Réalisations</a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#contacternous" class="font-medium text-blanc md: ensavoirplus">Contact</a>
+            <a href="#contacternous" class="font-medium text-blanc md:navbaranim">Contact</a>
             </li>
         </ul>
         </div>
