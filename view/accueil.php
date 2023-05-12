@@ -431,7 +431,7 @@
   <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
 </button>
 
-<hr class="w-4/6 m-auto mt-16 md:w-2/6">
+<hr class="hrgradient w-4/6 m-auto mt-16 md:w-2/6">
 
 <h2 class="text-3xl text-blanc">
   Quelques-uns de
@@ -440,7 +440,7 @@
   </span>
 </h2>
 
-<hr class="w-4/6 m-auto mb-16 md:w-2/6">
+<hr class="hrgradient w-4/6 m-auto mb-16 md:w-2/6">
 
 	<div id="cards">
 			<div class="card ntshow">
@@ -542,7 +542,7 @@
 		</a>
 
 
-<hr class="w-4/6 m-auto mt-16 md:w-2/6">
+<hr class="hrgradient w-4/6 m-auto mt-16 md:w-2/6">
 
 <h2 class="text-3xl text-blanc">
   Quelques-uns de
@@ -551,7 +551,7 @@
   </span>
 </h2>
 
-<hr class="w-4/6 m-auto mb-16 md:w-2/6">
+<hr class="hrgradient w-4/6 m-auto mb-16 md:w-2/6">
 
 
 <div id="cardss">
@@ -656,7 +656,7 @@
 
 		<section class="comment-section mt-20">
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-    <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+    <h2 class="text-center text-2xl font-bold tracking-tight sm:text-3xl">
       Quelques commentaires d'anciens clients 
     </h2>
 
@@ -799,7 +799,7 @@
         </div>
 
         <p class="line-clamp-2 sm:line-clamp-none mt-4 text-blanc">
-		Leur travail est incroyable ! Grâce à eux, Kylian va rester chez nous nous en sommes certains.
+		Leur travail est incroyable ! Grâce à eux, Kylian va rester chez nous, nous en sommes certains.
         </p>
       </blockquote>
 
@@ -865,7 +865,7 @@
               </svg>
             </div>
 
-            <p class="mt-1 text-lg font-medium text-blanc">Chuck Norris</p>
+            <p class="mt-1 text-lg font-medium text-blanc">Le Chuck Norris</p>
           </div>
         </div>
 
@@ -878,19 +878,19 @@
 
 <div class="testimonial w-full border-0 mt-8">
   <div class="testimonial-content w-full md:w-4/6 m-auto">
-    <div class="icons-row w-4/6 pt-8">
+    <div class="w-full icons-row md:w-4/6 pt-8">
       <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
       <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
     </div>
-    <div class="text-row w-4/6">
+    <div class="w-full text-row md:w-4/6">
       <div class="text"><h4 class="m-4">Des designs magiques !</h4></div>
       <div class="text"><h4 class="m-4">Une réalisation rapide !</h4></div>
     </div>
-    <div class="icons-row w-4/6 pt-8">
+    <div class="w-full icons-row md:w-4/6 pt-8">
       <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
       <div class="icon"><i class="fa-solid fa-gear"></i></div>
     </div>
-    <div class="text-row w-4/6 pb-8">
+    <div class="w-full text-row md:w-4/6 pb-8">
       <div class="text"><h4 class="m-4">99% de retours satisfaits.</h4></div>
       <div class="text"><h4 class="m-4">Une maintenance automatique.</h4></div>
     </div>
