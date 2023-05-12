@@ -80,7 +80,7 @@
         <div class="hidden md:block w-full" id="mobile-menu">
         <ul class="flex-col items-center justify-around md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li class="w-full md:w-auto">
-            <a href="#" class="flex items-center md: ensavoirplus " aria-current="page">Articles</a>
+            <a href="articles.php" class="flex items-center md: ensavoirplus " aria-current="page">Articles</a>
             </li>
             <li class="w-full md:w-auto">
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md: ensavoirplus">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
@@ -88,10 +88,10 @@
                 <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                     <ul class="" aria-labelledby="dropdownLargeButton">
                     <li>
-                        <a href="#" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Nos compétences</a>
+                        <a href="presentation.php" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Nos compétences</a>
                     </li>
                     <li>
-                        <a href="#" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
+                        <a href="presentation.php" class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
                     </li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
            <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
+            <a href="realisations.php" class="font-medium text-blanc md: ensavoirplus">Réalisations</a>
             </li>
             <li class="w-full md:w-auto">
             <a href="#contacternous" class="font-medium text-blanc md: ensavoirplus">Contact</a>
@@ -113,13 +113,13 @@
 
 
 <div class="flex w-full md:hidden" id="nav">
-    <a href="article.php" class="button active">
+    <a href="index.php" class="button active">
         <i class="fa-solid fa-house"></i> 
     </a>
-    <a href="#" class="button">
+    <a href="#contacternous" class="button">
         <i class="fa-solid fa-envelope"></i>
     </a>
-    <a href="#" class="button">
+    <a href="articles.php" class="button">
         <i class="fa-solid fa-newspaper"></i>
     </a>
     <button type="button" class="button" data-dropdown-toggle="dropupPhone">
@@ -128,10 +128,10 @@
 	<div id="dropupPhone" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
     <ul class="py-1 bg-primary" aria-labelledby="dropdownLargeButton">
         <li>
-            <a href="#" class="text-blanc bg-primary block px-4 py-2">Réalisation</a>
+            <a href="realisations.php" class="text-blanc bg-primary block px-4 py-2">Réalisation</a>
         </li>
         <li>
-            <a href="#" class="text-blanc bg-primary block px-4 py-2">Présentation</a>
+            <a href="presentation.php" class="text-blanc bg-primary block px-4 py-2">Présentation</a>
         </li>
     </ul>
 </div>
@@ -607,7 +607,7 @@
 			</div>
 		</div>
 
-		<a href="#" class="m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-8">
+		<a href="#" class="w-fit m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-rose hover:border-transparent rounded mt-8">
 		<p class="z-10">En savoir plus</p>
 		</a>
 
@@ -719,30 +719,255 @@
 			</div>
 		</div>
 
-		<a href="#" class="m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-8">
+		<a href="#" class="w-fit m-auto flex justify-center button-twitch bg-transparent text-blanc font-semibold hover:text-white py-2 px-4 border border-rose hover:border-transparent rounded mt-8">
 		<p class="z-10">En savoir plus</p>
 		</a>
 
-<div class="testimonial w-full border-0 mt-28">
-  <div class="testimonial-content w-4/6 m-auto">
+
+		<section class="comment-section mt-20">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+      Quelques commentaires d'anciens clients 
+    </h2>
+
+    <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+      <blockquote class="rounded-lg bg-card p-8">
+        <div class="flex items-center gap-4">
+          <img
+            alt="Man"
+            src="assets/images/stevejobs.jpg"
+            class="h-16 w-16 rounded-full object-cover"
+          />
+
+          <div>
+            <div class="flex justify-center gap-0.5 text-blanc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+
+            <p class="mt-1 text-lg font-medium text-blanc">Steve Travaille</p>
+          </div>
+        </div>
+
+        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-blanc">
+		Ils m'ont créé un site internet magnifique ! iTelephone reviens sur le devant de la scène.
+        </p>
+      </blockquote>
+
+      <blockquote class="rounded-lg bg-card p-8">
+        <div class="flex items-center gap-4">
+          <img
+            alt="Man"
+            src="assets/images/kylian.jpg"
+            class="h-16 w-16 rounded-full object-cover"
+          />
+
+          <div>
+            <div class="flex justify-center gap-0.5 text-blanc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+
+            <p class="mt-1 text-lg font-medium text-blanc">Kiki Saint-Germain</p>
+          </div>
+        </div>
+
+        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-blanc">
+		Leur travail est incroyable ! Grâce à eux, Kylian va rester chez nous nous en sommes certains.
+        </p>
+      </blockquote>
+
+      <blockquote class="rounded-lg bg-card p-8">
+        <div class="flex items-center gap-4">
+          <img
+            alt="Man"
+            src="assets/images/chuck.jpg"
+            class="h-16 w-16 rounded-full object-cover"
+          />
+
+          <div>
+            <div class="flex justify-center gap-0.5 text-blanc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+
+            <p class="mt-1 text-lg font-medium text-blanc">Chuck Norris</p>
+          </div>
+        </div>
+
+        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-blanc">
+		Un jour, Chuck Norris demanda la création d'un site, et le site fut. Je recommande leur travail car Chuck Norris l'a utilisé.
+        </p>
+      </blockquote>
+    </div>
+  </div>
+
+<div class="testimonial w-full border-0 mt-8">
+  <div class="testimonial-content w-full md:w-4/6 m-auto">
     <div class="icons-row w-4/6 pt-8">
       <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
       <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
     </div>
     <div class="text-row w-4/6">
-      <div class="text"><h4>Des designs magiques !</h4></div>
-      <div class="text"><h4>Une réalisation rapide !</h4></div>
+      <div class="text"><h4 class="m-4">Des designs magiques !</h4></div>
+      <div class="text"><h4 class="m-4">Une réalisation rapide !</h4></div>
     </div>
     <div class="icons-row w-4/6 pt-8">
-      <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
       <div class="icon"><i class="fa-solid fa-gear"></i></div>
     </div>
     <div class="text-row w-4/6 pb-8">
-      <div class="text"><h4>Des paiements sécurisés.</h4></div>
-      <div class="text"><h4>Une maintenance automatique.</h4></div>
+      <div class="text"><h4 class="m-4">99% de retours satisfaits.</h4></div>
+      <div class="text"><h4 class="m-4">Une maintenance automatique.</h4></div>
     </div>
   </div>
 </div>
+
+</section>
 
 <!-- Contact -->
 
@@ -939,9 +1164,9 @@ document.getElementById("cardss").onmousemove = e => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            observer.unobserve(entry.target);
         } else {
             entry.target.classList.remove('show');
         }
@@ -949,8 +1174,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll('.ntshow');
-hiddenElements.forEach((el) =>observer.observe(el));
-
+hiddenElements.forEach((el) => observer.observe(el));
 </script>
 
 <script>
@@ -981,6 +1205,28 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      centeredSlides: true,
+      autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    })
+  })
 </script>
 
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
