@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <link rel="stylesheet" href="../assets/css/cards.css">
 </head>
@@ -142,7 +143,7 @@
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                <div id="cards" style="margin: auto;">
+                    <div id="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
@@ -175,8 +176,6 @@
                                 </div>
                             </div>
                         </div>
-                
-                        
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
@@ -210,7 +209,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
@@ -285,7 +283,6 @@
                     </div>
                 </div>
                
-
                 <div id="ref-section" class="mt-4" style="display: none;">
                     <div id="cards" style="margin: auto;">
                         
@@ -350,7 +347,7 @@
 
     <script src="../assets/js/cards.js"></script>
     <script src="../assets/js/tabs.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    
 
 </body>
 
