@@ -23,7 +23,6 @@
     }
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="assets/css/accueil.css">
 
   <!-- LOAD JQUERY LIBRARY -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
