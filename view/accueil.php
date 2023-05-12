@@ -1035,33 +1035,6 @@
     });	/*ready*/
   </script>
 
-  <!-- <script> 
-
-let index = 0,
-    interval = 1000;
-
-const rand = (min, max) => 
-  Math.floor(Math.random() * (max - min + 1)) + min;
-
-const animate = star => {
-  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
-  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
-
-  star.style.animation = "none";
-  star.offsetHeight;
-  star.style.animation = "";
-}
-
-for(const star of document.getElementsByClassName("magic-star")) {
-  setTimeout(() => {
-    animate(star);
-    
-    setInterval(() => animate(star), 1000);
-  }, index++ * (interval / 3))
-}
-
-  </script> -->
-
 <script>
 
 document.getElementById("cards").onmousemove = e => {
@@ -1110,34 +1083,88 @@ hiddenElements.forEach((el) => observer.observe(el));
 </script>
 
 <script>
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
 
-// Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+	  mybutton.classList.add("fade-in");
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  // When the user clicks on the button, scroll to the top of the document with animation
+  mybutton.addEventListener("click", backToTop);
 
+  function backToTop() {
+    // Set the animation interval
+	const animationInterval = 1000;
+  
+  // Smooth scroll to top
+  const smoothScroll = setInterval(function() {
+    const position = window.pageYOffset;
+    if (position > 0) {
+      window.scrollTo(0, position - animationInterval);
+    } else {
+      clearInterval(smoothScroll);
+    }
+  }, 10);
+
+    // Get the current scroll position
+    const startScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Calculate the distance to scroll
+    const distance = -startScroll;
+
+    // Calculate the number of frames needed for the animation
+    const frames = Math.ceil(Math.abs(distance) / animationInterval);
+
+    // Calculate the distance to move on each frame
+    const step = distance / frames;
+
+    // Define the animation function
+    function animate() {
+      // Get the current scroll position
+      const currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+      // Calculate the new scroll position
+      const newScroll = currentScroll + step;
+
+      // Set the new scroll position
+      document.documentElement.scrollTop = newScroll;
+      document.body.scrollTop = newScroll;
+
+      // Check if the animation is complete
+      if (
+        currentScroll !== 0 &&
+        ((step > 0 && newScroll < 0) || (step < 0 && newScroll > 0))
+      ) {
+        // Request the next frame of the animation
+        window.requestAnimationFrame(animate);
+      } else {
+        // Set the final scroll position
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    }
+    // Start the animation
+    window.requestAnimationFrame(animate);
+  }
 </script>
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
