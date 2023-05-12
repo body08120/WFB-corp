@@ -6,7 +6,7 @@ require_once('src/controller/presentation.php');
 if (isset($_GET['action']) && $_GET['action'] !== '') {
     switch ($_GET['action']) {
         case 'presentation':
-            presentation();
+            presentationVue();
             break;
         // génère la home si aucun des cases n'est trouvé
         default:
@@ -17,6 +17,4 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     // Génère la home
     homepage();
 }
-
-
 ?>
