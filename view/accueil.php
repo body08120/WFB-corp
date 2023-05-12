@@ -66,9 +66,7 @@
 
 <body class="bg-primary">
 
-<!-- This is an example component -->
-
-<?php include_once('view/includes/navbar.php')?>
+<?php include('view/includes/navbar.php'); ?>
 
 <section class="example">
 			<article class="content">
