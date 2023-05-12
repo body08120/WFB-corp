@@ -1,3 +1,94 @@
+<style>
+
+.navbaranim{
+  position: relative;
+  cursor: pointer;
+  font-size: 20px; 
+  color: #F1F5F2;
+}
+
+.navbaranim::before{
+  content: "";
+  background-color: #70163c;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 0;  
+  transition: 0.3s ease-in-out; 
+}
+
+.navbaranim:hover::before{
+  content: "";
+  background-color: #70163c;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 100%;    
+}
+
+.navbaranim::after{
+  content: "";
+  background-color: #70163c;
+  position: absolute;
+  left: 0;
+  bottom: -0;
+  height: 3px;
+  width: 0;  
+  transition: 0.3s ease-in-out; 
+}
+
+#nav {
+  position: fixed;
+  bottom: 0px;
+  justify-content: space-around;
+  z-index: 3;
+  background-color: rgb(var(--theme-background));
+  padding: 0.5rem 1rem;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+#nav > button {
+  padding: 0.5rem 1rem;  
+  border-radius: 0.25rem;
+  position: relative;
+}
+#nav > a {
+  padding: 0.5rem 1rem;  
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+#nav > button.active:after
+#nav > a.active:after {
+  content: "";
+  height: 0.25rem;
+  width: 1.5rem;
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  translate: -50%;
+  background: var(--linear-gradient);
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+#nav > button:hover,
+#nav > a:hover,
+#nav > button:focus-visible {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+#nav > button > i {
+  width: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+</style>
+
+
 <div class="hidden sticky top-0 z-50 md:w-full relative md:block">
     
     <nav class="bg-primary">
@@ -11,10 +102,10 @@
         <div class="hidden md:block w-full" id="mobile-menu">
         <ul class="flex-col items-center justify-around md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li class="w-full md:w-auto">
-            <a href="articles.php" class="flex items-center md:navbaranim " aria-current="page">Articles</a>
+            <a href="articles.php" class="flex items-center md: navbaranim " aria-current="page">Articles</a>
             </li>
             <li class="w-full md:w-auto">
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md:navbaranim">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-blanc font-medium w-full md: navbaranim">Présentations <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                     <ul class="" aria-labelledby="dropdownLargeButton">
@@ -31,10 +122,10 @@
            <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="realisations.php" class="font-medium text-blanc md:navbaranim">Réalisations</a>
+            <a href="realisations.php" class="font-medium text-blanc md: navbaranim">Réalisations</a>
             </li>
             <li class="w-full md:w-auto">
-            <a href="#contacternous" class="font-medium text-blanc md:navbaranim">Contact</a>
+            <a href="#contacternous" class="font-medium text-blanc md: navbaranim">Contact</a>
             </li>
         </ul>
         </div>
