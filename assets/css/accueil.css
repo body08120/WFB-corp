@@ -66,14 +66,14 @@ h2 > .magic > .magic-text {
 
 :root {
   --bg-color: rgb(20, 20, 20);
-  --card-color: rgb(23, 23, 23);
+  --card-color: rgb(28, 36, 42);
 }
 
 #cards {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;  
-  max-width: 1280px;
+  max-width: 1400px;
   width: calc(100% - 20px);
   margin: auto;
 }
@@ -82,7 +82,7 @@ h2 > .magic > .magic-text {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;  
-  max-width: 1280px;
+  max-width: 1400px;
   width: calc(100% - 20px);
   margin: auto;
 }
@@ -103,26 +103,21 @@ h2 > .magic > .magic-text {
   height: 350px;
   flex-direction: column;
   position: relative;
-  width: 400px;  
+  width: 400px;
+  margin: 20px;
 }
 
-.ntshow{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+.ntshow {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
-@media(prefers-reduced-motion){
-  .ntshow{
-    transition: none;
-}
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 
@@ -363,10 +358,9 @@ i {
 
 .testimonial {
   position: relative;
-  background-image: url("../images/attireoeil.png");
   background-size: cover;
   background-position: center;
-}
+  }
 
 .testimonial::before {
   content: "";
@@ -376,7 +370,6 @@ i {
   right: 0;
   bottom: 0;
   background: inherit;
-  filter: blur(2px);
 }
 
 .testimonial-content {
@@ -388,7 +381,6 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, transparent, #1d1d1f, transparent);
 }
 
 .icons-row, .text-row {
@@ -469,6 +461,14 @@ i {
   width: 100%;
   z-index: 1;
   border-radius: 4px;
+}
+
+.comment-section{
+  background: linear-gradient(
+  transparent,
+  #70163c,
+  transparent
+  );
 }
 
 
