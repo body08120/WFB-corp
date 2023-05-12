@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <link rel="stylesheet" href="../assets/css/cards.css">
 </head>
@@ -77,7 +76,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="web design" width="250px">
+                                    <img src="../assets/images/articles/web_design.webp" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -236,7 +235,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="design UI/UX" width="250px">
+                                    <img src="../assets/images/articles/web_design.webp" alt="design UI/UX" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -293,7 +292,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.jpeg" alt="designer UI/UX" width="250px">
+                                    <img src="../assets/images/articles/web_design.webp" alt="designer UI/UX" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
