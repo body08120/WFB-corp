@@ -64,9 +64,9 @@
 </head>
 
 
-<body class="bg-[#141414]">
+<body class="bg-primary">
 
-<?php include('view/includes/navbar.php'); ?>
+
 
 <section class="example">
 			<article class="content">
@@ -915,7 +915,7 @@
         <div class="grid lg:grid-cols-2 flex items-center">
           <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
             <div
-              class="bg-blanc bg-opacity-25 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+              class="bg-blanc bg-opacity-10 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
             >
             <h2 class="text-3xl font-bold mb-12">Nous contacter</h2>
             <form>
