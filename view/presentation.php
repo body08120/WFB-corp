@@ -66,7 +66,7 @@
   <?php include('view/includes/navbar.php'); ?>
 
   <!--header section-->
-  <div class=" h-[400px] flex bg-primary lg:h-[600px]">
+  <div id="header" class=" h-[400px] flex bg-primary lg:h-[600px]">
     <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
       <div>
         <h2 class="text-3xl font-semibold text-rose md:text-4xl">
