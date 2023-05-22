@@ -1,4 +1,9 @@
 <style>
+  :root {
+    --theme-background: 10 10 10;
+    --linear-gradient: linear-gradient(to right, rgb(var(--gradient-color-1)), rgb(var(--gradient-color-2)));
+  }
+
   .navbaranim {
     position: relative;
     cursor: pointer;
@@ -155,16 +160,16 @@
 
 <div class="z-[500] flex w-full md:hidden" id="nav">
   <a href="article.php" class="button active">
-    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-house text-white"></i>
   </a>
   <a href="#" class="button">
-    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-envelope text-white"></i>
   </a>
   <a href="#" class="button">
-    <i class="fa-solid fa-newspaper"></i>
+    <i class="fa-solid fa-newspaper text-white"></i>
   </a>
   <button type="button" class="button" data-dropdown-toggle="dropupPhone">
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars text-white"></i>
   </button>
   <div id="dropupPhone"
     class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
