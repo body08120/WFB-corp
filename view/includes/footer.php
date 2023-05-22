@@ -1,5 +1,5 @@
   <footer class="bg-primary">
-    <div class="mx-auto w-full  py-16 px-52 lg:py-8">
+    <div class="mx-auto w-full lg:py-8 xl:px-52">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">
