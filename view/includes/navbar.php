@@ -42,7 +42,6 @@
     position: fixed;
     bottom: 0px;
     justify-content: space-around;
-    z-index: 3;
     background-color: rgb(var(--theme-background));
     padding: 0.5rem 1rem;
     border-top: 1px solid rgb(255 255 255 / 10%);
@@ -154,7 +153,7 @@
 </div>
 
 
-<div class="flex w-full md:hidden" id="nav">
+<div class="z-[500] flex w-full md:hidden" id="nav">
   <a href="article.php" class="button active">
     <i class="fa-solid fa-house"></i>
   </a>
