@@ -31,11 +31,12 @@
   <link href="assets/css/sequence-theme.two-up.css" rel="stylesheet" media="all" />
 
   <!-- LOADING FONTS AND ICONS -->
-  <link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C400" rel="stylesheet" property="stylesheet"
-    type="text/css" media="all" />
-
+  <link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+  <link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+ 
   <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
   <!-- REVOLUTION STYLE SHEETS -->
   <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
@@ -1670,6 +1671,8 @@
 
   <!-- flowbite-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
 
   <!-- slider script-->
   <script src="assets/scripts/imagesloaded.pkgd.min.js"></script>
