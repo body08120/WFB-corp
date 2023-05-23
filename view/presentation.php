@@ -31,12 +31,14 @@
   <link href="assets/css/sequence-theme.two-up.css" rel="stylesheet" media="all" />
 
   <!-- LOADING FONTS AND ICONS -->
-  <link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-  <link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet" type="text/css" media="all">
- 
+  <link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C400" rel="stylesheet" property="stylesheet"
+    type="text/css" media="all" />
+  <link href="http://fonts.googleapis.com/css?family=Poppins:700|Oswald:300" rel="stylesheet" property="stylesheet"
+    type="text/css" media="all">
+
   <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- REVOLUTION STYLE SHEETS -->
   <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
@@ -64,7 +66,7 @@
 <body class="bg-primary">
 
   <!--nav bar section-->
-  <?php include('view/includes/navbar.php'); ?>
+  <?php include_once('view/includes/navbar.php'); ?>
 
   <!--header section-->
   <div id="header" class=" h-[400px] flex bg-primary lg:h-[600px]">
@@ -92,7 +94,6 @@
       </div>
     </div>
   </div>
-
 
   <!--section presentation-->
   <div id="sequence" class="seq">
@@ -436,7 +437,6 @@
       </ul>
     </div>
   </div>
-
 
   <!-- section team -->
   <section id="team" class="example">
@@ -1611,7 +1611,8 @@
                 data-hh="['200px','140px','140px','80px']" width="300" height="300" data-no-retina />
             </div>
           </div>
-          <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important"></div>
+          <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important">
+        </div>
         </div>
       </div>
       <!-- END REVOLUTION SLIDER -->
@@ -1666,7 +1667,7 @@
 
 
   <!-- footer section -->
-  <?php include('view/includes/footer.php'); ?>
+  <?php include_once('view/includes/footer.php'); ?>
 
 
   <!-- flowbite-->
