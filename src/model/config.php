@@ -32,7 +32,8 @@ define("DBNAME", "wfbcorp");
 $connect = new Connect();
 
 // Exemple d'utilisation : requête préparée avec des paramètres
-$stmt = $connect->prepare("SELECT * FROM ma_table WHERE id = :id");
-$stmt->execute(['id' => 1]);
-$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $connect->prepare("SELECT * FROM ma_table WHERE id = :id");
+// $stmt->execute(['id' => 1]);
+// $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
