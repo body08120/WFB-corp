@@ -90,13 +90,11 @@
   }
 </style>
 
-
 <div class="hidden sticky top-0 z-50 md:w-full relative md:block">
-
   <nav class="bg-primary">
     <div
       class="container mx-auto flex flex-wrap items-center justify-between w-fit md:container flex justify-center w-fit min-w-full">
-      <a href="#"><img class="md:hidden w-4/12 ml-6" src="assets/images/logowithoutback.png"></a>
+      <a href="index.php?action="><img class="md:hidden w-4/12 ml-6" src="assets/images/logowithoutback.png"></a>
       <button data-collapse-toggle="mobile-menu" type="button"
         class="md:hidden mr-3 text-gray-400 hover:text-blanc focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
         aria-controls="mobile-menu-2" aria-expanded="false">
@@ -143,7 +141,7 @@
             </div>
           </li>
           <li class="hidden md:block w-2/12">
-            <a href="#"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
+            <a href="index.php?action="><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
           </li>
           <li class="w-full md:w-auto">
             <a href="index.php?action=realisations" class="font-medium text-blanc md: navbaranim">Réalisations</a>
@@ -157,7 +155,7 @@
   </nav>
 </div>
 
-
+<!--mobile menu navigation-->
 <div class="z-[500] flex w-full md:hidden" id="nav">
   <a href="article.php" class="button active">
     <i class="fa-solid fa-house text-white"></i>
