@@ -1,3 +1,9 @@
+<?php 
+
+include('src/model/config.php');
+
+?>
+
 <!doctype html>
 <html lang="en">
 
