@@ -16,6 +16,12 @@
 
 </head>
 <body>
+
+<?php
+
+include_once "view/includes/navbar.php";
+
+?>
     
 <section class="featured-image m-4">
   <article class="article mt-4">
@@ -130,7 +136,11 @@
   </article>
 </section>
 
-      
+<?php
+
+include_once "view/includes/footer.php";
+
+?>      
 
 
 
