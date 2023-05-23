@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
+    <title>Nos réalisations</title>
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <script>
         tailwind.config = {
@@ -30,43 +30,41 @@
     <!--flowbite-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
+<body class="bg-[#141414]">
 
+    <?php
 
-<body class="bg-primary">
+    include_once("view/includes/navbar.php");
 
-    <?php include_once('includes/navbar.php') ?>
-
+    ?>
 
     <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
         <div class="space-y-5 w-9/12">
 
             <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
-                    <li class="flex-1">
+                    <li class="l flex-1">
                         <a href="#all-section"
-                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            class="t text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
                             Tous</a>
                     </li>
-                    <li class="flex-1">
+                    <li class="l flex-1">
                         <a href="#dev-section"
-                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
-                            Pôle développement</a>
+                            class="t text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            E-commerces</a>
                     </li>
-                    <li class="flex-1">
+                    <li class="l flex-1">
                         <a href="#design-section"
-                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
-                            Pôle design
+                            class="t text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Sites vitrines
                         </a>
                     </li>
                     <li class="flex-1">
                         <a href="#ref-section"
                             class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
-                            Pôle référencement</a>
+                            Applications</a>
                     </li>
                 </ul>
 
@@ -81,7 +79,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">E-commerces</h3>
                                             <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
                                                 mobile</h4>
                                         </div>
@@ -97,7 +95,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Sites vitrines</h3>
                                             <h4>Le développement de jeux vidéo : une industrie en constante évolution
                                             </h4>
                                         </div>
@@ -113,7 +111,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Applications</h3>
                                             <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
                                                 mobile</h4>
                                         </div>
@@ -130,7 +128,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h3 class="category_projects">Pôle référencement</h3>
                                             <h4> L'importance du référencement dans la stratégie de marketing numérique
                                                 d'un site web</h4>
                                         </div>
@@ -146,7 +144,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Les tendances récentes en web design : Couleurs audacieuses,
                                                 typographies imposantes et expériences centrées sur l'utilisateur</h4>
                                         </div>
@@ -163,7 +161,7 @@
                                     <div class="card-info">
                                         <i class="fa-duotone fa-otter"></i>
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Pôle développement</h3>
                                             <h4>Blabla</h4>
                                         </div>
                                     </div>
@@ -183,7 +181,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Pôle développement</h3>
                                             <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
                                                 mobile</h4>
                                         </div>
@@ -199,7 +197,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Pôle développement</h3>
                                             <h4>Le développement de jeux vidéo : une industrie en constante évolution
                                             </h4>
                                         </div>
@@ -216,7 +214,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Les tendances récentes en web design : Couleurs audacieuses,
                                                 typographies imposantes et expériences centrées sur l'utilisateur</h4>
                                         </div>
@@ -233,7 +231,7 @@
                                     <div class="card-info">
                                         <i class="fa-duotone fa-otter"></i>
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Pôle développement</h3>
                                             <h4>Blabla</h4>
                                         </div>
                                     </div>
@@ -254,7 +252,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle développement</h3>
+                                            <h3 class="category_projects">Pôle développement</h3>
                                             <h4>Le développement de jeux vidéo : une industrie en constante évolution
                                             </h4>
                                         </div>
@@ -270,7 +268,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
                                                 mobile</h4>
                                         </div>
@@ -287,7 +285,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h3 class="category_projects">Pôle référencement</h3>
                                             <h4> L'importance du référencement dans la stratégie de marketing numérique
                                                 d'un site web</h4>
                                         </div>
@@ -303,7 +301,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Les tendances récentes en web design : Couleurs audacieuses,
                                                 typographies imposantes et expériences centrées sur l'utilisateur</h4>
                                         </div>
@@ -327,7 +325,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
                                                 mobile</h4>
                                         </div>
@@ -344,7 +342,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle référencement</h3>
+                                            <h3 class="category_projects">Pôle référencement</h3>
                                             <h4> L'importance du référencement dans la stratégie de marketing numérique
                                                 d'un site web</h4>
                                         </div>
@@ -360,7 +358,7 @@
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_article">Pôle design</h3>
+                                            <h3 class="category_projects">Pôle design</h3>
                                             <h4>Les tendances récentes en web design : Couleurs audacieuses,
                                                 typographies imposantes et expériences centrées sur l'utilisateur</h4>
                                         </div>
@@ -377,18 +375,17 @@
         </div>
     </main>
 
+    <?php
 
-    <?php include_once('includes/footer.php') ?>
+    include_once("view/includes/footer.php");
 
+    ?>
 
-    <!-- script -->
+    <!--SCRIPT CARDS-->
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/tabs.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-
-    <!--flowbite-->
-    <!-- <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script> -->
+    <!-- flowbite-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 
