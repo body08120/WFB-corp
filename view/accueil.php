@@ -902,7 +902,7 @@
 <!-- Contact -->
 
 <div class="container my-24 px-6 mx-auto">
-<h4 class="text-center underline">Une question ? Une requête ? Une recommandation ? N'hésitez pas et venez nous en parler.</h4>
+<h4 class="text-center underline text-xl">Une question ? Une requête ? Une recommandation ? N'hésitez pas et venez nous en parler.</h4>
   <section class="mb-32 text-gray-800 text-center">
     <style>
       .map-container {
