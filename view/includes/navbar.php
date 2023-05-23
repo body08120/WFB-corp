@@ -134,7 +134,7 @@
                     class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Découvrez-nous</a>
                 </li>
                 <li>
-                  <a href="presentation.php"
+                  <a href="index.php?action=presentation#team"
                     class="bg-primary text-blanc hover:bg-blanc hover:text-primary block px-4 py-2">Notre équipe</a>
                 </li>
               </ul>
