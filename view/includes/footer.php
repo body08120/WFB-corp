@@ -1,4 +1,13 @@
-  <footer class="bg-primary">
+<style>
+
+.footerprim {
+  background-image: linear-gradient(#1D1D1F, #1C242A);
+}
+
+
+</style>  
+  
+  <footer class="footerprim ml-4 mr-4 md:ml-0 md:mr-0">
     <div class="mx-auto w-full lg:py-8 xl:px-52">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">

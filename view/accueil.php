@@ -442,7 +442,7 @@
 
 <hr class="hrgradient w-4/6 m-auto mb-16 md:w-2/6">
 
-	<div id="cards">
+		<div class="cards">
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
@@ -554,7 +554,7 @@
 <hr class="hrgradient w-4/6 m-auto mb-16 md:w-2/6">
 
 
-<div id="cardss">
+<div class="cards">
 			<div class="card ntshow">
 			<div class="card-content">
 				<div class="card-image">
@@ -902,7 +902,7 @@
 <!-- Contact -->
 
 <div class="container my-24 px-6 mx-auto">
-<h4 class="text-center underline">Une question ? Une requête ? Une recommandation ? N'hésitez pas et venez nous en parler.</h4>
+<h4 class="text-center underline text-xl">Une question ? Une requête ? Une recommandation ? N'hésitez pas et venez nous en parler.</h4>
   <section class="mb-32 text-gray-800 text-center">
     <style>
       .map-container {
@@ -1034,21 +1034,21 @@
     });	/*ready*/
   </script>
 
-<script src="assets/js/cards.js">
-</script>
 
 <script>
+  const cards = document.getElementsByClassName("cards");
+  for (const cardsElement of cards) {
+    cardsElement.onmousemove = e => {
+      for (const card of cardsElement.getElementsByClassName("card")) {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-document.getElementById("cardss").onmousemove = e => {
-  for(const card of document.getElementsByClassName("card")) {
-    const rect = card.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
-
-    card.style.setProperty("--mouse-x", `${x}px`);
-    card.style.setProperty("--mouse-y", `${y}px`);
-  };
-}
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      }
+    };
+  }
 
 </script>
 

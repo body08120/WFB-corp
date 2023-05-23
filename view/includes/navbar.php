@@ -88,10 +88,15 @@
     font-size: 1.1rem;
     text-align: center;
   }
+
+  .navbarstyle {
+  background-image: linear-gradient(#1C242A, #1D1D1F);
+}
 </style>
 
 <div class="hidden sticky top-0 z-50 md:w-full relative md:block">
-  <nav class="bg-primary">
+  <nav class="navbarstyle">
+
     <div
       class="container mx-auto flex flex-wrap items-center justify-between w-fit md:container flex justify-center w-fit min-w-full">
       <a href="index.php?action="><img class="md:hidden w-4/12 ml-6" src="assets/images/logowithoutback.png"></a>
