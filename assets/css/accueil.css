@@ -77,7 +77,7 @@ h2 > .magic > .magic-text {
   --card-color: rgb(28, 36, 42);
 }
 
-#cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;  
@@ -86,20 +86,7 @@ h2 > .magic > .magic-text {
   margin: auto;
 }
 
-#cardss {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;  
-  max-width: 1400px;
-  width: calc(100% - 20px);
-  margin: auto;
-}
-
-#cards:hover > .card::after {
-  opacity: 1;
-}
-
-#cardss:hover > .card::after {
+.cards:hover > .card::after {
   opacity: 1;
 }
 
@@ -430,16 +417,11 @@ i {
     overflow: auto;
   }
   
-  #cards {    
+  .cards {    
     max-width: 1000px;
     padding: 10px 0px;
   }
 
-  #cardss {    
-    max-width: 1000px;
-    padding: 10px 0px;
-  }
-  
   .card {
     flex-shrink: 1;
     width: calc(50% - 4px);

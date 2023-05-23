@@ -66,7 +66,7 @@
                 </ul>
 
                 <div id="all-section" class="mt-4">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
@@ -168,7 +168,7 @@
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                <div id="cards" style="margin: auto;">
+                <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
@@ -240,7 +240,7 @@
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
-                <div id="cards" style="margin: auto;">
+                <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
@@ -313,7 +313,7 @@
                
 
                 <div id="ref-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         
                         <div class="card">
                             <div class="card-content">
