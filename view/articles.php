@@ -5,18 +5,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-    <link rel="stylesheet" href="../assets/css/cards.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1D1D1F',
+                        card: '#1C242A',
+                        blanc: '#F1F5F2',
+                        rose: '#8c7284',
+                        grenat: '#70163c',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    <!--CARDS HEADER -->
+    <link rel="stylesheet" href="assets/css/cards.css">
+
+    <!--FOOTER HEADER -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body class="bg-[#141414]">
 
-<?php
+    <?php
 
-include_once "view/includes/navbar.php";
+    include_once("view/includes/navbar.php");
 
-?>
+    ?>
 
     <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
         <div class="space-y-5 w-9/12">
@@ -51,7 +71,8 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/AI.webp" alt="artificial intelligence" width="250px">
+                                    <img src="assets/images/articles/AI.webp" alt="artificial intelligence"
+                                        width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -67,7 +88,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.webp " alt="gaming" width="250px">
+                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -83,7 +104,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/web_design.webp" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -99,7 +120,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
+                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
                                         alt="cybersécutité" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
@@ -116,7 +137,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -132,7 +153,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/framework.webp" alt="framework" width="250px">
+                                    <img src="assets/images/articles/framework.webp" alt="framework" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -153,7 +174,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/AI.webp" alt="cybersecurity" width="250px">
+                                    <img src="assets/images/articles/AI.webp" alt="cybersecurity" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -169,7 +190,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.webp " alt="jeux vidéos" width="250px">
+                                    <img src="assets/images/articles/gaming.webp " alt="jeux vidéos" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -185,7 +206,8 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.webp" alt="développement informatique" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="développement informatique"
+                                        width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -201,7 +223,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/framework.webp" alt="framework" width="250px">
+                                    <img src="assets/images/articles/framework.webp" alt="framework" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -219,11 +241,11 @@ include_once "view/includes/navbar.php";
 
                 <div id="design-section" class="mt-4" style="display: none;">
                     <div id="cards" style="margin: auto;">
-                        
+
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/gaming.webp " alt="gaming" width="250px">
+                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -239,7 +261,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.webp" alt="design UI/UX" width="250px">
+                                    <img src="assets/images/articles/web_design.webp" alt="design UI/UX" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -255,7 +277,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
+                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
                                         alt="cybersécurité" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
@@ -272,7 +294,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="web design" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -285,17 +307,18 @@ include_once "view/includes/navbar.php";
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
-               
+
                 <div id="ref-section" class="mt-4" style="display: none;">
                     <div id="cards" style="margin: auto;">
-                        
+
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/web_design.webp" alt="designer UI/UX" width="250px">
+                                    <img src="assets/images/articles/web_design.webp" alt="designer UI/UX"
+                                        width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -311,7 +334,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
+                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
                                         alt="référencement" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
@@ -328,7 +351,7 @@ include_once "view/includes/navbar.php";
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="../assets/images/articles/dev.webp" alt="Typographies" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="Typographies" width="250px">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -341,25 +364,27 @@ include_once "view/includes/navbar.php";
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
-            
+
 
             </div>
         </div>
     </main>
 
-<?php
+    <?php
 
-include_once "view/includes/footer.php";
+    include_once("view/includes/footer.php");
 
-?>
+    ?>
 
+    <!--SCRIPT CARDS-->
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/tabs.js"></script>
 
-    <script src="../assets/js/cards.js"></script>
-    <script src="../assets/js/tabs.js"></script>
-    
+    <!--SCRIPT FOOTER-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 </body>
 
