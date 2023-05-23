@@ -26,8 +26,9 @@
     <!--CARDS HEADER -->
     <link rel="stylesheet" href="assets/css/cards.css">
 
-    <!--FOOTER HEADER -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!--flowbite-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+
 </head>
 
 <body class="bg-[#141414]">
@@ -383,8 +384,9 @@
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/tabs.js"></script>
 
-    <!--SCRIPT FOOTER-->
+    <!-- flowbite-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
 
 </body>
 
