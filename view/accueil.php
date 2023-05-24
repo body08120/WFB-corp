@@ -1042,6 +1042,7 @@
     });	/*ready*/
   </script>
 
+
 <script>
   const cards = document.getElementsByClassName("cards");
   for (const cardsElement of cards) {
@@ -1056,6 +1057,7 @@
       }
     };
   }
+
 </script>
 
 <script>
