@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-    <link rel="stylesheet" href="../assets/css/cards.css">
-    <link rel="stylesheet" href="../assets/css/accueil.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/accueil.css">
 
     <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 	<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
@@ -70,7 +70,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/AI.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/AI.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -86,7 +86,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/gaming.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/gaming.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -102,7 +102,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/web_design.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/web_design.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -118,7 +118,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
+                                    <img class="w-full" src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
                                         alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
@@ -135,7 +135,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/dev.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/dev.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -151,7 +151,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/framework.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/framework.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -172,7 +172,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/AI.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/AI.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -188,7 +188,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/gaming.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/gaming.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -206,7 +206,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/dev.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/dev.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -222,7 +222,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/framework.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/framework.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -237,14 +237,14 @@
                         </div>
                     </div>
                 </div>
-                </div>
+
 
                 <div id="design-section" class="mt-4" style="display: none;">
                 <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/AI.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/AI.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -260,7 +260,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/gaming.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/gaming.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -278,7 +278,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/dev.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/dev.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -294,7 +294,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/framework.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/framework.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -318,7 +318,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/web_design.webp" alt="" >
+                                    <img class="w-full" src="assets/images/articles/web_design.webp" alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -334,7 +334,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
+                                    <img class="w-full" src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
                                         alt="" >
                                 </div>
                                 <div class="card-info-wrapper">
@@ -351,7 +351,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image w-full">
-                                    <img class="w-full" src="../assets/images/articles/dev.webp" alt="">
+                                    <img class="w-full" src="assets/images/articles/dev.webp" alt="">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -376,8 +376,8 @@
     <?php include_once('includes/footer.php')?>
 
 
-    <script src="../assets/js/cards.js"></script>
-    <script src="../assets/js/tabs.js"></script>
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/tabs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 
