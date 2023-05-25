@@ -918,7 +918,7 @@
               class="bg-blanc bg-opacity-10 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
             >
             <h2 class="text-3xl font-bold mb-12">Nous contacter</h2>
-            <form action="src/controller/contact_ttt.php" method="post">
+            <form action="#" method="post">
               <div class="form-group mb-6">
                 <input
                   type="text"
@@ -957,11 +957,11 @@
               </div>
 
 			  <!-- champ caché pour générer des jetons -->
-			  <div class="form-group mb-6">
+			  <!-- <div class="form-group mb-6">
 			  	<input
-				 type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+				 type="hidden" name="csrf_token" value="<?php// echo $_SESSION['csrf_token']; ?>">
 
-			  </div> 
+			  </div>  -->
 
               <button
                 type="submit"
