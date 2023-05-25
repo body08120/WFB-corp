@@ -41,6 +41,11 @@
                     </div>
 
                     <div class="inputBx">
+                        <input type="text" name="code" placeholder="Code admin">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="inputBx">
                         <input type="submit" value="Enregistrer">
                     </div>
 
