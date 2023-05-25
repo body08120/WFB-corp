@@ -162,10 +162,10 @@
 
 <!--mobile menu navigation-->
 <div class="z-[500] flex w-full md:hidden" id="nav">
-  <a href="article.php" class="button active">
+  <a href="index.php" class="button active">
     <i class="fa-solid fa-house text-white"></i>
   </a>
-  <a href="#" class="button">
+  <a href="index.php?action=accueil#contacternous" class="button scroll-smooth">
     <i class="fa-solid fa-envelope text-white"></i>
   </a>
   <a href="#" class="button">
@@ -187,3 +187,89 @@
   </div>
 
 </div>
+
+<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="z-50 bottom-20 right-2 inline-block p-3 bg-grenat text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose hover:shadow-lg focus:bg-grenat focus:shadow-lg focus:outline-none focus:ring-0 active:bg-rose active:shadow-lg transition duration-150 ease-in-out fixed md:bottom-5 md:right-5" id="btn-back-to-top">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+	  mybutton.classList.add("fade-in");
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document with animation
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    // Set the animation interval
+	const animationInterval = 1000;
+  
+  // Smooth scroll to top
+  const smoothScroll = setInterval(function() {
+    const position = window.pageYOffset;
+    if (position > 0) {
+      window.scrollTo(0, position - animationInterval);
+    } else {
+      clearInterval(smoothScroll);
+    }
+  }, 10);
+
+    // Get the current scroll position
+    const startScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Calculate the distance to scroll
+    const distance = -startScroll;
+
+    // Calculate the number of frames needed for the animation
+    const frames = Math.ceil(Math.abs(distance) / animationInterval);
+
+    // Calculate the distance to move on each frame
+    const step = distance / frames;
+
+    // Define the animation function
+    function animate() {
+      // Get the current scroll position
+      const currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+      // Calculate the new scroll position
+      const newScroll = currentScroll + step;
+
+      // Set the new scroll position
+      document.documentElement.scrollTop = newScroll;
+      document.body.scrollTop = newScroll;
+
+      // Check if the animation is complete
+      if (
+        currentScroll !== 0 &&
+        ((step > 0 && newScroll < 0) || (step < 0 && newScroll > 0))
+      ) {
+        // Request the next frame of the animation
+        window.requestAnimationFrame(animate);
+      } else {
+        // Set the final scroll position
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    }
+    // Start the animation
+    window.requestAnimationFrame(animate);
+  }
+</script>

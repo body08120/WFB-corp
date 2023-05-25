@@ -21,10 +21,10 @@
               Ressources
             </h2>
             <ul class="text-rose font-medium">
-              <li class="mb-4">
+              <li class="text-center mb-4">
                 <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
               </li>
             </ul>
@@ -34,10 +34,10 @@
               Suivez-nous
             </h2>
             <ul class="text-rose font-medium">
-              <li class="mb-4">
+              <li class="text-center mb-4">
                 <a href="https://github.com/themesberg/flowbite" class="hover:underline">Github</a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
               </li>
             </ul>
@@ -47,11 +47,11 @@
               Mentions légales
             </h2>
             <ul class="text-rose font-medium">
-              <li class="mb-4">
+              <li class="text-center mb-4">
                 <a href="#" class="hover:underline">Politique de confidentialité
                 </a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="#" class="hover:underline">Termes &amp; conditions</a>
               </li>
             </ul>
