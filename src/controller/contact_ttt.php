@@ -2,27 +2,25 @@
 
 //////////  Traitement Formulaire de contact /////////////////////////
 
-// Démarrer la session
-
 // Générer un jeton CSRF et le stocker dans la variable de session
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-}
+// if (!isset($_SESSION['csrf_token'])) {
+//     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+// }
 
-// Vérifier si la requête est de type POST
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Vérifier si le jeton CSRF est présent et correspond à celui stocké dans la variable de session
-    if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
-        // Jeton CSRF invalide, traitement de l'erreur (redirection, message d'erreur, etc.)
-        die("Erreur de sécurité : Jeton CSRF invalide.");
-    }
+// // Vérifier si la requête est de type POST
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     // Vérifier si le jeton CSRF est présent et correspond à celui stocké dans la variable de session
+//     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+//         // Jeton CSRF invalide, traitement de l'erreur (redirection, message d'erreur, etc.)
+//         die("Erreur de sécurité : Jeton CSRF invalide.");
+//     }
 
-    // Le jeton CSRF est valide, vous pouvez continuer à traiter les données du formulaire
-    // ...
+//     // Le jeton CSRF est valide, vous pouvez continuer à traiter les données du formulaire
+//     // ...
 
-    // Réinitialiser le jeton CSRF pour empêcher les attaques ultérieures
-    unset($_SESSION['csrf_token']);
-}
+//     // Réinitialiser le jeton CSRF pour empêcher les attaques ultérieures
+//     unset($_SESSION['csrf_token']);
+// }
 
 if(!empty($_POST))
 {
