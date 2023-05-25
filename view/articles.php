@@ -47,7 +47,7 @@ include('src/model/config.php');
     ?>
 
     <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
-        <div class="space-y-5 w-9/12">
+        <div class="space-y-5 w-10/12">
 
             <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
