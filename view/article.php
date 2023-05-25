@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="assets/css/articles.css">
     <link rel="stylesheet" href="assets/css/cards.css">
     <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
 
 </head>
 
@@ -124,7 +126,7 @@
             </div>
 
 
-                <hr>
+            <hr>
             <div id="all-section article" class="mt-4 w-full">
                 <h2 class="m-10 no-italic">Ces articles pourraient vous intéresser</h2>
                 <div id="cards" style="margin: auto;">
@@ -180,25 +182,22 @@
                     </div>
                 </div>
             </div>
-           
+
+            <?php
+
+            include_once "view/includes/footer.php";
+
+            ?>
 
         </article>
     </section>
 
-    <div>
-        <?php
 
-        include_once "view/includes/footer.php";
-
-        ?>
-    </div>
-
-
-
-    -
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/tabs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
 
 </body>
 
