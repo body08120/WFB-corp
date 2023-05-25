@@ -6,19 +6,19 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     switch ($_GET['action']) {
         case 'presentation':
             require_once('src/controller/presentation.php');
-            presentationVue();
+            require_once('view/presentation.php');
             break;
         case 'articles':
             require_once('src/controller/articles.php');
-            articlesVue();
+            require_once('view/articles.php');
             break;
         case 'article':
             require_once('src/controller/article.php');
-            articleVue();
+            require_once('view/article.php');
             break;
         case 'realisations':
             require_once('src/controller/realisations.php');
-            realisationsVue();
+            require_once('view/realisations.php');
             break;
         // génère la home si aucun des cases n'est trouvé
         default:
