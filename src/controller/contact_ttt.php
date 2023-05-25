@@ -2,8 +2,6 @@
 
 //////////  Traitement Formulaire de contact /////////////////////////
 
-// Démarrer la session
-
 // Générer un jeton CSRF et le stocker dans la variable de session
 // if (!isset($_SESSION['csrf_token'])) {
 //     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
