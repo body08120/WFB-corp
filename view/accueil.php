@@ -954,7 +954,7 @@
 			  <!-- champ caché pour générer des jetons -->
 			  <!-- <div class="form-group mb-6">
 			  	<input
-				 type="hidden" name="csrf_token" value="<?php// echo $_SESSION['csrf_token']; ?>">
+				 type="hidden" name="csrf_token" value="< ? php// echo $_SESSION['csrf_token']; ?>">
 
 			  </div>  -->
 
