@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 23, 2023 at 10:07 AM
+-- Generation Time: May 26, 2023 at 08:43 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -182,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id_user` int NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `firstname` varchar(50) NOT NULL,
-  `mail` varchar(50) NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `password` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL,
   `active` tinyint(1) NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_user`, `name`, `firstname`, `mail`, `password`, `token`, `active`, `id_role`) VALUES
+INSERT INTO `users` (`id_user`, `name`, `firstname`, `email`, `password`, `token`, `active`, `id_role`) VALUES
 (3, 'Admin', 'Admin', 'admin@admin.net', '$2y$10$AYMHRg2MH2u.WTZL/q6ELeaVADERvZI59VTnkxDl0shhjg1FjBfia', '', 1, 1);
 
 --
