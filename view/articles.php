@@ -1,6 +1,6 @@
 <?php 
 
-include('src/model/config.php');
+include('src/model/classes/Connect.php');
 
 ?>
 
@@ -47,7 +47,7 @@ include('src/model/config.php');
     ?>
 
     <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
-        <div class="space-y-5 w-9/12">
+        <div class="space-y-5 w-10/12">
 
             <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
@@ -67,10 +67,11 @@ include('src/model/config.php');
                             Pôle graphique
                         </a>
                     </li>
-                    <li class="flex-1">
+                    <li class="l flex-1">
                         <a href="#ref-section"
-                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
-                            Expert en référencement</a>
+                            class="t text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Expert en référencement
+                        </a>
                     </li>
                 </ul>
 
@@ -85,7 +86,7 @@ include('src/model/config.php');
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
+                                            <a href=""> <h3 class="category_articles">Pôle développement</h3></a>
                                             <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
                                                 mobile</h4>
                                         </div>
