@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="inputBx">
-                        <input type="password" name="mdp" placeholder="Mot de passe">
+                        <input type="password" name="password" placeholder="Mot de passe">
                         <i class="fa-solid fa-lock"></i>
                     </div>
 
