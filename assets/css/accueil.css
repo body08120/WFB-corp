@@ -407,20 +407,17 @@ i {
   );
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #444;
-}
-
 main {
   display: block;
   position: relative;
   box-sizing: border-box;
   padding: 30px;
   width: 100%;
-  background-color: #fff;
+  background: linear-gradient(
+    transparent,
+    #70163b49,
+    transparent
+    );
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -449,7 +446,9 @@ h1 {
   padding: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
-  border-bottom: solid 1px #ebebeb;
+  border: solid 1px #ebebeb;
+  border-radius: 4px;
+  margin: 2%;
 }
 
 .open {
@@ -463,8 +462,7 @@ h1 {
 }
 
 .expanded {
-  background-color: #f5f5f5;
-  transition: all .3s ease-in-out;
+  --tw-bg-opacity: 0;
 }
 
 .ptag {
@@ -474,10 +472,10 @@ h1 {
 .question {
   padding-top: 30px;
   padding-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 18px;
   font-weight: 500;
-  color: #526ee4;
+  color: #F1F5F2;
 }
 
 .answer {
@@ -488,6 +486,7 @@ h1 {
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
+  color: #F1F5F2;
 }
 
 .faq-t {
