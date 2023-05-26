@@ -1,6 +1,6 @@
 <?php
 
-require_once 'src/model/config.php';
+require_once ('Connect.php');
 // Inclut le fichier de configuration
 
 
@@ -126,6 +126,7 @@ class User extends Connect
         }
 
         return true; // L'utilisateur est authentifié
+        
     }
 }
 
@@ -164,4 +165,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["login"])) {
         echo "Identifiants incorrects.";
     }
 }
+
 ?>
