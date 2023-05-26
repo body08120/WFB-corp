@@ -89,7 +89,7 @@ class User extends Connect
 
         //on va fetcher sur la bdd et si on compte plus de 0 même emails donc true: l'email est déjà utilisé
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-wwwwwwwwwwwwwwwwwwwwwwwww
+
         // Prépare et exécute une requête pour compter le namebre d'utilisateurs avec le même firstname
 
 
