@@ -1,6 +1,6 @@
 <?php 
 
-include('src/model/config.php');
+include('src/model/classes/Connect.php');
 
 ?>
 
