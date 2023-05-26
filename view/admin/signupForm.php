@@ -15,21 +15,22 @@
             <div class="form">
                 <h2>Créer compte</h2>
                 <form action="" method="post">
-                    <div class="inputBx">
-                        <input type="text" name="pseudo" placeholder="Pseudo">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
 
                     <div class="inputBx">
-                        <input type="text" name="nom" placeholder="Nom">
+                        <input type="text" name="name" placeholder="Nom">
                         <i class="fa-solid fa-user"></i>
                     </div>
-
+                    
                     <div class="inputBx">
-                        <input type="text" name="prenom" placeholder="Prénom">
+                        <input type="text" name="firstname" placeholder="Prénom">
                         <i class="fa-solid fa-user"></i>
                     </div>
-
+                    
+                    <div class="inputBx">
+                        <input type="email" name="email" placeholder="Email">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
                     <div class="inputBx">
                         <input type="password" name="mdp" placeholder="Mot de passe">
                         <i class="fa-solid fa-lock"></i>

@@ -15,8 +15,9 @@
             <div class="form">
                 <h2>Login</h2>
                 <form action="" method="post">
+                
                     <div class="inputBx">
-                        <input type="text" name="pseudo" placeholder="Pseudo">
+                        <input type="email" name="email" placeholder="Email">
                         <i class="fa-solid fa-user"></i>
                     </div>
 
