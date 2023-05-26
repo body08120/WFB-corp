@@ -362,10 +362,14 @@
     </main>
     <?php include_once('includes/footer.php')?>
 
-</body>
-
+    <!--SCRIPT CARDS-->
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/tabs.js"></script>
+
+    <!-- flowbite-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+</body>
 
+</html>
