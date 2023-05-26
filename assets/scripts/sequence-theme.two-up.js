@@ -98,34 +98,34 @@ mySequence.ready = function() {
     windowWidth = enableSwiping();
   }
 
-  function scroll(e) {
+  // function scroll(e) {
 
-    // Only allow mousewheel navigation above 769px
-    if (windowWidth < 769) {
-      return;
-    }
+  //   // Only allow mousewheel navigation above 769px
+  //   if (windowWidth < 769) {
+  //     return;
+  //   }
 
-    // e.preventDefault();
+  //   // e.preventDefault();
 
-    delta = e.wheelDelta || -e.detail;
+  //   delta = e.wheelDelta || -e.detail;
 
-    deltaOfInterest = delta;
-    timeNow = new Date().getTime();
+  //   deltaOfInterest = delta;
+  //   timeNow = new Date().getTime();
 
-    // Cancel scroll if currently animating or within quiet period
-    if (timeNow - lastAnimation < mouseWheel.quietPeriod + mouseWheel.animationTime) {
-      // e.preventDefault();
-      return;
-    }
+  //   // Cancel scroll if currently animating or within quiet period
+  //   if (timeNow - lastAnimation < mouseWheel.quietPeriod + mouseWheel.animationTime) {
+  //     // e.preventDefault();
+  //     return;
+  //   }
 
-    if (deltaOfInterest < 0) {
-      mySequence.next();
-    } else {
-      mySequence.prev();
-    }
+  //   if (deltaOfInterest < 0) {
+  //     mySequence.next();
+  //   } else {
+  //     mySequence.prev();
+  //   }
 
-    lastAnimation = timeNow;
-  }
+  //   lastAnimation = timeNow;
+  // }
 
   mySequence.utils.addEvent(document, "mousewheel", scroll);
   mySequence.utils.addEvent(document, "DOMMouseScroll", scroll);
