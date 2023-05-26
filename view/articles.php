@@ -85,7 +85,7 @@ include('src/model/config.php');
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
+                                            <a href=""> <h3 class="category_articles">Pôle développement</h3></a>
                                             <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
                                                 mobile</h4>
                                         </div>

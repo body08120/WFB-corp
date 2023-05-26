@@ -55,7 +55,6 @@ class ContactForm {
             header('Location:http://www.localhost/WFB-CORP/index.php');
         } else {
             echo "Erreur : impossible d'envoyer le message";
-            // header('Location:http://www.localhost/WFB-CORP/index.php');
         }
     }
 
