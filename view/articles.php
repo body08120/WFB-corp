@@ -67,10 +67,11 @@ include('src/model/config.php');
                             Pôle graphique
                         </a>
                     </li>
-                    <li class="flex-1">
+                    <li class="l flex-1">
                         <a href="#ref-section"
-                            class="text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
-                            Expert en référencement</a>
+                            class="t text-gray-300 relative flex items-center justify-center gap-2 rounded-lg bg-[#141414] px-3 py-2 shadow hover:bg-[#171717] hover:text-gray-500">
+                            Expert en référencement
+                        </a>
                     </li>
                 </ul>
 
