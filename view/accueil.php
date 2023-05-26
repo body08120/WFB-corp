@@ -914,7 +914,7 @@
               class="bg-blanc bg-opacity-10 backdrop-blur block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
             >
             <h2 class="text-3xl font-bold mb-12">Nous contacter</h2>
-            <form action="#" method="post">
+            <form action="src/controller/contact_ttt.php" method="post">
               <div class="form-group mb-6">
                 <input
                   type="text"
@@ -952,6 +952,12 @@
                 ></textarea>
               </div>
 
+			  <!-- champ caché pour générer des jetons -->
+			  <div class="hidden form-group mb-6">
+			  	<input
+				 type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+
+			  </div> 
 
               <button
                 type="submit"
@@ -973,80 +979,72 @@
   </section>
 </div>
 
-<main class="bg-primary">
-  <h3 class="text-center">Questions souvent posées :</h3>
+<main>
+  <h3 class="text-center text-3xl">FAQ</h3>
 
+  <div class="topic">
     <div class="open">
+      <h2 class="question">Quelle est l'expérience de votre entreprise dans le domaine du développement web ?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Notre entreprise possède une solide expérience dans le domaine du développement web. Nous sommes actifs depuis 2020 et avons travaillé sur de nombreux projets variés pour des clients de différents secteurs d'activité. 
+		Notre équipe est composée de développeurs web expérimentés et passionnés, ce qui nous permet de proposer des solutions web de haute qualité.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+      <h2 class="question">Quelle est votre approche en matière de conception et de développement web ?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Nous adoptons une approche axée sur le client et centrée sur la qualité lorsqu'il s'agit de conception et de développement web. Notre processus commence par une écoute attentive de vos besoins et de vos objectifs. 
+		Ensuite, nous travaillons en étroite collaboration avec vous pour créer une conception web attrayante et conviviale qui reflète l'identité de votre entreprise. 
+		Nous utilisons les dernières technologies et les meilleures pratiques de développement pour garantir des résultats performants, évolutifs et sécurisés.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+      <h2 class="question">Comment travaillez-vous en collaboration avec vos clients pendant le processus de développement ?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Nous considérons la collaboration avec nos clients comme essentielle pour le succès de chaque projet. 
+		Tout au long du processus de développement, nous entretenons une communication régulière avec vous. 
+		Nous organisons des réunions, des discussions et des échanges d'idées pour nous assurer que nous comprenons parfaitement vos besoins et vos attentes. 
+		Nous vous tenons informé de l'avancement du projet, et nous sommes ouverts aux feedbacks et aux ajustements tout au long du processus. 
+		Notre objectif est de vous offrir une expérience transparente et de garantir que le résultat final répond pleinement à vos exigences.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+      <h2 class="question">Comment assurez-vous la qualité et les tests de vos développements web ?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Nous accordons une grande importance à la qualité de nos développements web. 
+		Pour garantir cela, nous suivons des processus de développement rigoureux. 
+		Tout d'abord, notre équipe de développeurs suit les meilleures pratiques de codage et utilise des normes de développement web reconnues. 
+		De plus, nous effectuons des tests approfondis à différentes étapes du processus, tels que des tests fonctionnels, des tests de compatibilité multiplateforme et des tests de performance. 
+		Nous utilisons également des outils et des frameworks de test automatisés pour assurer la stabilité et la fiabilité de nos applications web. 
+		Notre objectif est de livrer des développements web de haute qualité qui répondent aux attentes de nos clients.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+      <h2 class="question">Comment est établi le budget pour un projet de développement web et quelles sont vos modalités de paiement ?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">L'établissement du budget pour un projet de développement web dépend de divers facteurs, tels que la complexité du projet, les fonctionnalités requises, les délais et d'autres exigences spécifiques. 
+		Lors de notre processus initial de consultation, nous discuterons de vos besoins et de vos objectifs, et nous fournirons une estimation détaillée des coûts associés. 
+		Nous adoptons une approche transparente et collaborative pour définir un budget réaliste et adapté à votre projet.
+	
+	<br>
+	<br>
 
-      <h2 class="question">1. How can i delete my complaint/comment?<span class="ptag">SIEBEL</span></h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	En ce qui concerne les modalités de paiement, nous proposons généralement des options flexibles. Cela peut inclure des paiements échelonnés basés sur des jalons clés du projet.
+	Les détails spécifiques des modalités de paiement seront discutés et convenus avec vous avant le début du projet, afin de s'assurer que toutes les parties sont satisfaites des arrangements financiers.</p>
   </div>
   <div class="topic">
     <div class="open">
-      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?
+      <h2 class="question">Comment puis-je demander un devis pour mon projet de développement web ?
 </h2><span class="faq-t"></span>
     </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">3. How can I edit a complaint I posted?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">4. How can i find out personal information of another user?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">5. How can i contact another user?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">3. How can I edit a complaint I posted?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">4. How can i find out personal information of another user?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">5. How can i contact another user?
-</h2><span class="faq-t"></span>
-    </div>
-    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="answer">Pour demander un devis pour votre projet de développement web, vous pouvez nous contacter via notre site web, par e-mail ou par téléphone. 
+		Nous vous demanderons de nous fournir des informations détaillées sur votre projet, telles que les fonctionnalités requises, les objectifs, les délais et toute autre exigence spécifique. Plus les informations que vous nous fournissez sont détaillées, mieux nous pourrons comprendre vos besoins et vous fournir un devis précis. 
+		Une fois que nous aurons reçu votre demande, notre équipe examinera les détails et vous fournira un devis dans les meilleurs délais.</p>
   </div>
 </main>
 
