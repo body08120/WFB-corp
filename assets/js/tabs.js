@@ -1,5 +1,6 @@
 // Récupérer tous les liens des onglets
 const tabLinks = document.querySelectorAll("ul.flex li.l a.t");
+console.log(tabLinks)
 
 // Parcourir les liens des onglets et ajouter un écouteur d'événement de clic à chacun
 tabLinks.forEach(tabLink => {
