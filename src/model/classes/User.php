@@ -6,17 +6,17 @@ require_once 'src/model/config.php';
 class User extends Connect
 {
     private $firstname;
-    private $nom;
+    private $name;
     private $email;
     private $password;
     private $code;
 
     // Définit les propriétés de la classe User
 
-    public function __construct($firstname, $nom, $email, $password, $code)
+    public function __construct($firstname, $name, $email, $password, $code)
     {
         $this->firstname = $firstname;
-        $this->nom = $nom;
+        $this->name = $name;
         $this->email = $email;
         $this->password = $password;
         $this->code = $code;
@@ -46,9 +46,9 @@ class User extends Connect
         // Hash le mot de passe en utilisant la fonction password_hash() avec l'algorithme PASSWORD_DEFAULT
 
         // Insérer l'utilisateur dans la base de données
-        $stmt = $db->prepare("INSERT INTO users (firstname, nom, email, mot_de_passe, code_admin) VALUES (:firstname, :nom, :email, :password, :code)");
+        $stmt = $db->prepare("INSERT INTO users (firstname, name, email, mot_de_passe, code_admin) VALUES (:firstname, :name, :email, :password, :code)");
         $stmt->bindValue(':firstname', $this->firstname);
-        $stmt->bindValue(':nom', $this->nom);
+        $stmt->bindValue(':name', $this->name);
         $stmt->bindValue(':email', $this->email);
         $stmt->bindValue(':password', $hashedPassword);
         $stmt->bindValue(':code', $this->code);
@@ -61,7 +61,7 @@ class User extends Connect
     private function validateFields()
     {
         // Valider que tous les champs du formulaire sont renseignés
-        if (empty($this->firstname) || empty($this->nom) || empty($this->email) || empty($this->password) || empty($this->code)) {
+        if (empty($this->firstname) || empty($this->name) || empty($this->email) || empty($this->password) || empty($this->code)) {
             return false;
         }
         // Vérifie si tous les champs du formulaire sont renseignés et retourne false si l'un des champs est vide
@@ -83,7 +83,7 @@ class User extends Connect
         $stmt->bindValue(':firstname', $this->firstname);
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        // Prépare et exécute une requête pour compter le nombre d'utilisateurs avec le même firstname
+        // Prépare et exécute une requête pour compter le namebre d'utilisateurs avec le même firstname
 
         if ($result['count'] > 0) {
             return true; // Le firstname est déjà utilisé
@@ -122,14 +122,14 @@ class User extends Connect
 // Vérifier si le formulaire d'inscription a été soumis
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["register"])) {
     $firstname = isset($_POST["firstname"]) ? trim($_POST["firstname"]) : '';
-    $nom = isset($_POST["nom"]) ? trim($_POST["nom"]) : '';
+    $name = isset($_POST["name"]) ? trim($_POST["name"]) : '';
     $email = isset($_POST["email"]) ? trim($_POST["email"]) : '';
     $password = isset($_POST["mdp"]) ? $_POST["mdp"] : '';
     $verifmdp = isset($_POST["verifmdp"]) ? $_POST["verifmdp"] : '';
     $code = isset($_POST["code"]) ? trim($_POST["code"]) : '';
     // Récupère les valeurs des champs du formulaire soumis en utilisant isset() et trim() pour nettoyer les espaces
 
-    $user = new User($firstname, $nom, $email, $password, $code);
+    $user = new User($firstname, $name, $email, $password, $code);
     // Crée une nouvelle instance de la classe User en passant les valeurs récupérées du formulaire
 
     if ($user->register()) {
