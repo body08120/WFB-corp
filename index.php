@@ -1,38 +1,39 @@
 <?php
 session_start();
+require_once('src/controller/homeController.php');
 
 
 if (isset($_GET['action']) && $_GET['action'] !== '') {
     switch ($_GET['action']) {
         case 'presentation':
-            require_once('src/controller/presentation.php');
-            require_once('view/presentation.php');
+            vuePresentation();
             break;
         case 'articles':
-            require_once('src/controller/articles.php');
-            require_once('view/articles.php');
+            vueArticles();
             break;
         case 'article':
-            require_once('src/controller/article.php');
-            require_once('view/article.php');
+            vueArticle();
+            break;
+        case 'login':
+            vueLogin();
             break;
         case 'realisations':
-            require_once('src/controller/realisations.php');
-            require_once('view/realisations.php');
+            vueRealisations();
             break;
         // génère la home si aucun des cases n'est trouvé
         default:
-            require_once('view/accueil.php');
+            homepage();
             break;
     }
 } else {
-    if(!empty($_POST))
-    {
-        require_once('src/controller/contact_ttt.php');
-    }
-    else
-    {
-        require_once('view/accueil.php');
+    if (!empty($_POST['contact'])) {
+        require_once('src/model/classes/Contact.php');
+    } elseif (!empty($_POST['login'])) {
+        require_once('src/model/classes/User.php');
+    } elseif (!empty($_POST['signup'])) {
+        require_once('src/model/classes/User.php');
+    } else {
+        homepage();
     }
 }
 ?>
