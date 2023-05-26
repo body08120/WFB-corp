@@ -10,7 +10,8 @@ class ContactForm {
     private $regex_mail;
     private $regex_head;
 
-    public function __construct() {
+    public function __construct() 
+    {
         if (!empty($_POST)) {
             $this->nom = trim($_POST['nom-user']);
             $this->mail = trim($_POST['mail-user']);
@@ -25,7 +26,9 @@ class ContactForm {
         $this->courriel = 0;
     }
 
-    private function validateEmail() {
+    // la chaîne de format est "L'adresse %s n'est pas valide", où %s est le marqueur de position pour une chaîne de caractères. Lorsque la fonction sprintf() est appelée, la valeur de $this->mail sera insérée à la place du marqueur %s dans la chaîne de format. Cela permet de générer dynamiquement un message d'erreur indiquant que l'adresse e-mail n'est pas valide.
+    private function validateEmail() 
+    {
         if (!preg_match($this->regex_mail, $this->mail)) {
             $this->alert = sprintf("L'adresse %s n'est pas valide", $this->mail);
         } else {
@@ -33,7 +36,8 @@ class ContactForm {
         }
     }
 
-    private function validateFields() {
+    private function validateFields() 
+    {
         if (empty($this->nom) || empty($this->mail) || empty($this->message)) {
             $this->alert = 'Tous les champs doivent être renseignés';
         } else {
@@ -41,7 +45,8 @@ class ContactForm {
         }
     }
 
-    private function sendEmail() {
+    private function sendEmail() 
+    {
         if ($this->renseigne == 1 && $this->courriel == 1) {
             $to = "nataeel08120@gmail.com";
             $sujet = "Message depuis le site";
@@ -58,7 +63,8 @@ class ContactForm {
         }
     }
 
-    public function processForm() {
+    public function processForm() 
+    {
         $this->validateEmail();
         $this->validateFields();
         $this->sendEmail();
