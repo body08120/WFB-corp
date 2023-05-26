@@ -13,6 +13,7 @@ class User extends Connect
     private $code;
 
     // Définit les propriétés de la classe User
+
     public function __construct($firstname, $name, $email, $password, $code)
     {
         $this->firstname = $firstname;
@@ -52,6 +53,7 @@ class User extends Connect
             return false;
         }
 
+
         return true; // L'inscription est réussie
     }
 
@@ -87,6 +89,9 @@ class User extends Connect
 
         //on va fetcher sur la bdd et si on compte plus de 0 même emails donc true: l'email est déjà utilisé
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
+wwwwwwwwwwwwwwwwwwwwwwwww
+        // Prépare et exécute une requête pour compter le namebre d'utilisateurs avec le même firstname
+
 
         if ($result['count'] > 0) {
             return true;
