@@ -115,9 +115,6 @@ h2 > .magic > .magic-text {
   transform: translateX(0);
 }
 
-
-
-
 .card:nth-child(2){
   transition-delay: 200ms;
 }
@@ -415,7 +412,7 @@ main {
   width: 100%;
   background: linear-gradient(
     transparent,
-    #70163b49,
+    #1c242acc,
     transparent
     );
   margin: 0 auto;
@@ -516,9 +513,6 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  .faq-t {
-    display: none;
-  }
   .question {
     padding-right: 0px;
   }
