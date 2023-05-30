@@ -60,10 +60,11 @@
 
             <!-- __ -->
 
-            <section class="m-auto px-4 py-4">
-                <h1 class="text-center">Panneau administratif</h1>
+            <section class="m-auto px-8">
+                <br>
+                <h1 class="tracking-widest text-center text-3xl font-semibold text-grenat md:text-4xl">Panneau administratif</h1>
                 <br />
-                <p class="text-justify">Bienvenue sur la section administrative de notre site web. Ici, vous pouvez
+                <p class="tracking-wide text-justify text-sm text-blanc md:text-2xl">Bienvenue sur la section administrative de notre site web. Ici, vous pouvez
                     gérer tous les aspects de votre compte utilisateur, y compris la modification de vos informations
                     personnelles, la réinitialisation de votre mot de passe et la gestion de vos préférences. Dans la
                     section "Projets", vous pouvez créer de nouveaux projets, les modifier ou les supprimer selon vos
@@ -75,7 +76,7 @@
                     explorer ces différentes sections pour tirer le meilleur parti de votre expérience sur notre site
                     web administratif.</p>
             </section>
-
+<br>
         </div>
 
 

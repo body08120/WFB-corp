@@ -18,11 +18,11 @@
             Ressources
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 text-left">
+            <li class="mb-4 ">
               <a href="https://flowbite.com/" class="hover:underline hover:text-grenat">Flowbite</a>
 
             </li>
-            <li class="text-left">
+            <li class="">
               <a href="https://tailwindcss.com/" class="hover:underline hover:text-grenat">Tailwind CSS</a>
             </li>
           </ul>
@@ -32,11 +32,11 @@
             Suivez-nous
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 text-left">
+            <li class="mb-4 ">
               <a href="https://github.com/themesberg/flowbite" class="hover:underline hover:text-grenat">Github</a>
 
             </li>
-            <li class="text-left">
+            <li class="">
               <a href="https://discord.gg/4eeurUVvTy" class="hover:underline hover:text-grenat">Discord</a>
             </li>
           </ul>
@@ -46,12 +46,12 @@
             Mentions légales
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 text-left">
+            <li class="mb-4 ">
               <a href="#" class="hover:underline hover:text-grenat">Politique de confidentialité
 
               </a>
             </li>
-            <li class="text-left">
+            <li class="">
               <a href="#" class="hover:underline hover:text-grenat">Termes &amp; conditions</a>
             </li>
           </ul>
@@ -60,7 +60,7 @@
     </div>
     <hr class="my-6 border-blanc sm:mx-auto lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-left ">© 2023
+      <span class="text-sm text-gray-500 sm: ">© 2023
         <a href="https://flowbite.com/" class="hover:underline hover:text-grenat">WFB Corporation™</a>. Tous droits
         réservés.
       </span>
