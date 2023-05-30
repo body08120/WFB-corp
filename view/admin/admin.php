@@ -32,13 +32,56 @@
 
 <body>
 
-    <?php include_once('view/includes/navbar.php'); ?>
+    <main class="bg-rose">
 
-    
-    
+        <?php include_once('view/includes/navbar.php'); ?>
+
+        <div class="flex">
+
+            <aside class="bg-grenat py-6 h-full w-fit flex flex-col justify-around">
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=administration">Accueil administratif</a>
+                <br />
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=">Gestion des utilisateurs</a>
+                <br />
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=">Gestion des projets</a>
+                <br />
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=">Gestion des articles</a>
+                <br />
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=">Gestion des commentaires</a>
+                <br />
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=">Gestion de la F.A.Q</a>
+            </aside>
+
+            <!-- __ -->
+
+            <section class="m-auto px-4 py-4">
+                <h1 class="text-center">Panneau administratif</h1>
+                <br />
+                <p class="text-justify">Bienvenue sur la section administrative de notre site web. Ici, vous pouvez
+                    gérer tous les aspects de votre compte utilisateur, y compris la modification de vos informations
+                    personnelles, la réinitialisation de votre mot de passe et la gestion de vos préférences. Dans la
+                    section "Projets", vous pouvez créer de nouveaux projets, les modifier ou les supprimer selon vos
+                    besoins. De plus, la section "Articles" vous permet de rédiger et de publier des articles pertinents
+                    liés à vos intérêts et à votre expertise. Vous pouvez également interagir avec vos lecteurs grâce à
+                    la fonctionnalité de commentaire, où vous pouvez répondre à leurs questions et recevoir des
+                    feedbacks précieux. Si vous avez des questions fréquemment posées, veuillez consulter notre section
+                    FAQ qui fournit des réponses détaillées aux interrogations les plus courantes. N'hésitez pas à
+                    explorer ces différentes sections pour tirer le meilleur parti de votre expérience sur notre site
+                    web administratif.</p>
+            </section>
+
+        </div>
 
 
-    <?php include_once('view/includes/footer.php'); ?>
+        <?php include_once('view/includes/footer.php'); ?>
+
+    </main>
 
     <!-- Flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
