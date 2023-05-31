@@ -6,7 +6,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>WFB - Accueil</title>
   <script defer src="assets/js/accueil.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
