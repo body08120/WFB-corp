@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 26, 2023 at 08:43 AM
+-- Generation Time: May 30, 2023 at 12:10 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
 --
 
 INSERT INTO `articles` (`id_article`, `title`, `enunciate`, `intro`, `p1`, `p2`, `p3`, `conclusion`, `date`, `id_category_article`, `id_user`) VALUES
-(4, 'Titre Test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet. Amet nisl suscipit adipiscing bibendum. Eu consequat ac felis donec et odio p', 'Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Id volutpat lacus laoreet non curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Pellentesque massa placerat duis ultricies lacus. Gravida neque convallis a cra', 'In ornare quam viverra orci sagittis eu. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Quis lectus nulla at volutpat. Lectus arcu bibendum at varius vel pharetra. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Donec massa sapien faucibus et molestie. Morbi enim nunc faucibus a. Magna sit amet purus gravida quis blandit turpis cursus in. Nec feugiat in fermentum posuere urna. Ut diam quam nulla porttitor massa id neque aliquam. Ac turpis egestas integer eget aliquet nibh praesent tristique. Volutpat lacus laoreet non curabitur gravida arcu. Platea dictumst vestibulum rhoncus est.', 'Bibendum est ultricies integer quis. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Purus ut faucibus pulvinar elementum. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Lacinia quis vel eros donec ac. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nam aliquam sem et tortor consequat id porta. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Lacus viverra vitae congue eu consequat ac felis. Sem viverra aliquet eget sit amet tellus cras adipiscing. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Ut lectus arcu bibendum at varius. Hendrerit gravida rutrum quisque non tellus. Urna duis convallis convallis tellus id interdum velit laoreet.', 'Magna sit amet purus gravida. Tortor aliquam nulla facilisi cras fermentum odio. Libero enim sed faucibus turpis in eu mi bibendum neque. Eu mi bibendum neque egestas congue quisque egestas diam in. Ut venenatis tellus in metus vulputate eu scelerisque. Nibh mauris cursus mattis molestie a iaculis at erat. Dui sapien eget mi proin. Ut porttitor leo a diam. Rhoncus aenean vel elit scelerisque. Purus sit amet luctus venenatis lectus magna fringilla urna. Sit amet nisl suscipit adipiscing bibendum est. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed.', 'Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Hendrerit dolor magna eget est. Eget nullam non nisi est sit amet. Odio ut sem nulla pharetra. Accumsan in nisl nisi scelerisque eu ultrices. Tristique nulla aliquet enim tortor at auctor urna nunc id. Volutpat blandit aliquam etiam erat velit scelerisque in. ', '2023-05-23 08:52:56', 1, 3);
+(1, 'Titre Test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet. Amet nisl suscipit adipiscing bibendum. Eu consequat ac felis donec et odio p', 'Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Id volutpat lacus laoreet non curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Pellentesque massa placerat duis ultricies lacus. Gravida neque convallis a cra', 'In ornare quam viverra orci sagittis eu. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Quis lectus nulla at volutpat. Lectus arcu bibendum at varius vel pharetra. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Donec massa sapien faucibus et molestie. Morbi enim nunc faucibus a. Magna sit amet purus gravida quis blandit turpis cursus in. Nec feugiat in fermentum posuere urna. Ut diam quam nulla porttitor massa id neque aliquam. Ac turpis egestas integer eget aliquet nibh praesent tristique. Volutpat lacus laoreet non curabitur gravida arcu. Platea dictumst vestibulum rhoncus est.', 'Bibendum est ultricies integer quis. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Purus ut faucibus pulvinar elementum. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Lacinia quis vel eros donec ac. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nam aliquam sem et tortor consequat id porta. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Lacus viverra vitae congue eu consequat ac felis. Sem viverra aliquet eget sit amet tellus cras adipiscing. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Ut lectus arcu bibendum at varius. Hendrerit gravida rutrum quisque non tellus. Urna duis convallis convallis tellus id interdum velit laoreet.', 'Magna sit amet purus gravida. Tortor aliquam nulla facilisi cras fermentum odio. Libero enim sed faucibus turpis in eu mi bibendum neque. Eu mi bibendum neque egestas congue quisque egestas diam in. Ut venenatis tellus in metus vulputate eu scelerisque. Nibh mauris cursus mattis molestie a iaculis at erat. Dui sapien eget mi proin. Ut porttitor leo a diam. Rhoncus aenean vel elit scelerisque. Purus sit amet luctus venenatis lectus magna fringilla urna. Sit amet nisl suscipit adipiscing bibendum est. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed.', 'Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Hendrerit dolor magna eget est. Eget nullam non nisi est sit amet. Odio ut sem nulla pharetra. Accumsan in nisl nisi scelerisque eu ultrices. Tristique nulla aliquet enim tortor at auctor urna nunc id. Volutpat blandit aliquam etiam erat velit scelerisque in. ', '2023-05-23 08:52:56', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -187,6 +187,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   `token` varchar(255) NOT NULL,
   `active` tinyint(1) NOT NULL,
   `id_role` int DEFAULT NULL,
+  `job_title` varchar(250) NOT NULL,
+  `description` text NOT NULL,
+  `facebook` varchar(250) NOT NULL,
+  `twitter` varchar(250) NOT NULL,
+  `linkedin` varchar(250) NOT NULL,
   PRIMARY KEY (`id_user`),
   KEY `users_role_FK` (`id_role`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -195,8 +200,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_user`, `name`, `firstname`, `email`, `password`, `token`, `active`, `id_role`) VALUES
-(3, 'Admin', 'Admin', 'admin@admin.net', '$2y$10$AYMHRg2MH2u.WTZL/q6ELeaVADERvZI59VTnkxDl0shhjg1FjBfia', '', 1, 1);
+INSERT INTO `users` (`id_user`, `name`, `firstname`, `email`, `password`, `token`, `active`, `id_role`, `job_title`, `description`, `facebook`, `twitter`, `linkedin`) VALUES
+(3, 'Admin', 'Admin', 'admin@admin.net', '$2y$10$AYMHRg2MH2u.WTZL/q6ELeaVADERvZI59VTnkxDl0shhjg1FjBfia', '', 1, 1, '', '', '', '', '');
 
 --
 -- Constraints for dumped tables
