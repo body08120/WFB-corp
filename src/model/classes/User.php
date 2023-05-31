@@ -6,15 +6,15 @@ require_once ('Connect.php');
 
 class User extends Connect
 {
-    private $firstname;
-    private $name;
-    private $email;
-    private $password;
-    private $code;
+    private string $firstname;
+    private string $name;
+    private string $email;
+    private string $password;
+    private int $code;
 
     // Définit les propriétés de la classe User
 
-    public function __construct($firstname, $name, $email, $password, $code)
+    public function __construct(string $firstname, string $name, string $email, string $password, int $code)
     {
         $this->firstname = $firstname;
         $this->name = $name;
@@ -156,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["login"])) {
     $password = isset($_POST["mdp"]) ? $_POST["mdp"] : '';
 
     // Crée une nouvelle instance de la classe User en passant les valeurs récupérées du formulaire
-    $user = new User('', '', $email, $password, '');
+    $user = new User($firstname, $name, $email, $password, $code);
     $authenticationStatus = $user->authenticate();
 
     if ($authenticationStatus) {
