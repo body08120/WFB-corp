@@ -49,6 +49,7 @@
     <section class="featured-image m-4">
         <article class="article mt-4">
             <h1 class="text-4xl m-4">Les enjeux de la cybersécurité pour la création d'un site web ou web mobile</h1>
+            <h2 class="text-rose not-italic uppercase">Pôle développement</h2>
 
             <h2>Dans cet article, nous allons examiner les principaux enjeux de la cybersécurité dans la création d'un
                 site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécurité de votre site.</h2>
@@ -102,9 +103,10 @@
                 article, nous allons passer en revue les principales mesures à prendre pour assurer la sécurité de votre
                 site.
             </p>
-
-
+            
+            
             <div id="share-buttons">
+                <span class="mx-auto italic">Boris Grand - 27 mai 2023</span>
 
                 <span>Partager</span>
                 <!-- Facebook -->

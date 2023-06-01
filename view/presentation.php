@@ -72,9 +72,9 @@
   <div id="header" class=" h-[400px] flex bg-primary lg:h-[600px]">
     <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
       <div>
-        <h2 class="text-3xl font-semibold text-rose md:text-4xl">
+        <h1 class="text-3xl font-semibold text-rose md:text-4xl">
           Boostez votre présence en ligne avec <span class="text-grenat">notre expertise</span>
-        </h2>
+        </h1>
         <p class="mt-2 text-sm text-gray-500 md:text-base">
           Nous sommes une équipe passionnée et compétente spécialisée dans les domaines du développement, du
           référencement et du graphisme. Découvrez comment nous pouvons vous aider à atteindre vos objectifs en ligne
