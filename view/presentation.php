@@ -1461,7 +1461,7 @@
               </a>
             </li>
           </ul>
-          <div style="" class="tp-static-layers">
+          <div styles="" class="tp-static-layers">
             <!-- LAYER NR. 57 -->
             <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme tp-static-layer" id="slider-1082-layer-1"
               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
