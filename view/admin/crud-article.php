@@ -67,7 +67,7 @@
     </button>
 </div>
 
-<div class="tab-content active gradient-border w-full md:w-5/6 md:m-auto md:mb-24" id="tab-users">
+<div class="tab-content active gradient-border w-full md:w-5/6 md:m-auto" id="tab-users">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -153,7 +153,7 @@
 </div>
 </div>
 
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto md:mb-24" id="tab-articles">
+<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-articles">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -252,7 +252,7 @@
 </div>
 
 
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto md:mb-24" id="tab-real">
+<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-real">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -320,7 +320,7 @@
 </div>
 </div>
 
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto md:mb-24" id="tab-contact">
+<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-contact">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -394,7 +394,7 @@
 </div>
 </div>
 
-<footer class="footerprim ml-4 mr-4 md:ml-0 md:mr-0">
+<footer class="footerprim pl-4 pr-4 md:ml-0 md:mr-0">
   <div class="mx-auto w-full lg:py-8 xl:px-52">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
@@ -404,7 +404,7 @@
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase text-center">
             Ressources
           </h2>
           <ul class="text-gray-500 font-medium">
@@ -418,7 +418,7 @@
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase text-center">
             Suivez-nous
           </h2>
           <ul class="text-gray-500 font-medium">
@@ -432,7 +432,7 @@
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase text-center">
             Mentions légales
           </h2>
           <ul class="text-gray-500 font-medium">

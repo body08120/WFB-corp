@@ -4,12 +4,12 @@
   }
 </style>
 
-<footer class="footerprim ml-4 mr-4 md:ml-0 md:mr-0">
+<footer class="footerprim pl-4 pr-4 md:ml-0 md:mr-0">
   <div class="mx-auto w-full lg:py-8 xl:px-52">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="https://flowbite.com/" class="flex items-center">
-          <img src="assets/images/logo.png" class="h-16 mr-3" alt="WFB CORP Logo" />
+          <img src="assets/images/logowithoutback.png" class="h-16 mr-3" alt="WFB CORP Logo" />
         </a>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -18,11 +18,11 @@
             Ressources
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 ">
+            <li class="mb-4 text-center">
               <a href="https://flowbite.com/" class="hover:underline hover:text-grenat">Flowbite</a>
 
             </li>
-            <li class="">
+            <li class="text-center">
               <a href="https://tailwindcss.com/" class="hover:underline hover:text-grenat">Tailwind CSS</a>
             </li>
           </ul>
@@ -32,11 +32,11 @@
             Suivez-nous
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 ">
+            <li class="mb-4 text-center">
               <a href="https://github.com/themesberg/flowbite" class="hover:underline hover:text-grenat">Github</a>
 
             </li>
-            <li class="">
+            <li class="text-center">
               <a href="https://discord.gg/4eeurUVvTy" class="hover:underline hover:text-grenat">Discord</a>
             </li>
           </ul>
@@ -46,12 +46,12 @@
             Mentions légales
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 ">
+            <li class="mb-4 text-center">
               <a href="#" class="hover:underline hover:text-grenat">Politique de confidentialité
 
               </a>
             </li>
-            <li class="">
+            <li class="text-center">
               <a href="#" class="hover:underline hover:text-grenat">Termes &amp; conditions</a>
             </li>
           </ul>
