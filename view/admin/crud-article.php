@@ -99,12 +99,6 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
                 <th scope="col" class="px-6 py-3">
                     Nom
                 </th>
@@ -142,12 +136,6 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
                 <th scope="row" class="px-6 py-4 font-medium">
                     jufez
                 </th>
@@ -186,6 +174,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 
@@ -275,12 +280,7 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
+
                 <th scope="col" class="px-6 py-3">
                     Titre
                 </th>
@@ -315,12 +315,7 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
+
                 <th scope="row" class="px-6 py-4 font-medium">
                     Apple MacBook Pro 17"
                 </th>
@@ -356,6 +351,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 
@@ -444,12 +456,7 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
+
                 <th scope="col" class="px-6 py-3">
                     Id Réalisation
                 </th>
@@ -472,12 +479,7 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
+
                 <th scope="row" class="px-6 py-4 font-medium">
                     jufez
                 </th>
@@ -501,6 +503,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 
@@ -557,12 +576,7 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
+
                 <th scope="col" class="px-6 py-3">
                     Id Commentaire
                 </th>
@@ -582,12 +596,7 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
+
                 <th scope="row" class="px-6 py-4 font-medium">
                     jufez
                 </th>
@@ -608,6 +617,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 
@@ -668,12 +694,6 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
                 <th scope="col" class="px-6 py-3">
                     Id Faq
                 </th>
@@ -690,12 +710,7 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
+
                 <th scope="row" class="px-6 py-4 font-medium">
                     jufez
                 </th>
@@ -713,6 +728,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 
@@ -768,12 +800,7 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
+
                 <th scope="col" class="px-6 py-3">
                     Nom
                 </th>
@@ -796,12 +823,7 @@
         </thead>
         <tbody>
             <tr class="bg-primary text-blanc">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
+
                 <th scope="row" class="px-6 py-4 font-medium">
                     Apple MacBook Pro 17"
                 </th>
@@ -824,6 +846,23 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="Pagination" class="flex items-center text-blanc p-4">
+  <a href="#" class="p-2 mr-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 1 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 2 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 3 </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> ... </a>
+  <a href="#" class="px-4 py-2 rounded hover:bg-blanc hover:text-primary"> 9 </a>
+  <a href="#" class="p-2 ml-4 rounded hover:bg-blanc hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</nav>
 </div>
 
 <footer class="footerprim pl-4 pr-4 md:ml-0 md:mr-0">
