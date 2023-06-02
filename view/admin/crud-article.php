@@ -36,7 +36,7 @@
 
 <?php include('../includes/navbar.php')?>
 
-<div class="m-auto w-fit mt-24 mb-24">
+<div class="m-auto w-fit mt-24 mb-24 button-crud">
     <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-users">
     <p class="hidden md:block">Users</p><p class="md:hidden"><i class="fa-solid fa-user" style="color: #ffffff;"></i></p>
     <svg class="glow-container">
@@ -51,8 +51,22 @@
         <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
     </svg>
     </button>
-    <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-real">
-    <p class="hidden md:block">Réalisations</p><p class="md:hidden"><i class="fa-solid fa-paintbrush" style="color: #ffffff;"></i></p>
+    <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-project">
+    <p class="hidden md:block">Realisation</p><p class="md:hidden"><i class="fa-solid fa-paintbrush" style="color: #ffffff;"></i></p>
+    <svg class="glow-container">
+        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+    </svg>
+    </button>
+    <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-commentaire">
+    <p class="hidden md:block">Commentaire</p><p class="md:hidden"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></p>
+    <svg class="glow-container">
+        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+    </svg>
+    </button>
+    <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-faq">
+    <p class="hidden md:block">F.A.Q</p><p class="md:hidden"><i class="fa-solid fa-question" style="color: #ffffff;"></i></p>
     <svg class="glow-container">
         <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
         <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
@@ -67,7 +81,7 @@
     </button>
 </div>
 
-<div class="tab-content active gradient-border w-full md:w-5/6 md:m-auto" id="tab-users">
+<div class="tab-content active gradient-border w-full md:w-11/12 md:m-auto" id="tab-users">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -164,7 +178,7 @@
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-6 py-4 text-center">
+                <td class="px-6 py-4 md:text-center">
                     <a href="#" class="mr-6 font-medium text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
                     <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
                 </td>
@@ -243,7 +257,7 @@
 </div>
 
 
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-articles">
+<div class="tab-content gradient-border w-full md:w-11/12 md:m-auto" id="tab-articles">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -334,7 +348,7 @@
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-6 py-4 text-center">
+                <td class="px-6 py-4 md:text-center">
                     <a href="#" class="font-medium mr-6 text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
                     <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
                 </td>
@@ -371,8 +385,8 @@
                         <textarea name="enoncer" id="enoncer" rows="2" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
                     </div>
                     <div>
-                        <label for="imagereal" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Image</label>
-                        <input type="file" name="imagereal" id="imagereal" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+                        <label for="imageartice" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Image</label>
+                        <input type="file" name="imagearticle" id="imagearticle" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
                     </div>
                     <div>
                         <label for="intro" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Intro</label>
@@ -412,8 +426,7 @@
     </div>
 </div>
 
-
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-real">
+<div class="tab-content gradient-border w-full md:w-11/12 md:m-auto" id="tab-project">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -425,9 +438,9 @@
             </svg>
         </div>
         <input type="text" id="table-search" class="block p-2 pl-10 pr-8 text-sm text-third rounded-lg w-80 bg-secondary focus:ring-grenat focus:border-grenat" placeholder="Search for items">
-        <button><i class="fa-solid fa-circle-plus absolute top-5 right-8 md:right-20 flex text-2xl" style="color: #33d17a;" data-modal-toggle="modalreal"></i></button>
+        <button><i class="fa-solid fa-circle-plus absolute top-5 right-8 md:right-20 flex text-2xl" style="color: #33d17a;" data-modal-toggle="modalproject"></i></button>
     </div>
-    </div>
+</div>
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -438,19 +451,22 @@
                     </div>
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Product name
+                    Id Réalisation
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Color
+                    Titre
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Category
+                    Image
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Price
+                    Id Catégorie
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Id User
                 </th>
                 <th scope="col" class="px-6 py-3 text-center">
-                    Action
+                    Actions
                 </th>
             </tr>
         </thead>
@@ -463,7 +479,7 @@
                     </div>
                 </td>
                 <th scope="row" class="px-6 py-4 font-medium">
-                    Apple MacBook Pro 17"
+                    jufez
                 </th>
                 <td class="px-6 py-4">
                     Silver
@@ -474,8 +490,11 @@
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-6 py-4 text-center">
-                    <a href="#" class="font-medium mr-6 text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+                <td class="px-6 py-4 md:text-center">
+                    <a href="#" class="mr-6 font-medium text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
                     <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
                 </td>
             </tr>
@@ -484,7 +503,255 @@
 </div>
 </div>
 
-<div class="tab-content gradient-border w-full md:w-5/6 md:m-auto" id="tab-contact">
+
+<div id="modalproject" tabindex="-1" aria-hidden="true" class="hidden overflow-y-scroll overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative p-4 bg-modal rounded-lg shadow dark:bg-gray-800 sm:p-5">
+            <!-- Modal header -->
+            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-blanc dark:text-white">
+                    Ajouter un article 
+                </h3>
+                <button type="button" class="text-red-500 bg-transparent hover:text-red-700 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="modalproject">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <form action="formulaireaddreal.php" method="POST">
+                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                    <div>
+                        <label for="titrereal" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Titre</label>
+                        <input type="text" name="titrereal" id="titrereal" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div>
+                        <label for="imagereal" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Image</label>
+                        <input type="file" name="imagereal" id="imagereal" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+                    </div>
+                </div>
+                <button type="submit" class="text-white inline-flex items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Confirmer
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="tab-content gradient-border w-full md:w-11/12 md:m-auto" id="tab-commentaire">
+
+<div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="pb-4 bg-primary dark:bg-gray-900">
+        <label for="table-search" class="sr-only">Search</label>
+        <div class="flex relative p-4">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-7 pointer-events-none">
+            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <input type="text" id="table-commentaire" class="block p-2 pl-10 pr-8 text-sm text-third rounded-lg w-80 bg-secondary focus:ring-grenat focus:border-grenat" placeholder="Search for items">
+        <button><i class="fa-solid fa-circle-plus absolute top-5 right-8 md:right-20 flex text-2xl" style="color: #33d17a;" data-modal-toggle="modalcommentaire"></i></button>
+    </div>
+</div>
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
+                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                    </div>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Id Commentaire
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Nom
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Image
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Commentaire
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-primary text-blanc">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium">
+                    jufez
+                </th>
+                <td class="px-6 py-4">
+                    Silver
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+                <td class="px-6 py-4 md:text-center">
+                    <a href="#" class="mr-6 font-medium text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+<div id="modalcommentaire" tabindex="-1" aria-hidden="true" class="hidden overflow-y-scroll overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative p-4 bg-modal rounded-lg shadow dark:bg-gray-800 sm:p-5">
+            <!-- Modal header -->
+            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-blanc dark:text-white">
+                    Ajouter un article 
+                </h3>
+                <button type="button" class="text-red-500 bg-transparent hover:text-red-700 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="modalcommentaire">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <form action="formulaireaddreal.php" method="POST">
+                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                    <div>
+                        <label for="nomcomms" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Nom</label>
+                        <input type="text" name="nomcomms" id="nomcomms" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div>
+                        <label for="imagecomms" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Image</label>
+                        <input type="file" name="imagecomms" id="imagecomms" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div>
+                        <label for="textcomms" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Commentaire</label>
+                        <textarea name="textcommms" id="textcomms" rows="2" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
+                    </div>
+                </div>
+                <button type="submit" class="text-white inline-flex items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Confirmer
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="tab-content gradient-border w-full md:w-11/12 md:m-auto" id="tab-faq">
+
+<div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="pb-4 bg-primary dark:bg-gray-900">
+        <label for="table-search" class="sr-only">Search</label>
+        <div class="flex relative p-4">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-7 pointer-events-none">
+            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <input type="text" id="table-faq" class="block p-2 pl-10 pr-8 text-sm text-third rounded-lg w-80 bg-secondary focus:ring-grenat focus:border-grenat" placeholder="Search for items">
+        <button><i class="fa-solid fa-circle-plus absolute top-5 right-8 md:right-20 flex text-2xl" style="color: #33d17a;" data-modal-toggle="modalfaq"></i></button>
+    </div>
+</div>
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-blanc uppercase bg-secondary dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
+                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                    </div>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Id Faq
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Question
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Réponse
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-primary text-blanc">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-grenat bg-gray-100 border-gray-300 rounded focus:ring-rose focus:ring-2">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium">
+                    jufez
+                </th>
+                <td class="px-6 py-4">
+                    Silver
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 md:text-center">
+                    <a href="#" class="mr-6 font-medium text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+<div id="modalfaq" tabindex="-1" aria-hidden="true" class="hidden overflow-y-scroll overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative p-4 bg-modal rounded-lg shadow dark:bg-gray-800 sm:p-5">
+            <!-- Modal header -->
+            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-blanc dark:text-white">
+                    Ajouter un article 
+                </h3>
+                <button type="button" class="text-red-500 bg-transparent hover:text-red-700 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="modalfaq">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <form action="formulaireaddreal.php" method="POST">
+                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                    <div>
+                        <label for="question" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Question</label>
+                        <input type="text" name="question" id="question" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div>
+                        <label for="textquestion" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Commentaire</label>
+                        <textarea name="textquestion" id="textquestion" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
+                    </div>
+                </div>
+                <button type="submit" class="text-white inline-flex items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Confirmer
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="tab-content gradient-border w-full md:w-11/12 md:m-auto" id="tab-contact">
 
 <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="pb-4 bg-primary dark:bg-gray-900">
@@ -550,8 +817,7 @@
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-6 py-4 text-center">
-                    <a href="#" class="font-medium mr-6 text-blue-600 dark:text-blue-500 hover:underline">Modifier</a>
+                <td class="px-6 py-4 md:text-center">
                     <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</a>
                 </td>
             </tr>

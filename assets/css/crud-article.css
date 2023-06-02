@@ -271,3 +271,11 @@ background-image: linear-gradient(#1C242A, #1D1D1F);
 .footerprim {
   background-image: linear-gradient(#1D1D1F, #1C242A);
 }
+
+@media screen and (width < 916px) {
+  .button-crud {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  /* 3 columns */
+    grid-template-rows: repeat(3,1fr); /* 3 rows  */
+  }
+  }

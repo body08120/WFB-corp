@@ -14,44 +14,43 @@
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase ">
             Ressources
           </h2>
-          <ul class="text-gray-500 font-medium">
+          <ul class="text-blanc font-medium">
             <li class="mb-4 text-center">
               <a href="https://flowbite.com/" class="hover:underline hover:text-grenat">Flowbite</a>
-
             </li>
-            <li class="text-center">
+            <li class="text-blanc text-center">
               <a href="https://tailwindcss.com/" class="hover:underline hover:text-grenat">Tailwind CSS</a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase ">
             Suivez-nous
           </h2>
           <ul class="text-gray-500 font-medium">
-            <li class="mb-4 text-center">
+            <li class="mb-4 text-center text-blanc">
               <a href="https://github.com/themesberg/flowbite" class="hover:underline hover:text-grenat">Github</a>
 
             </li>
-            <li class="text-center">
+            <li class="text-center text-blanc">
               <a href="https://discord.gg/4eeurUVvTy" class="hover:underline hover:text-grenat">Discord</a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-blanc uppercase ">
+          <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase ">
             Mentions légales
           </h2>
-          <ul class="text-gray-500 font-medium">
+          <ul class="text-blanc font-medium">
             <li class="mb-4 text-center">
               <a href="#" class="hover:underline hover:text-grenat">Politique de confidentialité
 
               </a>
             </li>
-            <li class="text-center">
+            <li class="text-center text-blanc">
               <a href="#" class="hover:underline hover:text-grenat">Termes &amp; conditions</a>
             </li>
           </ul>
