@@ -43,19 +43,19 @@
                     href="index.php?admin=administration">Accueil administratif</a>
                 <br />
                 <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des utilisateurs</a>
+                    href="index.php?admin=utilisateurs">Gestion des utilisateurs</a>
                 <br />
                 <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des projets</a>
+                    href="index.php?admin=projets">Gestion des projets</a>
                 <br />
                 <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des articles</a>
+                    href="index.php?admin=articles">Gestion des articles</a>
                 <br />
                 <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des commentaires</a>
+                    href="index.php?admin=commentaires">Gestion des commentaires</a>
                 <br />
                 <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion de la F.A.Q</a>
+                    href="index.php?admin=faq">Gestion de la F.A.Q</a>
             </aside>
 
             <!-- __ -->

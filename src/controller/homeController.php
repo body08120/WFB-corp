@@ -17,10 +17,6 @@ function vueArticle(){
     require_once('view/article.php');
 }
 
-function vueLogin(){
-    require_once('view/admin/loginForm.php');
-}
-
 function vueRealisations(){
     require_once('view/realisations.php');
 }
