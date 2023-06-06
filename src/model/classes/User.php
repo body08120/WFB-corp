@@ -1,169 +1,235 @@
 <?php
+require_once('Connect.php');
 
-require_once ('Connect.php');
-// Inclut le fichier de configuration
-
-
-class User extends Connect
+class User
 {
-    private string $firstname;
-    private string $name;
-    private string $email;
-    private string $password;
-    private int $code;
+    private $id_user;
+    private $name;
+    private $firstname;
+    private $email;
+    private $password;
+    private $token;
+    private $active;
+    private $id_role;
+    private $job_title;
+    private $description;
+    private $fb;
+    private $twitter;
+    private $linkedin;
 
-    // Définit les propriétés de la classe User
+    public function __construct()
+    {
 
-    public function __construct(string $firstname, string $name, string $email, string $password, int $code)
+    }
+
+    // Getters and setters
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function getFirstName(): string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstName(string $firstname): void
     {
         $this->firstname = $firstname;
-        $this->name = $name;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): void
+    {
         $this->email = $email;
+    }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): void
+    {
         $this->password = $password;
-        $this->code = $code;
     }
-    // Définit le constructeur de la classe User qui prend en paramètre les informations nécessaires pour créer un utilisateur
 
-    public function register()
+    public function getIdRole(): int
     {
-        $db = parent::getDb(); // Equivaut à $db = $this->getDb();
-
-        // Valider les champs du formulaire en utilisant la méthode validateFields() et retourne false si la validation échoue
-        if (!$this->validateFields()) {
-            return false;
-        }
-
-        // Vérifier si l'email est déjà utilisé en utilisant la méthode isEmailTaken() et retourne false si le firstname est pris
-        if ($this->isEmailTaken($db)) {
-            return false;
-        }
-
-        // Hasher le mot de passe en utilisant la fonction password_hash() avec l'algorithme PASSWORD_DEFAULT
-        $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
-
-        // Insérer l'utilisateur dans la base de données : Prépare et exécute une requête d'insertion pour insérer l'utilisateur dans la base de données
-        $stmt = $db->prepare("INSERT INTO users (firstname, name, email, password, code_admin) VALUES (:firstname, :name, :email, :password, :code)");
-        $stmt->bindParam(':firstname', $this->firstname);
-        $stmt->bindParam(':name', $this->name);
-        $stmt->bindParam(':email', $this->email);
-        $stmt->bindParam(':password', $hashedPassword);
-        $stmt->bindParam(':code', $this->code);
-
-        if (!$stmt->execute()) {
-            return false;
-        }
-
-
-        return true; // L'inscription est réussie
+        return $this->id_role;
     }
 
-    private function validateFields()
+    public function setIdRole(int $id_role): void
     {
-        // Valider que tous les champs du formulaire sont renseignés
-        if (empty($this->firstname) || empty($this->name) || empty($this->email) || empty($this->password) || empty($this->code)) {
-            return false;
-        }
-
-        // Vérifie si tous les champs du formulaire sont renseignés et retourne false si l'un des champs est vide
-        if ($this->password !== $_POST["verifmdp"]) {
-            return false; // Vérification que si le mot de passe et la confirmation du mot de passe n'est pas strictement égal retournera false
-        }
-
-        // Vérifier si l'email est valide 
-        if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
-            return false;
-        }
-
-        return true;
+        $this->id_role = $id_role;
     }
 
-    // Véfifier que l'email n'est pas existant dans la base de données
-    private function isEmailTaken($db)
+    public function getToken(): string
     {
-        $stmt = $db->prepare("SELECT COUNT(*) as count FROM users WHERE email = :email");
-        $stmt->bindParam(':email', $this->email);
-
-        if (!$stmt->execute()) {
-            return true; // Si la réquête échoue , nous supposerons que l'email est pris 
-        }
-
-        //on va fetcher sur la bdd et si on compte plus de 0 même emails donc true: l'email est déjà utilisé
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        // Prépare et exécute une requête pour compter le namebre d'utilisateurs avec le même firstname
-
-
-        if ($result['count'] > 0) {
-            return true;
-        }
-
-        return false; // l'email n'existe pas dans le bdd
+        return $this->token;
     }
 
-    public function authenticate()
+    public function setToken(string $token): void
     {
-        // Connexion à la base de données à partir de l'objet Connect (qui est parent)
-        $db = parent::getDb();
-
-        // Valider les champs du formulaire en utilisant la méthode validateFields() et retourne false si la validation échoue
-        if (!$this->validateFields()) {
-            return false;
-        }
-
-        // Requête préparée pour rechercher l'utilisateur : Prépare et exécute une requête pour obtenir le mot de passe de l'utilisateur correspondant au email
-
-        $stmt = $db->prepare("SELECT password FROM users WHERE email = :email");
-        $stmt->bindParam(':email', $this->email);
-
-        if (!$stmt->execute()) {
-            return false; // L'authentification a échoué si l'exécution échoue
-        }
-
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (!$result || !password_verify($this->password, $result['password'])) {
-            return false; // si il n'y a pas de résultat OU si les deux mots de passes ne correspondent pas alors --> L'authentification a échouée
-        }
-
-        return true; // L'utilisateur est authentifié
-        
+        $this->token = $token;
     }
+
+    public function getActive(): int
+    {
+        return $this->active;
+    }
+
+    public function setActive(int $active): void
+    {
+        $this->active = $active;
+    }
+
+    public function getIdUser(): int
+    {
+        return $this->id_user;
+    }
+
+    public function setIdUser(int $id_user): void
+    {
+        $this->id_user = $id_user;
+    }
+
+    public function getJobTitle(): string
+    {
+        return $this->job_title;
+    }
+
+    public function setJobTitle(string $job_title): void
+    {
+        $this->job_title = $job_title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    public function getFb(): string
+    {
+        return $this->fb;
+    }
+
+    public function setFb(string $fb): void
+    {
+        $this->fb = $fb;
+    }
+
+    public function getTwitter(): string
+    {
+        return $this->twitter;
+    }
+
+    public function setTwitter(string $twitter): void
+    {
+        $this->twitter = $twitter;
+    }
+
+    public function getLinkedin(): string
+    {
+        return $this->linkedin;
+    }
+
+    public function setLinkedin(string $linkedin): void
+    {
+        $this->linkedin = $linkedin;
+    }
+
+
+
 }
 
-// Vérifier si le formulaire d'inscription a été soumis : Récupère les valeurs des champs du formulaire soumis en utilisant isset() et trim() pour nettoyer les espaces
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["register"])) {
-    $firstname = isset($_POST["firstname"]) ? trim($_POST["firstname"]) : '';
-    $name = isset($_POST["name"]) ? trim($_POST["name"]) : '';
-    $email = isset($_POST["email"]) ? trim($_POST["email"]) : '';
-    $password = isset($_POST["mdp"]) ? $_POST["mdp"] : '';
-    $verifmdp = isset($_POST["verifmdp"]) ? $_POST["verifmdp"] : '';
-    $code = isset($_POST["code"]) ? trim($_POST["code"]) : '';
+class UserRepository extends Connect
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
-    // Crée une nouvelle instance de la classe User en passant les valeurs récupérées du formulaire
-    $user = new User($firstname, $name, $email, $password, $code);
-    $registrationStatus = $user->register(); // Appelle la méthode register() de l'objet User et affiche un message en fonction du résultat
+    public function getUserByEmail($email)
+    {
+        $req = $this->getDb()->prepare('SELECT * FROM users WHERE email = ?');
+        $req->execute([$email]);
+        $data = $req->fetch();
 
-    if ($registrationStatus) {
-        echo "Inscription réussie !";
-    } else {
-        echo "Échec de l'inscription. Veuillez vérifier les informations fournies.";
+        if ($data !== false) {
+            $user = new User();
+            $user->setName($data['name']);
+            $user->setFirstName($data['firstname']);
+            $user->setEmail($data['email']);
+            $user->setPassword($data['password']);
+            $user->setIdRole($data['id_role']);
+
+            return $user;
+        }
+
+        return null;
+    }
+
+    public function Signin(User $user)
+    {
+        // if (!isset($_POST['email']) || $_POST['email'] === '') {
+        //     return false;
+        // }
+
+        // if (!isset($_POST['password']) || strlen($_POST['password']) < 4) {
+        //     return false;
+        // }
+
+        $req = $this->getDb()->prepare('SELECT * FROM users WHERE email =?');
+        $req->execute([$user->getEmail()]);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        var_dump($data);
+        die();
+        if ($data && password_verify($_POST['password'], $user->getPassword())) {
+           echo 'connexion ok';
+        } else {
+            echo "connexion echouée";
+        }
+    }
+
+   
+
+
+
+    public function insertUser(User $user)
+    {
+
+        $req = $this->getDb()->prepare("INSERT INTO users (name, firstname, email, password, token, active, id_role, job_title, description, fb, twitter, linkedin)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+
+        $req->execute([
+            $user->getName(),
+            $user->getFirstName(),
+            $user->getEmail(),
+            $user->getPassword(),
+            $user->getToken(),
+            $user->getActive(),
+            $user->getIdRole(),
+            $user->getJobTitle(),
+            $user->getDescription(),
+            $user->getFb(),
+            $user->getTwitter(),
+            $user->getLinkedin()
+        ]);
     }
 }
-
-// Vérifier si le formulaire d'authentification a été soumis : Récupère les valeurs des champs du formulaire soumis en utilisant isset()
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["login"])) {
-    $email = isset($_POST["email"]) ? trim($_POST["email"]) : '';
-    $password = isset($_POST["mdp"]) ? $_POST["mdp"] : '';
-
-    // Crée une nouvelle instance de la classe User en passant les valeurs récupérées du formulaire
-    $user = new User($firstname, $name, $email, $password, $code);
-    $authenticationStatus = $user->authenticate();
-
-    if ($authenticationStatus) {
-        echo "Authentification réussie.";
-    } else {
-        echo "Identifiants incorrects.";
-    }
-}
-
 ?>

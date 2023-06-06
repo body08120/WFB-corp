@@ -57,15 +57,5 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     } else {
         homepage();
     }
-} else {
-    if (!empty($_POST['contact'])) {
-        require_once('src/model/classes/Contact.php');
-    } elseif (!empty($_POST['login'])) {
-        require_once('src/model/classes/User.php');
-    } elseif (!empty($_POST['signup'])) {
-        require_once('src/model/classes/User.php');
-    } else {
-        homepage();
-    }
 }
 ?>
