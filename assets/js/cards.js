@@ -11,4 +11,26 @@
       }
     };
   }
+
+$(document).ready(function() {
+    $("#article-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+});
+
+
   
