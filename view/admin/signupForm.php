@@ -14,7 +14,7 @@
         <div class="box">
             <div class="form">
                 <h2>Créer compte</h2>
-                <form action="" method="post">
+                <form action="signup_ttt.php" method="post">
 
                     <div class="inputBx">
                         <input type="text" name="name" placeholder="Nom">

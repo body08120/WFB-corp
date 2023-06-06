@@ -38,33 +38,33 @@
 
         <div class="flex">
 
-            <aside class="bg-grenat py-6 h-full w-fit flex flex-col justify-around">
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
+            <aside class="bg-grenat py-6 h-full w-max flex flex-col justify-around">
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
                     href="index.php?admin=administration">Accueil administratif</a>
                 <br />
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des utilisateurs</a>
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=utilisateurs">Gestion des utilisateurs</a>
                 <br />
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des projets</a>
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=projets">Gestion des projets</a>
                 <br />
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des articles</a>
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=articles">Gestion des articles</a>
                 <br />
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion des commentaires</a>
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=commentaires">Gestion des commentaires</a>
                 <br />
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xs font-semibold rounded hover:bg-gray-400"
-                    href="index.php?admin=">Gestion de la F.A.Q</a>
+                <a class="mx-4 px-4 py-3 bg-gray-300 text-grenat text-xl font-semibold rounded hover:bg-gray-400"
+                    href="index.php?admin=faq">Gestion de la F.A.Q</a>
             </aside>
 
             <!-- __ -->
 
             <section class="m-auto px-8">
-                <br>
-                <h1 class="tracking-widest text-center text-3xl font-semibold text-grenat md:text-4xl">Panneau administratif</h1>
-                <br />
-                <p class="tracking-wide text-justify text-sm text-blanc md:text-2xl">Bienvenue sur la section administrative de notre site web. Ici, vous pouvez
+                <h1 class="tracking-widest text-center text-3xl font-semibold text-grenat md:text-4xl">Panneau
+                    administratif</h1>
+                <p class="tracking-wide text-justify text-sm text-blanc md:text-2xl">Bienvenue sur la section
+                    administrative de notre site web. Ici, vous pouvez
                     gérer tous les aspects de votre compte utilisateur, y compris la modification de vos informations
                     personnelles, la réinitialisation de votre mot de passe et la gestion de vos préférences. Dans la
                     section "Projets", vous pouvez créer de nouveaux projets, les modifier ou les supprimer selon vos
@@ -76,7 +76,6 @@
                     explorer ces différentes sections pour tirer le meilleur parti de votre expérience sur notre site
                     web administratif.</p>
             </section>
-<br>
         </div>
 
 
