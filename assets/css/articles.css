@@ -47,6 +47,10 @@ h3 {
   text-align: justify;
 }
 
+.design-paragraph-article:nth-child(2n){
+background-color: #8c7284;
+}
+
 p::first-letter{
   font-size:2em
 }
@@ -59,9 +63,6 @@ p::first-letter{
 #share-buttons span, #share-buttons a{
   padding: 10px;
 }
-
-
-
 
 /* ///////////// Media query ////////////////
 

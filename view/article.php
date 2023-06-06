@@ -52,14 +52,14 @@
             <h2 class="text-rose not-italic uppercase">Pôle développement</h2>
 
             <h2>Dans cet article, nous allons examiner les principaux enjeux de la cybersécurité dans la création d'un
-                site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécurité de votre site.</h2>
+                site web ou web mobile, ainsi que les mesures à prendre pour assurer la sécuriteé de votre site.</h2>
             <!-- <hr class="my-4"> -->
             <div class="img">
                 <img src="assets/images/articles/cybersecurity3.webp" alt="cybersecurite"
-                    class="w-3/4 mx-auto my-4 lg:w-6/12">
+                    class="w-3/4 mx-auto my-4 lg:w-8/12">
             </div>
 
-            <p class="intro w-3/4 mx-auto lg:w-2/4">
+            <p class="intro w-3/4 mx-auto lg:w-2/4 design-paragraph-article">
                 La cybersécurité est devenue un enjeu majeur pour toutes les entreprises qui créent des sites web ou des
                 applications mobiles. La sécurité des données et la protection de la vie privée sont des aspects
                 essentiels pour garantir la confiance des utilisateurs et la pérennité de l'entreprise. Dans cet
@@ -67,7 +67,7 @@
                 site.
             </p>
 
-            <p class="paragraph_1 w-3/4 mx-auto lg:w-2/4">L'installation d'un certificat SSL/TLS est une mesure cruciale
+            <p class="paragraph_1 w-3/4 mx-auto lg:w-2/4 design-paragraph-article">L'installation d'un certificat SSL/TLS est une mesure cruciale
                 pour protéger les données en transit entre les utilisateurs et le serveur. Le protocole HTTPS est la
                 norme en matière de sécurité pour les sites web et garantit que toutes les données sont chiffrées avant
                 d'être transmises entre le navigateur de l'utilisateur et le serveur. Ainsi, il est important de prendre
@@ -75,7 +75,7 @@
                 site web.
             </p>
 
-            <p class="paragraph_2 w-3/4 mx-auto lg:w-2/4">La gestion des mots de passe est également essentielle pour la
+            <p class="paragraph_2 w-3/4 mx-auto lg:w-2/4 design-paragraph-article">La gestion des mots de passe est également essentielle pour la
                 sécurité de votre site web. Les mots de passe sont souvent la première ligne de défense contre les
                 cyberattaques, il est donc important de les protéger. Nous recommandons d'utiliser des mots de passe
                 complexes, de ne jamais les réutiliser et de les changer régulièrement. La mise en place de politiques
@@ -83,7 +83,7 @@
                 site.
             </p>
 
-            <p class="paragraph_3 w-3/4 mx-auto lg:w-2/4">Les mises à jour régulières du site web sont également
+            <p class="paragraph_3 w-3/4 mx-auto lg:w-2/4 design-paragraph-article">Les mises à jour régulières du site web sont également
                 importantes pour garantir la sécurité de votre site. Les mises à jour de sécurité peuvent inclure des
                 correctifs pour des vulnérabilités identifiées ou des améliorations de la sécurité pour répondre aux
                 nouvelles menaces. Il est important de garder à jour tous les logiciels et plugins utilisés pour votre
@@ -129,10 +129,59 @@
 
 
             <hr>
-            <div id="all-section article" class="mt-4 w-full">
+            <div id="all-section article" class="mt-4 w-full mb-16">
                 <h2 class="m-10 no-italic">Ces articles pourraient vous intéresser</h2>
-                <div id="cards" style="margin: auto;">
+                <div class="cards" style="margin: auto;">
 
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/articles/gaming.webp " alt="" width="250px">
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+                                    <div class="card-info-title">
+                                        <h3 class="category_article">Pôle développement</h3>
+                                        <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/articles/web_design.webp" alt="" width="250px">
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+                                    <div class="card-info-title">
+                                        <h3 class="category_article">Pôle design</h3>
+                                        <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
+                                            mobile</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp" alt=""
+                                    width="250px">
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+                                    <div class="card-info-title">
+                                        <h3 class="category_article">Pôle référencement</h3>
+                                        <h4> L'importance du référencement dans la stratégie de marketing numérique
+                                            d'un site web</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-image">

@@ -36,7 +36,7 @@
 
 <?php include('../includes/navbar.php')?>
 
-<div class="m-auto w-fit mt-24 mb-24 button-crud">
+<div class="m-auto w-fit mt-24 mb-16 lg:mb-24 button-crud">
     <button class="tab-button glow-effect m-2" data-glow-offset="true" data-table="tab-users">
     <p class="hidden md:block">Users</p><p class="md:hidden"><i class="fa-solid fa-user" style="color: #ffffff;"></i></p>
     <svg class="glow-container">
@@ -303,10 +303,10 @@
                     Conclusion
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Nom / User
+                    Id User
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Prénom user
+                    Catégorie
                 </th>
                 <th scope="col" class="px-6 py-3 text-center">
                     Actions
@@ -406,27 +406,19 @@
                     </div>
                     <div>
                         <label for="p1" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Partie 1 </label>
-                        <textarea name="p1" id="p1" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
+                        <textarea name="p1" id="p1" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"></textarea> 
                     </div>
                     <div>
                         <label for="p2" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Partie 2 </label>
-                        <textarea name="p2" id="p2" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
+                        <textarea name="p2" id="p2" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"></textarea> 
                     </div>
                     <div>
                         <label for="p3" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Partie 3 </label>
-                        <textarea name="p3" id="p3" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea> 
+                        <textarea name="p3" id="p3" rows="4" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"></textarea> 
                     </div>
                     <div class="sm:col-span-2">
                         <label for="conclusion" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Conclusion</label>
-                        <textarea name="conclusion" id="conclusion" rows="2" class="block p-2.5 w-full text-sm text-primary bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required=""></textarea>                    
-                    </div>
-                    <div>
-                        <label for="nameuser" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Nom utilisateur </label>
-                        <input type="text" name="nameuser" id="nameuser" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
-                    </div>
-                    <div>
-                        <label for="firstnameuser" class="block mb-2 text-sm font-medium text-blanc dark:text-white">Prénom utilisateur</label>
-                        <input type="text" name="firstnameuser" id="firstnameuser" class="bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                        <textarea name="conclusion" id="conclusion" rows="2" class="block p-2.5 w-full text-sm text-primary bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"></textarea>                    
                     </div>
                 </div>
                 <button type="submit" class="text-white inline-flex items-center bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">

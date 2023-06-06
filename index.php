@@ -26,7 +26,7 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     }
 } elseif (isset($_GET['admin']) && $_GET['admin'] !== '') {
     //role rentrer en dur pour acceder panel admin
-    $_SESSION['role_user'] = 2;
+    // $_SESSION['role_user'] = 2;
     if (isset($_SESSION['role_user'])) {
         switch ($_GET['admin']) {
             case 'administration':

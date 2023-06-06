@@ -40,7 +40,7 @@
     <main class="h-full overflow-hidden flex items-center justify-center">
         <div class="space-y-5 w-10/12">
 
-            <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
+            <div class="overflow-hidden rounded-xl bg-[#141414]-50 p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
                     <li class="l flex-1">
                         <a href="#all-section"
@@ -67,19 +67,18 @@
                 </ul>
 
                 <div id="all-section" class="mt-4">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/AI.webp" alt="artificial intelligence"
-                                        width="250px">
+                                    <img src="assets/images/articles/logo-simplon.webp" alt="artificial intelligence"
+                                        width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
-                                                mobile</h4>
+                                            <h3 class="category_articles">Simplon Charleville</h3>
+                                            <h4>Formation dans l'informatique</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -88,13 +87,13 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="250px">
+                                    <img src="assets/images/articles/logo-rimbaud-tech.webp" alt="gaming" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
+                                            <h3 class="category_articles">Rimbaud Tech</h3>
+                                            <h4>Incubateur d'entreprise d'avenir
                                             </h4>
                                         </div>
                                     </div>
@@ -104,24 +103,23 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/web_design.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/manpower_paratge_twitter.webp" alt="web design">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
-                                                mobile</h4>
+                                            <h3 class="category_articles">Man Power</h3>
+                                            <h4>Entreprise d'intérim, cdi, cdd</h4>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="cybersécutité" width="250px">
+                                        alt="cybersécutité" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -137,7 +135,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="web design" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -153,7 +151,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/framework.webp" alt="framework" width="250px">
+                                    <img src="assets/images/articles/framework.webp" alt="framework" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -170,11 +168,11 @@
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/AI.webp" alt="cybersecurity" width="250px">
+                                    <img src="assets/images/articles/AI.webp" alt="cybersecurity" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -190,7 +188,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/gaming.webp " alt="jeux vidéos" width="250px">
+                                    <img src="assets/images/articles/gaming.webp " alt="jeux vidéos" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -207,7 +205,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="assets/images/articles/dev.webp" alt="développement informatique"
-                                        width="250px">
+                                        width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -223,7 +221,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/framework.webp" alt="framework" width="250px">
+                                    <img src="assets/images/articles/framework.webp" alt="framework" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -240,12 +238,12 @@
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
 
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="250px">
+                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -261,7 +259,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/web_design.webp" alt="design UI/UX" width="250px">
+                                    <img src="assets/images/articles/web_design.webp" alt="design UI/UX" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -278,7 +276,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="cybersécurité" width="250px">
+                                        alt="cybersécurité" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -294,7 +292,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="web design" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="web design" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -312,13 +310,13 @@
                 </div>
 
                 <div id="ref-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
 
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="assets/images/articles/web_design.webp" alt="designer UI/UX"
-                                        width="250px">
+                                        width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -335,7 +333,7 @@
                             <div class="card-content">
                                 <div class="card-image">
                                     <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="référencement" width="250px">
+                                        alt="référencement" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
@@ -351,7 +349,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="Typographies" width="250px">
+                                    <img src="assets/images/articles/dev.webp" alt="Typographies" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">

@@ -146,13 +146,13 @@
             </div>
           </li>
           <li class="hidden md:block w-2/12">
-            <a href="index.php?action="><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
+            <a href="index.php"><img class="w-4/6" src="assets/images/logowithoutback.png"></a>
           </li>
           <li class="w-full md:w-auto">
             <a href="index.php?action=realisations" class="font-medium text-blanc md: navbaranim">Réalisations</a>
           </li>
           <li class="w-full md:w-auto">
-            <a href="index.php?action=accueil#contacternous" class="font-medium text-blanc md: navbaranim">Contact</a>
+            <a href="index.php#contacternous" class="font-medium text-blanc md: navbaranim">Contact</a>
           </li>
         </ul>
       </div>
@@ -165,10 +165,10 @@
   <a href="index.php" class="button active">
     <i class="fa-solid fa-house text-white"></i>
   </a>
-  <a href="index.php?action=accueil#contacternous" class="button scroll-smooth">
+  <a href="index.php#contacternous" class="button scroll-smooth">
     <i class="fa-solid fa-envelope text-white"></i>
   </a>
-  <a href="#" class="button">
+  <a href="index.php?action=articles" class="button">
     <i class="fa-solid fa-newspaper text-white"></i>
   </a>
   <button type="button" class="button" data-dropdown-toggle="dropupPhone">
@@ -191,6 +191,19 @@
 <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="z-50 bottom-20 right-2 inline-block p-3 bg-grenat text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose hover:shadow-lg focus:bg-grenat focus:shadow-lg focus:outline-none focus:ring-0 active:bg-rose active:shadow-lg transition duration-150 ease-in-out fixed md:bottom-5 md:right-5" id="btn-back-to-top">
   <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
 </button>
+
+<?php
+
+$id_role = 1 ;
+$_SESSION['id_role'] = $id_role;
+
+if(isset($id_role) && $id_role == 2){
+    echo '<a href="view/admin/crud-article.php"><button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="z-50 bottom-20 left-2 inline-block p-3 bg-rose text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-rose active:shadow-lg transition duration-150 ease-in-out fixed md:bottom-5 md:left-5" id="btn-admin">
+    <i class="fa-solid fa-hammer"></i>
+    </button></a>';
+}
+?>
+
 
 <script>
   // Get the button

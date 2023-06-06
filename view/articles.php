@@ -38,7 +38,7 @@ include('src/model/classes/Connect.php');
 
 </head>
 
-<body class="bg-[#141414]">
+<body class="bg-primary">
 
     <?php
 
@@ -46,8 +46,8 @@ include('src/model/classes/Connect.php');
 
     ?>
 
-    <main class="h-full overflow-hidden flex items-center justify-center" style="background: #141414;">
-        <div class="space-y-5 w-10/12">
+    <main class="h-full overflow-hidden flex items-center justify-center">
+        <div class="space-y-5 w-full">
 
             <div class="overflow-hidden rounded-xl border border-[#171717] bg-[#141414]-50 p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
@@ -76,7 +76,7 @@ include('src/model/classes/Connect.php');
                 </ul>
 
                 <div id="all-section" class="mt-4">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
@@ -179,7 +179,7 @@ include('src/model/classes/Connect.php');
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
@@ -249,7 +249,7 @@ include('src/model/classes/Connect.php');
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
 
                         <div class="card">
                             <div class="card-content">
@@ -321,7 +321,7 @@ include('src/model/classes/Connect.php');
                 </div>
 
                 <div id="ref-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
+                    <div class="cards" style="margin: auto;">
 
                         <div class="card">
                             <div class="card-content">
