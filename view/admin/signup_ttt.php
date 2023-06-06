@@ -1,15 +1,8 @@
 <?php
 session_start();
-require 'connx.php';
+require '../../src\model\classes\Connect.php';
 ?>
 
-
-<!-- <div class="contenu">
-
-    <main class="accueil">
-
-      <div class="mess_erreur">
- -->
 
 <?php
 $name=htmlspecialchars($_POST['name']);
@@ -80,16 +73,3 @@ else{
 
 ?>
 
-<!-- 
-                                    $req = "SELECT * FROM code ";
-                                    $codeInscription = $db->prepare($req);
-                                    $codeInscription->execute();
-                                    $resultats = $codeInscription->fetch();
-                                    $rowCount = $codeInscription->rowCount();
-                                    if ($rowCount == 0) {
-                                          echo "<div class='alert alert-danger'>Le code n'est pas valide</div>"; -->
-<!-- </div>
-
-</main>
-
-</div> -->
