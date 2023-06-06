@@ -9,7 +9,7 @@ $stmt_all = $connect->prepare("SELECT a.*, ca.category, i.image_head, i.image_co
                               INNER JOIN images AS i ON a.id_article = i.id_article
                               INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article 
                               ORDER BY a.date DESC
-                              LIMIT 6"); 
+                              LIMIT 6");
 $stmt_all->execute();
 $articles_all = $stmt_all->fetchAll(PDO::FETCH_ASSOC);
 
@@ -21,7 +21,7 @@ $stmt_dev = $connect->prepare("SELECT a.*, ca.category, i.image_head, i.image_co
                               INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article 
                               WHERE ca.category = 'Développement Web'
                               ORDER BY a.date DESC
-                              LIMIT 6"); 
+                              LIMIT 6");
 $stmt_dev->execute();
 $articles_dev = $stmt_dev->fetchAll(PDO::FETCH_ASSOC);
 
@@ -33,7 +33,7 @@ $stmt_design = $connect->prepare("SELECT a.*, ca.category, i.image_head, i.image
                                  INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article 
                                  WHERE ca.category = 'Web Design'
                                  ORDER BY a.date DESC
-                                 LIMIT 6"); 
+                                 LIMIT 6");
 $stmt_design->execute();
 $articles_design = $stmt_design->fetchAll(PDO::FETCH_ASSOC);
 
@@ -45,7 +45,7 @@ $stmt_ref = $connect->prepare("SELECT a.*, ca.category, i.image_head, i.image_co
                               INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article 
                               WHERE ca.category = 'Web Référencement'
                               ORDER BY a.date DESC
-                              LIMIT 6"); 
+                              LIMIT 6");
 $stmt_ref->execute();
 $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
 
@@ -120,128 +120,120 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
                 </ul>
 
                 <div id="all-section" class="mt-4">
-                    <div id="cards" style="margin: auto;">
-                        <?php foreach ($articles_all as $article) {
-                            $id_article = $article['id_article'];
-                            $category = $article['category'];
-                            $title = $article['title'];
-                            $image_head = $article['image_head'];
-                        ?>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                <div class="card-image">
-                                    <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
-                                </div>
-
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <a href="">
-                                                <h3 class="category_articles"><?= $category ?></h3>
-                                            </a>
-                                            <h4><?= $title ?></h4>
+                <div id="cards" style="margin: auto;">
+                        <?php foreach ($articles_all as $article): ?>
+                            <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="<?= $article['image_head'] ?>" alt="cybersecurite" width="250px">
+                                        </div>
+                                        <div class="card-info-wrapper">
+                                            <div class="card-info">
+                                                <div class="card-info-title">
+                                                    <h3 class="category_article">
+                                                        <?= isset($article['category']) ? $article['category'] : '' ?>
+                                                    </h3>
+                                                    <h4>
+                                                        <?= isset($article['title']) ? $article['title'] : '' ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <?php } ?>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
-                        <?php foreach ($articles_dev as $article) {
-                            $id_article = $article['id_article'];
-                            $category = $article['category'];
-                            $title = $article['title'];
-                            $image_head = $article['image_head'];
-                        ?>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                <div class="card-image">
-                                    <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
-                                </div>
-
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles"><?= $category ?></h3>
-                                            <h4><?= $title ?></h4>
+                <div id="cards" style="margin: auto;">
+                        <?php foreach ($articles_dev as $article): ?>
+                            <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="<?= $article['image_head'] ?>" alt="cybersecurite" width="250px">
+                                        </div>
+                                        <div class="card-info-wrapper">
+                                            <div class="card-info">
+                                                <div class="card-info-title">
+                                                    <h3 class="category_article">
+                                                        <?= isset($article['category']) ? $article['category'] : '' ?>
+                                                    </h3>
+                                                    <h4>
+                                                        <?= isset($article['title']) ? $article['title'] : '' ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <?php } ?>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
-                    <div id="cards" style="margin: auto;">
-                        <?php foreach ($articles_design as $article) {
-                            $id_article = $article['id_article'];
-                            $category = $article['category'];
-                            $title = $article['title'];
-                            $image_head = $article['image_head'];
-                        ?>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <div class="card-image">
-                                        <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
-                                    </div>
-
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles"><?= $category ?></h3>
-                                            <h4><?= $title ?></h4>
+                <div id="cards" style="margin: auto;">
+                        <?php foreach ($articles_design as $article): ?>
+                            <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="<?= $article['image_head'] ?>" alt="cybersecurite" width="250px">
+                                        </div>
+                                        <div class="card-info-wrapper">
+                                            <div class="card-info">
+                                                <div class="card-info-title">
+                                                    <h3 class="category_article">
+                                                        <?= isset($article['category']) ? $article['category'] : '' ?>
+                                                    </h3>
+                                                    <h4>
+                                                        <?= isset($article['title']) ? $article['title'] : '' ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <?php } ?>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="ref-section" class="mt-4" style="display: none;">
                     <div id="cards" style="margin: auto;">
-                        <?php foreach ($articles_ref as $article) {
-                            $id_article = $article['id_article'];
-                            $category = $article['category'];
-                            $title = $article['title'];
-                            $image_head = $article['image_head'];
-                        ?>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <div class="card-image">
-                                        <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
-                                    </div>
-
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles"><?= $category ?></h3>
-                                            <h4><?= $title ?></h4>
+                        <?php foreach ($articles_ref as $article): ?>
+                            <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="<?= $article['image_head'] ?>" alt="cybersecurite" width="250px">
+                                        </div>
+                                        <div class="card-info-wrapper">
+                                            <div class="card-info">
+                                                <div class="card-info-title">
+                                                    <h3 class="category_article">
+                                                        <?= isset($article['category']) ? $article['category'] : '' ?>
+                                                    </h3>
+                                                    <h4>
+                                                        <?= isset($article['title']) ? $article['title'] : '' ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <?php } ?>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
-                </div>
 
+                </div>
             </div>
+
+        </div>
         </div>
     </main>
 
