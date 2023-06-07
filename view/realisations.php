@@ -1,3 +1,52 @@
+<?php 
+require_once('src/model/classes/Connect.php');
+
+// Récupération des 6 derniers projets ajoutés
+$stmt_all = $connect->prepare("SELECT p.*, cp.category_project
+                              FROM projects AS p
+                              INNER JOIN users AS u ON u.id_user = p.id_user
+                              INNER JOIN category_projects AS cp ON p.id_category_project = cp.id_category_project
+                              ORDER BY p.id_project DESC
+                              LIMIT 6"); 
+$stmt_all->execute();
+$project_all = $stmt_all->fetchAll(PDO::FETCH_ASSOC);
+
+
+// Récupération des 6 derniers projets avec la catégorie "Site Vitrine"
+$stmt_vitrine = $connect->prepare("SELECT p.*, cp.category_project
+                              FROM projects AS p
+                              INNER JOIN users AS u ON u.id_user = p.id_user
+                              INNER JOIN category_projects AS cp ON p.id_category_project = cp.id_category_project
+                              WHERE cp.category_project = 'Site Vitrine'
+                              ORDER BY p.id_project DESC
+                              LIMIT 6"); 
+$stmt_vitrine->execute();
+$project_vitrine = $stmt_vitrine->fetchAll(PDO::FETCH_ASSOC);
+
+// Récupération des 6 derniers articles avec la catégorie "e-Commerce"
+$stmt_commerce = $connect->prepare("SELECT p.*, cp.category_project
+                              FROM projects AS p
+                              INNER JOIN users AS u ON u.id_user = p.id_user
+                              INNER JOIN category_projects AS cp ON p.id_category_project = cp.id_category_project
+                              WHERE cp.category_project = 'e-Commerce'
+                              ORDER BY p.id_project DESC
+                              LIMIT 6"); 
+$stmt_commerce->execute();
+$project_commerce = $stmt_commerce->fetchAll(PDO::FETCH_ASSOC);
+
+// Récupération des 6 derniers articles avec la catégorie "Application"
+$stmt_app = $connect->prepare("SELECT p.*, cp.category_project
+                              FROM projects AS p
+                              INNER JOIN users AS u ON u.id_user = p.id_user
+                              INNER JOIN category_projects AS cp ON p.id_category_project = cp.id_category_project
+                              WHERE cp.category_project = 'Application'
+                              ORDER BY p.id_project DESC
+                              LIMIT 6"); 
+$stmt_app->execute();
+$projet_application = $stmt_app->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -68,301 +117,91 @@
 
                 <div id="all-section" class="mt-4">
                     <div class="cards" style="margin: auto;">
+                    <?php foreach($project_all as $rowall): 
+                        ?>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/logo-simplon.webp" alt="artificial intelligence"
+                                    <img src="<?php echo $rowall['image']?>" alt="artificial intelligence"
                                         width="100%">
-                                </div>
+                                </div> 
                                 <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Simplon Charleville</h3>
-                                            <h4>Formation dans l'informatique</h4>
-                                        </div>
+                                    <div class="card-info"> 
+                                        <div class="card-info-title"> 
+                                            <h3 class="category_articles"><?php echo $rowall['title']?></h3>
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/logo-rimbaud-tech.webp" alt="gaming" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Rimbaud Tech</h3>
-                                            <h4>Incubateur d'entreprise d'avenir
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/manpower_paratge_twitter.webp" alt="web design">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Man Power</h3>
-                                            <h4>Entreprise d'intérim, cdi, cdd</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="cybersécutité" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle référencement</h3>
-                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
-                                                d'un site web</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="web design" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
-                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/framework.webp" alt="framework" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <i class="fa-duotone fa-otter"></i>
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Blabla</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="dev-section" class="mt-4" style="display: none;">
                     <div class="cards" style="margin: auto;">
+                    <?php foreach($project_vitrine as $rowall): 
+                        ?>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/AI.webp" alt="cybersecurity" width="100%">
+                                    <img src="<?php echo $rowall['image']?>" alt="cybersecurity" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Les enjeux de la cybersécurité pour la création d'un site web ou web
-                                                mobile</h4>
+                                            <h3 class="category_articles"><?php echo $rowall['title']?></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/gaming.webp " alt="jeux vidéos" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="développement informatique"
-                                        width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
-                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/framework.webp" alt="framework" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <i class="fa-duotone fa-otter"></i>
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Blabla</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="design-section" class="mt-4" style="display: none;">
                     <div class="cards" style="margin: auto;">
 
+                    <?php foreach($project_commerce as $rowall): 
+                        ?>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/gaming.webp " alt="gaming" width="100%">
+                                    <img src="<?php echo $rowall['image']?>" alt="cybersecurity" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle développement</h3>
-                                            <h4>Le développement de jeux vidéo : une industrie en constante évolution
-                                            </h4>
+                                            <h3 class="category_articles"><?php echo $rowall['title']?></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/web_design.webp" alt="design UI/UX" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
-                                                mobile</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="cybersécurité" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle référencement</h3>
-                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
-                                                d'un site web</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="web design" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
-                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
                 <div id="ref-section" class="mt-4" style="display: none;">
                     <div class="cards" style="margin: auto;">
-
+                    <?php foreach($projet_application as $rowall): 
+                        ?>
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                    <img src="assets/images/articles/web_design.webp" alt="designer UI/UX"
-                                        width="100%">
+                                    <img src="<?php echo $rowall['image']?>" alt="cybersecurity" width="100%">
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Le maquettage : l'étape cruciale de la conception de sites web et web
-                                                mobile</h4>
+                                            <h3 class="category_articles"><?php echo $rowall['title']?></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/concept-cybersecurite-ordinateur-gros-plan.webp"
-                                        alt="référencement" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle référencement</h3>
-                                            <h4> L'importance du référencement dans la stratégie de marketing numérique
-                                                d'un site web</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-image">
-                                    <img src="assets/images/articles/dev.webp" alt="Typographies" width="100%">
-                                </div>
-                                <div class="card-info-wrapper">
-                                    <div class="card-info">
-                                        <div class="card-info-title">
-                                            <h3 class="category_articles">Pôle design</h3>
-                                            <h4>Les tendances récentes en web design : Couleurs audacieuses,
-                                                typographies imposantes et expériences centrées sur l'utilisateur</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
