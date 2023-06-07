@@ -25,6 +25,7 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
         case 'connexion':
             vueLogin();
             break;
+        
         // génère la home si aucun des cases n'est trouvé
     }
 } elseif (isset($_GET['admin']) && $_GET['admin'] !== '') {
@@ -57,5 +58,7 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     } else {
         homepage();
     }
+} else {
+    homepage();
 }
 ?>
