@@ -21,10 +21,10 @@
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 350px;
+  height: 335px;
   flex-direction: column;
   position: relative;
-  width: 400px;
+  width: 380px;
   margin:2%;
 }
 
