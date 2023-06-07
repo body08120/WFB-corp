@@ -8,8 +8,9 @@
   flex-wrap: wrap;
   gap: 8px;  
   max-width: 1400px;
-  width: calc(100% - 20px);
+  width: 100%;
   margin: auto;
+  justify-content: center;
 }
 
 .cards:hover > .card::after {
@@ -21,10 +22,10 @@
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 350px;
+  height: 335px;
   flex-direction: column;
   position: relative;
-  width: 400px;
+  width: 380px;
   margin:2%;
 }
 
