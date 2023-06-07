@@ -25,7 +25,7 @@ if (isset($email, $password) && !empty($email) && !empty($password)) {
         } else {
             if (password_verify($password, $user['password'])) {
                 echo "Bienvenue";
-                var_dump($user);
+
                 // Création de la session utilisateur
                 $_SESSION["id_user"] = $user["id_user"];
                 $_SESSION["id_role"] = $user["id_role"];

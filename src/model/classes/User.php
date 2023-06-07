@@ -25,7 +25,7 @@ class User
     // Getters and setters
     public function getName(): string
     {
-        return $this->name;
+        return $this->name ?? "";
     }
 
     public function setName(string $name): void
@@ -35,7 +35,7 @@ class User
 
     public function getFirstName(): string
     {
-        return $this->firstname;
+        return $this->firstname ?? "";
     }
 
     public function setFirstName(string $firstname): void
@@ -60,7 +60,7 @@ class User
 
     public function setPassword(string $password): void
     {
-        $this->password = $password;
+        $this->password = password_hash($password, PASSWORD_DEFAULT);
     }
 
     public function getIdRole(): int
@@ -68,10 +68,11 @@ class User
         return $this->id_role;
     }
 
-    public function setIdRole(int $id_role): void
+    public function setIdRole(?int $id_role): void
     {
-        $this->id_role = $id_role;
+        $this->id_role;
     }
+
 
     public function getToken(): string
     {
@@ -85,7 +86,7 @@ class User
 
     public function getActive(): int
     {
-        return $this->active;
+        return $this->active = 0;
     }
 
     public function setActive(int $active): void
@@ -152,9 +153,6 @@ class User
     {
         $this->linkedin = $linkedin;
     }
-
-
-
 }
 
 class UserRepository extends Connect
@@ -166,9 +164,9 @@ class UserRepository extends Connect
 
     public function getUserByEmail($email)
     {
-        $req = $this->getDb()->prepare('SELECT * FROM users WHERE email = ?');
-        $req->execute([$email]);
-        $data = $req->fetch();
+        $stmt = $this->getDb()->prepare('SELECT * FROM users WHERE email = :email');
+        $stmt->execute(['email' => $email]);
+        $data = $stmt->fetch();
 
         if ($data !== false) {
             $user = new User();
@@ -184,52 +182,54 @@ class UserRepository extends Connect
         return null;
     }
 
-    public function Signin(User $user)
+    public function signin($email, $password)
     {
-        // if (!isset($_POST['email']) || $_POST['email'] === '') {
-        //     return false;
-        // }
+        $stmt = $this->getDb()->prepare('SELECT * FROM users WHERE email = :email');
+        $stmt->execute(['email' => $email]);
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        // if (!isset($_POST['password']) || strlen($_POST['password']) < 4) {
-        //     return false;
-        // }
-
-        $req = $this->getDb()->prepare('SELECT * FROM users WHERE email =?');
-        $req->execute([$user->getEmail()]);
-        $data = $req->fetch(PDO::FETCH_ASSOC);
-        var_dump($data);
-        die();
-        if ($data && password_verify($_POST['password'], $user->getPassword())) {
-           echo 'connexion ok';
-        } else {
-            echo "connexion echouée";
+        if ($data && password_verify($password, $data['password'])) {
+            return true;
         }
+
+        return false;
     }
 
-   
 
-
-
-    public function insertUser(User $user)
+    public function inscription(User $user)
     {
+        $stmt = $this->getDb()->prepare("INSERT INTO users (email, name, firstname, password, id_role)
+        VALUES (:email, :name, :firstname, :password, :id_role)");
 
-        $req = $this->getDb()->prepare("INSERT INTO users (name, firstname, email, password, token, active, id_role, job_title, description, fb, twitter, linkedin)
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-
-        $req->execute([
-            $user->getName(),
-            $user->getFirstName(),
-            $user->getEmail(),
-            $user->getPassword(),
-            $user->getToken(),
-            $user->getActive(),
-            $user->getIdRole(),
-            $user->getJobTitle(),
-            $user->getDescription(),
-            $user->getFb(),
-            $user->getTwitter(),
-            $user->getLinkedin()
+        $stmt->execute([
+            'email' => $user->getEmail(),
+            'name' => $user->getName(),
+            'firstname' => $user->getFirstName(),
+            'password' => $user->getPassword(),
+            'id_role' => 2
         ]);
     }
+
+    public function deleteUserById(User $user)
+    {
+        $stmt = $this->getDb()->prepare("DELETE FROM users WHERE id_user = :id_user");
+        $stmt->execute(['id_user' => $user->getIdUser()]);
+
+    }
+
+    public function updateUser(User $user)
+    {
+        $stmt = $this->getDb()->prepare("UPDATE users SET name = :name, firstname = :firstname, password = :password, id_role = :id_role WHERE id_user = :id_user");
+        $stmt->execute([
+            'name' => $user->getName(),
+            'firstname' => $user->getFirstName(),
+            'password' => $user->getPassword(),
+            'id_role' => $user->getIdRole(),
+            ]);
+
+    }
+
 }
 ?>
+
+
