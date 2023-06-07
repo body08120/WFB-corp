@@ -18,7 +18,7 @@ $stmt_dev = $connect->prepare("SELECT a.*, ca.category, i.image_head, i.image_co
                               FROM articles AS a 
                               INNER JOIN users AS u ON u.id_user = a.id_user
                               INNER JOIN images AS i ON a.id_article = i.id_article
-                              INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article 
+                              INNER JOIN category_articles AS ca ON a.id_category_article = ca.id_category_article
                               WHERE ca.category = 'Développement Web'
                               ORDER BY a.date DESC
                               LIMIT 6");
@@ -129,30 +129,26 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
                             $title = $article['title'];
                             $image_head = $article['image_head'];
                         ?>
+                        <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-image">
-                                <div class="card-image">
                                     <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
-                                </div>
-
                                 </div>
                                 <div class="card-info-wrapper">
                                     <div class="card-info">
                                         <div class="card-info-title">
-                                            <a href="">
                                                 <h3 class="category_articles"><?= $category ?></h3>
-                                            </a>
                                             <h4><?= $title ?></h4>
                                         </div>
                                     </div>
                                 </div>
                             </a>
+                        </div>
                     </div>
-                </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 <div id="dev-section" class="mt-4" style="display: none;">
-                <div id="cards" style="margin: auto;">
+                <div class="cards" style="margin: auto;">
                         <?php foreach ($articles_dev as $article): ?>
                             <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
                                 <div class="card">
