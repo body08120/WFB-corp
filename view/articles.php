@@ -85,7 +85,7 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
 
 </head>
 
-<body class="bg-[#141414]">
+<body class="bg-primary">
 
     <?php
     include_once("view/includes/navbar.php");
@@ -120,25 +120,30 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
                 </ul>
 
                 <div id="all-section" class="mt-4">
-                <div id="cards" style="margin: auto;">
-                        <?php foreach ($articles_all as $article): ?>
-                            <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="card-image">
-                                            <img src="<?= $article['image_head'] ?>" alt="cybersecurite" width="250px">
-                                        </div>
-                                        <div class="card-info-wrapper">
-                                            <div class="card-info">
-                                                <div class="card-info-title">
-                                                    <h3 class="category_article">
-                                                        <?= isset($article['category']) ? $article['category'] : '' ?>
-                                                    </h3>
-                                                    <h4>
-                                                        <?= isset($article['title']) ? $article['title'] : '' ?>
-                                                    </h4>
-                                                </div>
-                                            </div>
+
+                    <div class="cards" style="margin: auto;">
+                        <?php foreach ($articles_all as $article):  ?>
+                            <?php 
+                            $id_article = $article['id_article'];
+                            $category = $article['category'];
+                            $title = $article['title'];
+                            $image_head = $article['image_head'];
+                        ?>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                <div class="card-image">
+                                    <img src="<?= $image_head ?>" alt="cybersecurite" class="w-full mx-auto my-4">
+                                </div>
+
+                                </div>
+                                <div class="card-info-wrapper">
+                                    <div class="card-info">
+                                        <div class="card-info-title">
+                                            <a href="">
+                                                <h3 class="category_articles"><?= $category ?></h3>
+                                            </a>
+                                            <h4><?= $title ?></h4>
                                         </div>
                                     </div>
                                 </div>
