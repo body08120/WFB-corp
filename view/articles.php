@@ -85,7 +85,7 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
 
 </head>
 
-<body class="bg-[#141414]">
+<body class="bg-primary">
 
     <?php
     include_once("view/includes/navbar.php");
