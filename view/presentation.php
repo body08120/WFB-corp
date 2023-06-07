@@ -1,3 +1,25 @@
+<?php
+require_once('src/model/classes/Article.php');
+
+$articleRepository = new ArticleRepository();
+$dev = 1;
+$design = 2;
+$ref = 3;
+
+$arcticlesDev = $articleRepository->getArticlesByCategory($dev);
+$arcticlesDesign = $articleRepository->getArticlesByCategory($design);
+$arcticlesRef = $articleRepository->getArticlesByCategory($ref);
+
+
+
+var_dump($arcticlesDev);
+
+// $article = new Article();
+// $article->setIdArticle($articleDev['id_article']);
+
+// var_dump($articleRepository->getArticlesByCategory($design));
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -174,64 +196,40 @@
               <div class="flex justify-around py-4">
 
                 <!-- UNE CARD1 -->
-                <div class="relative max-w-sm border border-gray-700 rounded-lg shadow hidden 2xl:block 2xl:mx-2">
-                  <img src="assets/images/image-1.jpg" alt="Image de fond"
-                    class="absolute inset-0 w-full h-full object-cover filter blur" style="filter: blur(5px);" />
-                  <div class="relative p-5 hover:bg-primary hover:bg-opacity-80">
-                    <a href="#">
-                      <h5 class="mb-2 text-lg font-bold tracking-tight text-pink-800">
-                        Noteworthy technology acquisitions 2021
-                      </h5>
-                    </a>
-                    <p class="mb-3 font-normal text-sm text-blanc">
-                      Here are the biggest enterprise technology acquisitions
-                      of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#70163C] rounded-lg hover:bg-[#8C7287] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Découvrir
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                <?php foreach ($arcticlesDev as $cardDev): ?>
+                      <?php
+                      $enunciate = $cardDev['enunciate'];
+                      $title = $cardDev['title']; ?>
+
+                        <div class="relative max-w-sm border border-gray-700 rounded-lg shadow hidden 2xl:block 2xl:mx-2">
+                          <img src="<?= $cardDev['image_head']; ?>" alt="Image de fond"
+                            class="absolute inset-0 w-full h-full object-cover filter blur" style="filter: blur(5px);" />
+                          <div class="relative p-5 hover:bg-primary hover:bg-opacity-80">
+                              <h5 class="mb-2 text-lg font-bold tracking-tight text-pink-800">
+                                <?= $title // TITRE ?> 
+                              </h5>
+                            <p class="mb-3 font-normal text-sm text-blanc">
+                              <?= substr($enunciate, 0, 50) . '...'; // ENONCER ?>
+                            </p>
+                            <a href="index.php?action=article&id_article=<?= $cardDev['id_article']; ?>"
+                              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#70163C] rounded-lg hover:bg-[#8C7287] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                              Découvrir
+                              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                <?php endforeach; ?>
                 <!-- FIN CARD -->
 
-                <!-- UNE CARD2 -->
-                <div class="relative max-w-sm border border-gray-700 rounded-lg shadow lg:hidden 2xl:block 2xl:mx-2">
-                  <img src="assets/images/image-1.jpg" alt="Image de fond"
-                    class="absolute inset-0 w-full h-full object-cover filter blur" style="filter: blur(5px);" />
-                  <div class="relative p-5 hover:bg-[#1D1D1F] hover:opacity-80">
-                    <a href="#">
-                      <h5 class="mb-2 text-lg font-bold tracking-tight text-pink-800">
-                        Noteworthy technology acquisitions 2021
-                      </h5>
-                    </a>
-                    <p class="mb-3 font-normal text-sm text-blanc">
-                      Here are the biggest enterprise technology acquisitions
-                      of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#70163C] rounded-lg hover:bg-[#8C7287] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Découvrir
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <!-- FIN CARD -->
               </div>
               <!--fin section-->
 
-              <a class="seq-button rounded-[3px]" href="http://sequencejs.com/" target="_blank">VOIR PLUS</a>
+              <a class="seq-button rounded-[3px]" href="index.php?action=articles" target="_blank">VOIR PLUS</a>
             </div>
             <!--fin section-->
           </div>
@@ -330,7 +328,7 @@
               </div>
               <!--fin section-->
 
-              <a class="seq-button rounded-[3px]" href="http://sequencejs.com/" target="_blank">VOIR PLUS</a>
+              <a class="seq-button rounded-[3px]" href="index.php?action=articles" target="_blank">VOIR PLUS</a>
             </div>
             <!--fin section-->
           </div>
@@ -429,7 +427,7 @@
               </div>
               <!--fin section-->
 
-              <a class="seq-button rounded-[3px]" href="http://sequencejs.com/" target="_blank">VOIR PLUS</a>
+              <a class="seq-button rounded-[3px]" href="index.php?action=articles" target="_blank">VOIR PLUS</a>
             </div>
             <!--fin section-->
           </div>
