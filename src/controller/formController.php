@@ -1,6 +1,6 @@
 <?php
 require_once('src/model/classes/User.php');
-require_once('src/controller/formController.php');
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

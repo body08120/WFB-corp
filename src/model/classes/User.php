@@ -210,6 +210,13 @@ class UserRepository extends Connect
         ]);
     }
 
+    public function deleteUsers(User $user)
+    {
+        $stmt = $this->getDb()->prepare("DELETE FROM users WHERE id_user = :id_user");
+        $stmt->execute(['id_user' => $user->getIdUser()]);
+        
+    }
+
 }
 ?>
 
