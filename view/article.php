@@ -151,7 +151,7 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div id="cards" style="margin: auto;">
 
                     <?php foreach ($articles as $article): ?>
-                        <a href="test_article.php?id_article=<?= $article['id_article'] ?>"">
+                        <a href="index.php?action=article&id_article=<?= $article['id_article'] ?>">
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-image">
