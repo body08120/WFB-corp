@@ -89,7 +89,7 @@ $projet_application = $stmt_app->fetchAll(PDO::FETCH_ASSOC);
     <main class="h-full overflow-hidden flex items-center justify-center">
         <div class="space-y-5 w-10/12">
 
-            <div class="overflow-hidden rounded-xl bg-[#141414]-50 p-1 mt-6">
+            <div class="overflow-hidden rounded-xl p-1 mt-6">
                 <ul class="flex items-center gap-2 text-sm font-medium ">
                     <li class="l flex-1">
                         <a href="#all-section"
