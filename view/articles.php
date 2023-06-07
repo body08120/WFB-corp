@@ -148,10 +148,9 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
                                     </div>
                                 </div>
                             </a>
-                        <?php endforeach; ?>
                     </div>
                 </div>
-
+                <?php endforeach; ?>
                 <div id="dev-section" class="mt-4" style="display: none;">
                 <div id="cards" style="margin: auto;">
                         <?php foreach ($articles_dev as $article): ?>
@@ -268,6 +267,7 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
             });
         });
     </script>
+        <script src="assets/js/cards.js"></script>
 
 </body>
 
