@@ -210,11 +210,23 @@ class UserRepository extends Connect
         ]);
     }
 
-    public function deleteUsers(User $user)
+    public function deleteUserById(User $user)
     {
         $stmt = $this->getDb()->prepare("DELETE FROM users WHERE id_user = :id_user");
         $stmt->execute(['id_user' => $user->getIdUser()]);
-        
+
+    }
+
+    public function updateUser(User $user)
+    {
+        $stmt = $this->getDb()->prepare("UPDATE users SET name = :name, firstname = :firstname, password = :password, id_role = :id_role WHERE id_user = :id_user");
+        $stmt->execute([
+            'name' => $user->getName(),
+            'firstname' => $user->getFirstName(),
+            'password' => $user->getPassword(),
+            'id_role' => $user->getIdRole(),
+            ]);
+
     }
 
 }
