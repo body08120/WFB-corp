@@ -122,7 +122,8 @@ $articles_ref = $stmt_ref->fetchAll(PDO::FETCH_ASSOC);
                 <div id="all-section" class="mt-4">
 
                     <div class="cards" style="margin: auto;">
-                        <?php foreach ($articles_all as $article) {
+                        <?php foreach ($articles_all as $article):  ?>
+                            <?php 
                             $id_article = $article['id_article'];
                             $category = $article['category'];
                             $title = $article['title'];
